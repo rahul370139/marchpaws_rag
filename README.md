@@ -320,10 +320,6 @@ print(f"State: {result['state']}")
 - **Medical Validation**: Integration with medical knowledge bases
 - **Performance Benchmarking**: Comprehensive evaluation metrics
 
-## License
-
-This code is provided for educational and research purposes only. It is **not** certified medical advice and should not be used for actual medical care. Always consult qualified medical professionals for clinical decisions.
-
 ## Acknowledgments
 
 - **Tactical Combat Casualty Care (TCCC)** guidelines for medical protocol structure
@@ -343,5 +339,3 @@ We welcome contributions! Please see our [GitHub repository](https://github.com/
 ---
 
 **Repository**: [https://github.com/rahul370139/marchpaws_rag](https://github.com/rahul370139/marchpaws_rag)
-
-**Last Updated**: January 2025
