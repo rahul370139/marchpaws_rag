@@ -1,0 +1,9 @@
+streamlit>=1.20
+pymupdf>=1.22
+numpy>=1.21
+rank-bm25>=0.2.2
+faiss-cpu>=1.7.4  # optional, used for dense retrieval
+sentence-transformers>=2.2.2  # optional, used for embeddings
+requests>=2.31
+optimum>=1.16.0  # for model quantization
+intel-extension-for-pytorch>=2.0.0  # for CPU optimization
