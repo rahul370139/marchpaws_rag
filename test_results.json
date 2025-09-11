@@ -1,0 +1,1420 @@
+{
+  "scenarios": [
+    {
+      "scenario_name": "Chest Gunshot",
+      "scenario_description": "Gunshot wound to the chest with active bleeding",
+      "overall_success": true,
+      "completion_rate": 100.0,
+      "results": [
+        {
+          "scenario": "Gunshot wound to the chest with active bleeding",
+          "state": "M",
+          "question": "Is there any distention, contusion, penetration, evisceration or obvious bleeding observed?",
+          "user_answer": "Initial query",
+          "success": true,
+          "error": null,
+          "response_time": 18.38474988937378,
+          "checklist": [],
+          "citations": [],
+          "has_checklist": false,
+          "has_citations": false,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 0.0
+        },
+        {
+          "scenario": "Gunshot wound to the chest with active bleeding",
+          "state": "A",
+          "question": "Is an improvised occlusive chest seal applied over the open chest wound?",
+          "user_answer": "Yes, there is active bleeding from the chest wound",
+          "success": true,
+          "error": null,
+          "response_time": 29.84139108657837,
+          "checklist": [
+            "Evaluate the casualty",
+            "Determine if bleeding is life-threatening",
+            "If bleeding is life-threatening, decide on the appropriate method for massive hemorrhage control"
+          ],
+          "citations": [
+            "Ch2 \u00a72-1 | Evaluate A Casualty (081-COM-1001) | p.21\u201321",
+            "Ch6 \u00a76-1 | CONTROL BLEEDING | p.35\u201335",
+            "Ch6 \u00a76-2 | METHODS FOR CONTROLLING EXTERNAL BLEEDING | p.35\u201335"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.7,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Gunshot wound to the chest with active bleeding",
+          "state": "R",
+          "question": "Is the casualty breathing normally? (Observable signs: chest rising and falling, airflow, respiration rate)",
+          "user_answer": "No, the airway is clear and patient is breathing",
+          "success": true,
+          "error": null,
+          "response_time": 33.454460859298706,
+          "checklist": [
+            "Check for breathing",
+            "Monitor the casualty's respirations",
+            "Maintain an open airway"
+          ],
+          "citations": [
+            "Ch3 \u00a73-7 | Check For Breathing [p.27\u201327]",
+            "Ch14 \u00a714-1 | Rescue Breathing (081-831-0048) [p.69\u201369]",
+            "Ch3 \u00a73-8 | Open The Airway (081-COM-1023) [p.27\u201327]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Gunshot wound to the chest with active bleeding",
+          "state": "C",
+          "question": "Is the casualty's carotid pulse detectable within 10 seconds?",
+          "user_answer": "Yes, breathing is labored and shallow",
+          "success": true,
+          "error": null,
+          "response_time": 28.319713830947876,
+          "checklist": [
+            "Assess breathing and ventilation",
+            "Open the airway using jaw thrust method",
+            "Check for normal or abnormal breathing"
+          ],
+          "citations": [
+            "Ch3 \u00a73-4, p.26\u201326",
+            "Ch15 \u00a715-2, p.71\u201371",
+            "Ch15 \u00a715-5, p.72\u201372"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Gunshot wound to the chest with active bleeding",
+          "state": "H",
+          "question": "Is the casualty being kept warm and insulated?",
+          "user_answer": "Weak pulse, skin is pale and cool",
+          "success": true,
+          "error": null,
+          "response_time": 31.961737871170044,
+          "checklist": [
+            "Check the casualty's pulse",
+            "Assess skin color and temperature"
+          ],
+          "citations": [
+            "Ch6 \u00a76-5, p.35\u201335",
+            "Ch2 \u00a72-1, p.21\u201321"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.7,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Gunshot wound to the chest with active bleeding",
+          "state": "P",
+          "question": "Does the casualty report any persistent or worsening pain after controlling active bleeding from the gunshot wound?",
+          "user_answer": "No signs of hypothermia, no head injury",
+          "success": true,
+          "error": null,
+          "response_time": 33.9175078868866,
+          "checklist": [
+            "Check the casualty for signs of hypothermia (numbness, tingling, pale/yellowish skin, frozen tissue, etc.)",
+            "Assess the casualty for head injury or altered consciousness."
+          ],
+          "citations": [
+            "Ch12 \u00a712-3, p.57\u201357",
+            "Ch12 \u00a712-10, p.58\u201358"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Gunshot wound to the chest with active bleeding",
+          "state": "A2",
+          "question": "Is there active bleeding or any signs of penetrating wound? If yes, is the casualty aware of any known allergies to antibiotics?",
+          "user_answer": "Patient reports severe pain (8/10)",
+          "success": true,
+          "error": null,
+          "response_time": 29.22047519683838,
+          "checklist": [
+            "Assess pain level of the patient",
+            "Determine if analgesia is required based on pain assessment"
+          ],
+          "citations": [
+            "Ch2 \u00a72-1, p.21\u201321"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.8,
+          "answer_quality_score": 0.92
+        },
+        {
+          "scenario": "Gunshot wound to the chest with active bleeding",
+          "state": "W",
+          "question": "Is there any evidence of new or missed wounds on the casualty?",
+          "user_answer": "Yes, penetrating wound requires antibiotics, no known allergies",
+          "success": true,
+          "error": null,
+          "response_time": 28.892600059509277,
+          "checklist": [
+            "Check for the presence of penetrating wound",
+            "Determine if there is active bleeding",
+            "Note any known allergies to antibiotics"
+          ],
+          "citations": [
+            "[Ch2 \u00a72-1, p.21\u201321]",
+            "[Ch6 \u00a76-1, p.35\u201335]",
+            "[Ch2 \u00a72-1, p.21\u201321]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Gunshot wound to the chest with active bleeding",
+          "state": "S",
+          "question": "Is there any deformity, tenderness, swelling, pain, inability to move the injured part, protruding bone, or discolored skin at the injury site?",
+          "user_answer": "Chest wound is bleeding, no other injuries visible",
+          "success": true,
+          "error": null,
+          "response_time": 33.93647813796997,
+          "checklist": [
+            "Check for other injuries",
+            "Verify all dressings and seals",
+            "Inspect the wound for distention, contusions, penetration, eviscerations or obvious bleeding"
+          ],
+          "citations": [
+            "Ch2 \u00a72-1, p.21\u201321",
+            "Ch5 \u00a75-1, p.31\u201331",
+            "Ch17 \u00a717-2, p.79\u201379"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Gunshot wound to the chest with active bleeding",
+          "state": "END",
+          "question": "Is there active bleeding or any signs of shock?",
+          "user_answer": "No fractures detected, patient can move all limbs",
+          "success": true,
+          "error": null,
+          "response_time": 36.08385992050171,
+          "checklist": [
+            "[Ch13 \u00a713-6 | APPLY A RIGID SPLINT | p.63\u201363]",
+            "[Ch13 \u00a713-9 | LOWER EXTREMITY FRACTURES | p.64\u201364]",
+            "[Ch13 \u00a713-7 | Apply A Rigid Splint | p.63\u201363]"
+          ],
+          "citations": [
+            "ID:tc4-02.1:ch13:13-6@Base",
+            "ID:tc4-02.1:ch13:13-9@Base",
+            "ID:tc4-02.1:ch13:13-7@Base"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.7,
+          "answer_quality_score": 1.0
+        }
+      ]
+    },
+    {
+      "scenario_name": "Arm Burn",
+      "scenario_description": "Severe burns to the right arm",
+      "overall_success": true,
+      "completion_rate": 100.0,
+      "results": [
+        {
+          "scenario": "Severe burns to the right arm",
+          "state": "M",
+          "question": "Is there any active bleeding or large gaping wounds requiring tourniquet, packing, or direct pressure for control?",
+          "user_answer": "Initial query",
+          "success": true,
+          "error": null,
+          "response_time": 14.867367029190063,
+          "checklist": [],
+          "citations": [],
+          "has_checklist": false,
+          "has_citations": false,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 0.0
+        },
+        {
+          "scenario": "Severe burns to the right arm",
+          "state": "A",
+          "question": "Is the casualty breathing normally?",
+          "user_answer": "No active bleeding, but severe burns present",
+          "success": true,
+          "error": null,
+          "response_time": 29.257702112197876,
+          "checklist": [
+            "Inspect for any life-threatening bleeding",
+            "Evaluate if direct pressure or tourniquet is required"
+          ],
+          "citations": [
+            "Ch6 \u00a76-2",
+            "Ch6 \u00a76-5"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Severe burns to the right arm",
+          "state": "R",
+          "question": "Is the casualty able to breathe normally? If not, what is the respiratory rate for 15 seconds?",
+          "user_answer": "Airway is clear, patient is breathing normally",
+          "success": true,
+          "error": null,
+          "response_time": 29.15355372428894,
+          "checklist": [
+            "Check the airway for obstruction",
+            "Confirm if patient is breathing normally"
+          ],
+          "citations": [
+            "[Ch4 \u00a74-1 | Airway Obstruction Identification | p.29\u201329]",
+            "[Ch3 \u00a73-5 | Check For Breathing | p.26\u201326]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.5,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Severe burns to the right arm",
+          "state": "C",
+          "question": "Is there a carotid pulse present and what is the casualty's skin color and temperature?",
+          "user_answer": "Breathing is normal, no respiratory distress",
+          "success": true,
+          "error": null,
+          "response_time": 29.731105089187622,
+          "checklist": [
+            "Check for normal breathing",
+            "Monitor for any signs of respiratory distress"
+          ],
+          "citations": [
+            "Ch3 \u00a73-5, p.26\u201326",
+            "Ch8 \u00a78-1, p.41\u201341"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Severe burns to the right arm",
+          "state": "H",
+          "question": "Is the casualty's skin or clothing wet? (Ch12 \u00a7None [p.57\u201358])",
+          "user_answer": "Strong pulse, good circulation to unaffected areas",
+          "success": true,
+          "error": null,
+          "response_time": 36.74402689933777,
+          "checklist": [
+            "Check the casualty for signs and symptoms of shock (Ch8 \u00a78-1, p.41\u201341)",
+            "Assess if the bleeding from the burn is life-threatening (Ch6 \u00a76-1, p.35\u201335)",
+            "If necessary, control the external bleeding using direct pressure or a pressure dressing (Ch6 \u00a76-4, Ch6 \u00a76-6)"
+          ],
+          "citations": [
+            "Ch8 \u00a78-1, p.41\u201341",
+            "Ch6 \u00a76-1, p.35\u201335",
+            "Ch6 \u00a76-4, Ch6 \u00a76-6"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.7,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Severe burns to the right arm",
+          "state": "P",
+          "question": "Is the casualty experiencing significant pain due to the burns?",
+          "user_answer": "No hypothermia, no head injury",
+          "success": true,
+          "error": null,
+          "response_time": 32.63078188896179,
+          "checklist": [
+            "Check the casualty's temperature",
+            "Assess for any signs of head injury"
+          ],
+          "citations": [
+            "Ch12 \u00a712-3, p.57\u201357",
+            "Ch12 \u00a712-2, p.57\u201357"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.8,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Severe burns to the right arm",
+          "state": "A2",
+          "question": "Is there any evidence of burns on the casualty? (If yes, proceed with treatment as per Chapter 7, Task 081COM-1007.) Has the casualty reported any allergies to antibiotics?",
+          "user_answer": "Severe pain from burns (9/10)",
+          "success": true,
+          "error": null,
+          "response_time": 45.65369009971619,
+          "checklist": [
+            "Assess the pain level using a recognized scale (e.g., Visual Analog Scale). - [Ch2 \u00a72-1 | Evaluate A Casualty (081-COM-1001) | p.21\u201321]",
+            "Determine if there are any signs and symptoms of shock such as sweating, paleness, restlessness, or rapid breathing. - [Ch8 \u00a78-1 | SIGNS AND SYMPTOMS OF SHOCK | p.41\u201341]"
+          ],
+          "citations": [
+            "[Ch2 \u00a72-1 | Evaluate A Casualty (081-COM-1001) | p.21\u201321]",
+            "[Ch8 \u00a78-1 | SIGNS AND SYMPTOMS OF SHOCK | p.41\u201341]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.8,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Severe burns to the right arm",
+          "state": "W",
+          "question": "Is there any evidence of wounds on the casualty?",
+          "user_answer": "Yes, burns require antibiotics, no allergies",
+          "success": true,
+          "error": null,
+          "response_time": 35.902575969696045,
+          "checklist": [
+            "Check for penetrating wounds",
+            "Identify any allergies to antibiotics"
+          ],
+          "citations": [
+            "Ch2 \u00a72-1, p.21\u201321",
+            "Ch17 \u00a717-1, p.79\u201379"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Severe burns to the right arm",
+          "state": "S",
+          "question": "Is the suspected fracture immobilized and distal pulse checked after splinting?",
+          "user_answer": "Severe burns on right arm, no other injuries",
+          "success": true,
+          "error": null,
+          "response_time": 34.44875693321228,
+          "checklist": [
+            "Inspect the casualty for missed injuries or eviscerations.",
+            "Verify all dressings and seals."
+          ],
+          "citations": [
+            "[Ch2 \u00a72-1 | Evaluate A Casualty (081-COM-1001) | p.21\u201321]",
+            "[Ch17 \u00a717-2 | Abdominal Injuries (081-831-0028) | p.79\u201379]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Severe burns to the right arm",
+          "state": "END",
+          "question": "Is there any sign of burns on the casualty's right arm?",
+          "user_answer": "No fractures, but burns may affect mobility",
+          "success": true,
+          "error": null,
+          "response_time": 29.421983242034912,
+          "checklist": [
+            "Prepare a rigid splint.",
+            "Immobilize the right arm in the position of function.",
+            "Re-check distal pulse after splinting."
+          ],
+          "citations": [
+            "Ch13 \u00a713-6",
+            "Ch13 \u00a713-16",
+            "Ch13 \u00a713-11"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.7,
+          "answer_quality_score": 1.0
+        }
+      ]
+    },
+    {
+      "scenario_name": "Head Injury",
+      "scenario_description": "Blunt force trauma to the head with altered consciousness",
+      "overall_success": true,
+      "completion_rate": 100.0,
+      "results": [
+        {
+          "scenario": "Blunt force trauma to the head with altered consciousness",
+          "state": "M",
+          "question": "Is there active bleeding that requires control?",
+          "user_answer": "Initial query",
+          "success": true,
+          "error": null,
+          "response_time": 14.296699047088623,
+          "checklist": [],
+          "citations": [],
+          "has_checklist": false,
+          "has_citations": false,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 0.0
+        },
+        {
+          "scenario": "Blunt force trauma to the head with altered consciousness",
+          "state": "A",
+          "question": "Is the airway clear or obstructed?",
+          "user_answer": "No external bleeding visible",
+          "success": true,
+          "error": null,
+          "response_time": 31.21746277809143,
+          "checklist": [
+            "Evaluate the casualty for life-threatening conditions",
+            "Check for visible external bleeding"
+          ],
+          "citations": [
+            "Ch2 \u00a72-1 | Evaluate A Casualty (081-COM-1001) [p.21\u201321]",
+            "Ch6 \u00a76-1 | CONTROL BLEEDING [p.35\u201335]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Blunt force trauma to the head with altered consciousness",
+          "state": "R",
+          "question": "Is the casualty breathing adequately?",
+          "user_answer": "Airway is clear but patient is unconscious",
+          "success": true,
+          "error": null,
+          "response_time": 29.420997858047485,
+          "checklist": [
+            "Check the airway for obstruction.",
+            "Perform jaw thrust maneuver if no suspected spinal injury.",
+            "Count the number of respirations for 15 seconds."
+          ],
+          "citations": [
+            "Ch3 \u00a73-4",
+            "Ch4 \u00a74-1",
+            "Ch3 \u00a73-5"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Blunt force trauma to the head with altered consciousness",
+          "state": "C",
+          "question": "Is there a carotid pulse present and is the casualty breathing normally?",
+          "user_answer": "Breathing is irregular and shallow",
+          "success": true,
+          "error": null,
+          "response_time": 31.53322196006775,
+          "checklist": [
+            "Open the airway using the jaw thrust method (if there is suspected spinal injury) - Ch3 \u00a73-4",
+            "Assess the casualty for a response and look for normal or abnormal breathing - Ch15 \u00a715-2"
+          ],
+          "citations": [
+            "Ch3 \u00a73-4, p.26\u201326",
+            "Ch15 \u00a715-2, p.71\u201371"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Blunt force trauma to the head with altered consciousness",
+          "state": "H",
+          "question": "Is the casualty experiencing decreased alertness or confusion?",
+          "user_answer": "Weak and irregular pulse",
+          "success": true,
+          "error": null,
+          "response_time": 31.715002059936523,
+          "checklist": [
+            "Assess the casualty's pulse quality (Ch15 \u00a715-2)",
+            "Check for signs of shock (Ch8 \u00a78-1)",
+            "Decide if fluids or blood products are required based on pulse quality and shock signs"
+          ],
+          "citations": [
+            "Ch15 \u00a715-2, p.71\u201371",
+            "Ch8 \u00a78-1, p.41\u201341"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.7,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Blunt force trauma to the head with altered consciousness",
+          "state": "P",
+          "question": "Is the casualty experiencing any signs of pain or discomfort? (Focus on eye injuries and level of consciousness)",
+          "user_answer": "Patient is unconscious, possible head injury",
+          "success": true,
+          "error": null,
+          "response_time": 40.24815797805786,
+          "checklist": [
+            "Assess the patient's temperature",
+            "Check for signs of hypothermia (numbness, pale skin, tingling)",
+            "Monitor for heat stroke symptoms (hot dry skin, headache)",
+            "Loosen constricting clothing",
+            "Move the patient to a sheltered area if possible"
+          ],
+          "citations": [
+            "Ch12 \u00a712-3, p.57\u201357",
+            "Ch12 \u00a712-10, p.58\u201358",
+            "Ch11 \u00a711-8, p.54\u201354",
+            "Ch12 \u00a712-12, p.59\u201359"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Blunt force trauma to the head with altered consciousness",
+          "state": "A2",
+          "question": "Is there any evidence of eye injury or the casualty wearing contact lenses?",
+          "user_answer": "Patient is unconscious, cannot assess pain",
+          "success": true,
+          "error": null,
+          "response_time": 33.92756414413452,
+          "checklist": [
+            "Assess the level of consciousness using AVPU method (Ch7 \u00a77-1, p.22\u201322)"
+          ],
+          "citations": [
+            "Ch7 \u00a77-1, p.22\u201322"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.7,
+          "answer_quality_score": 0.8400000000000001
+        },
+        {
+          "scenario": "Blunt force trauma to the head with altered consciousness",
+          "state": "W",
+          "question": "Is there any evidence of wounds on the casualty?",
+          "user_answer": "No penetrating wounds, no antibiotics needed",
+          "success": true,
+          "error": null,
+          "response_time": 41.509223222732544,
+          "checklist": [
+            "Assess the casualty's level of consciousness (AVPU) using Ch7 \u00a77-1",
+            "Check for penetrating wounds or abdominal injuries according to Ch17 \u00a717-1 and Ch24 \u00a724-5"
+          ],
+          "citations": [
+            "Ch7 \u00a77-1 | Tactical Field Care [p.22\u201322]",
+            "Ch17 \u00a717-1 | Abdominal Injuries (081-831-0028) [p.79\u201379]",
+            "Ch24 \u00a724-5 | Eyelid (081-833-0040) With IFAK Eye-Shield [p.101\u2013101]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Blunt force trauma to the head with altered consciousness",
+          "state": "S",
+          "question": "Is there any evidence of altered pulse after immobilizing and splinting the suspected fracture?",
+          "user_answer": "Head injury visible, no other external injuries",
+          "success": true,
+          "error": null,
+          "response_time": 50.10088801383972,
+          "checklist": [
+            "Inspect the wound for missed injuries",
+            "Verify all dressings and seals"
+          ],
+          "citations": [
+            "Ch2 \u00a72-1, p.21\u201321",
+            "Ch17 \u00a717-1, p.79\u201379"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Blunt force trauma to the head with altered consciousness",
+          "state": "END",
+          "question": "Is the casualty conscious or unconscious? (Check for signs of fractures and assess life-threatening conditions.)",
+          "user_answer": "No fractures detected",
+          "success": true,
+          "error": null,
+          "response_time": 39.555591106414795,
+          "checklist": [
+            "[Ch13 \u00a713-7 | Apply A Rigid Splint]",
+            "[Ch13 \u00a713-16 | Prepare Cravats]"
+          ],
+          "citations": [
+            "[Ch13 \u00a713-7, p.63\u201363]",
+            "[Ch13 \u00a713-16, p.66\u201366]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.5,
+          "answer_quality_score": 1.0
+        }
+      ]
+    },
+    {
+      "scenario_name": "Leg Fracture",
+      "scenario_description": "Open fracture of the left femur with bleeding",
+      "overall_success": true,
+      "completion_rate": 100.0,
+      "results": [
+        {
+          "scenario": "Open fracture of the left femur with bleeding",
+          "state": "M",
+          "question": "Is there life-threatening bleeding requiring either direct pressure or a tourniquet?",
+          "user_answer": "Initial query",
+          "success": true,
+          "error": null,
+          "response_time": 15.09980297088623,
+          "checklist": [],
+          "citations": [],
+          "has_checklist": false,
+          "has_citations": false,
+          "question_quality_score": 0.8,
+          "answer_quality_score": 0.0
+        },
+        {
+          "scenario": "Open fracture of the left femur with bleeding",
+          "state": "A",
+          "question": "Is the airway clear and patient breathing normally?",
+          "user_answer": "Yes, there is bleeding from the open fracture",
+          "success": true,
+          "error": null,
+          "response_time": 31.62965488433838,
+          "checklist": [
+            "Check for life-threatening bleeding",
+            "Apply direct pressure if bleeding is not life-threatening"
+          ],
+          "citations": [
+            "Ch6 \u00a76-1 | CONTROL BLEEDING [p.35\u201335]",
+            "Ch6 \u00a76-4 | APPLY DIRECT PRESSURE [p.35\u201335]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Open fracture of the left femur with bleeding",
+          "state": "R",
+          "question": "Is the casualty's respiration rate less than 2 per 15 seconds or is the casualty unconscious?",
+          "user_answer": "Airway is clear, patient is conscious and breathing",
+          "success": true,
+          "error": null,
+          "response_time": 31.7920880317688,
+          "checklist": [
+            "Check for breathing as per [Ch3 \u00a73-5, p.26\u201326]",
+            "Confirm airway is clear and open as per [Ch3 \u00a73-8, p.27\u201327]"
+          ],
+          "citations": [
+            "ID:tc4-02.1:ch3:3-5@Base",
+            "ID:tc4-02.1:ch3:3-8@Base"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Open fracture of the left femur with bleeding",
+          "state": "C",
+          "question": "Is there a detectable pulse? (Assesses perfusion)",
+          "user_answer": "Breathing is normal",
+          "success": true,
+          "error": null,
+          "response_time": 31.677865028381348,
+          "checklist": [
+            "Check for breathing",
+            "Open the airway using the jaw thrust method (if suspected spinal injury) or headtilt chinlift method (if no suspected spinal injury)"
+          ],
+          "citations": [
+            "Ch3 \u00a73-8",
+            "Ch14 \u00a714-1"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Open fracture of the left femur with bleeding",
+          "state": "H",
+          "question": "Is the casualty showing signs of shivering or apathy?",
+          "user_answer": "Weak pulse due to blood loss",
+          "success": true,
+          "error": null,
+          "response_time": 35.62399482727051,
+          "checklist": [
+            "Check the casualty's pulse",
+            "Assess skin color and temperature",
+            "Decide if fluids or blood products are required"
+          ],
+          "citations": [
+            "Ch6 \u00a76-5, p.35\u201335",
+            "Not found",
+            "Not found"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.7,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Open fracture of the left femur with bleeding",
+          "state": "P",
+          "question": "Is there any observed deformity, tenderness, swelling, pain, inability to move the injured part, protruding bone, discolored skin at the injury site, or bleeding that may indicate a fracture?",
+          "user_answer": "No hypothermia, no head injury",
+          "success": true,
+          "error": null,
+          "response_time": 33.472163915634155,
+          "checklist": [
+            "Check the casualty for signs of hypothermia.",
+            "Assess if the casualty's skin or clothing is wet."
+          ],
+          "citations": [
+            "[Ch12 \u00a712-4, p.57\u201357]",
+            "[Ch12 \u00a712-3, p.57\u201357]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Open fracture of the left femur with bleeding",
+          "state": "A2",
+          "question": "Does the casualty present with signs and symptoms of a fracture? Is there any known allergy to antibiotics?",
+          "user_answer": "Severe pain from fracture (10/10)",
+          "success": true,
+          "error": null,
+          "response_time": 33.513121128082275,
+          "checklist": [
+            "Assess pain level",
+            "Check for presence of severe pain (10/10)"
+          ],
+          "citations": [
+            "Ch13 \u00a713-1 | FRACTURES [p.63\u201363]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.8,
+          "answer_quality_score": 0.92
+        },
+        {
+          "scenario": "Open fracture of the left femur with bleeding",
+          "state": "W",
+          "question": "Is there evidence of deformity, tenderness, swelling, pain, inability to move the injured part, protruding bone, bleeding, discolored skin at the injury site on any part of the casualty's body?",
+          "user_answer": "Yes, open fracture requires antibiotics, no allergies",
+          "success": true,
+          "error": null,
+          "response_time": 35.508140087127686,
+          "checklist": [
+            "Check for the need of a rigid splint (Ch13 \u00a713-6, p.63\u201363)",
+            "Check if there are any allergies to antibiotics (not specified)"
+          ],
+          "citations": [
+            "Ch13 \u00a713-6, p.63\u201363",
+            "Not specified"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Open fracture of the left femur with bleeding",
+          "state": "S",
+          "question": "Is the left femur immobilized using a splint and distal pulse checked after splinting?",
+          "user_answer": "Open fracture of left femur, no other injuries",
+          "success": true,
+          "error": null,
+          "response_time": 34.51024389266968,
+          "checklist": [
+            "Check for any signs of additional injuries",
+            "Inspect the dressing and seals on the open fracture of the left femur",
+            "Verify that a rigid splint has been applied to immobilize the fractured limb"
+          ],
+          "citations": [
+            "Ch13 \u00a713-16, p.66\u201366",
+            "Ch13 \u00a713-2, p.63\u201363",
+            "Ch13 \u00a713-7, p.63\u201363"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Open fracture of the left femur with bleeding",
+          "state": "END",
+          "question": "Is the fractured extremity properly splinted and immobilized?",
+          "user_answer": "Obvious fracture of left femur, needs splinting",
+          "success": true,
+          "error": null,
+          "response_time": 36.44481420516968,
+          "checklist": [
+            "Apply padding",
+            "Secure a splint to the injured extremity with the limb in the position of function",
+            "Recheck the distal pulse"
+          ],
+          "citations": [
+            "Ch13 \u00a713-15 @Base",
+            "Ch13 \u00a713-6 @Base",
+            "Ch13 \u00a713-15 @Base"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.7,
+          "answer_quality_score": 1.0
+        }
+      ]
+    },
+    {
+      "scenario_name": "Abdominal Evisceration",
+      "scenario_description": "Penetrating abdominal wound with organ evisceration",
+      "overall_success": true,
+      "completion_rate": 100.0,
+      "results": [
+        {
+          "scenario": "Penetrating abdominal wound with organ evisceration",
+          "state": "M",
+          "question": "Is there distention, contusion, penetration, evisceration or obvious bleeding at the abdominal wound?",
+          "user_answer": "Initial query",
+          "success": true,
+          "error": null,
+          "response_time": 16.433483839035034,
+          "checklist": [],
+          "citations": [],
+          "has_checklist": false,
+          "has_citations": false,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 0.0
+        },
+        {
+          "scenario": "Penetrating abdominal wound with organ evisceration",
+          "state": "A",
+          "question": "Is the casualty's airway clear or obstructed?",
+          "user_answer": "No external bleeding, but internal bleeding suspected",
+          "success": true,
+          "error": null,
+          "response_time": 33.70648717880249,
+          "checklist": [
+            "Check for obvious bleeding",
+            "Expose the wound",
+            "Inspect for distention, contusions, penetration, eviscerations or obvious bleeding",
+            "Apply direct pressure"
+          ],
+          "citations": [
+            "Ch6 \u00a76-1, p.35\u201335",
+            "Ch17 \u00a717-2, p.79\u201379",
+            "Ch17 \u00a717-2, p.79\u201379"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Penetrating abdominal wound with organ evisceration",
+          "state": "R",
+          "question": "Is the casualty breathing normally? (Check for signs of breathing - listen, observe chest rise and fall, feel air escaping.)",
+          "user_answer": "Airway is clear, patient is conscious",
+          "success": true,
+          "error": null,
+          "response_time": 33.800637006759644,
+          "checklist": [
+            "Check if the airway is clear",
+            "Monitor the patient's breathing"
+          ],
+          "citations": [
+            "Ch4 \u00a74-1 | Airway Obstruction Identification [p.29\u201329]",
+            "Ch3 \u00a73-5 | Check For Breathing [p.26\u201326]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Penetrating abdominal wound with organ evisceration",
+          "state": "C",
+          "question": "Is the casualty's pulse quality normal? (If not, is fluid or blood product administration required?)",
+          "user_answer": "Breathing is shallow due to pain",
+          "success": true,
+          "error": null,
+          "response_time": 30.355933904647827,
+          "checklist": [
+            "Check the casualty's breathing",
+            "Look for chest to rise and fall",
+            "Listen for air escaping during exhalation",
+            "Feel for the flow of air on the side of your face"
+          ],
+          "citations": [
+            "Ch3 \u00a73-5 | Check For Breathing [p.26\u201326]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.8,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Penetrating abdominal wound with organ evisceration",
+          "state": "H",
+          "question": "Is the casualty exhibiting signs of hypothermia?",
+          "user_answer": "Rapid weak pulse, signs of shock",
+          "success": true,
+          "error": null,
+          "response_time": 33.87480020523071,
+          "checklist": [
+            "Check for rapid weak pulse.",
+            "Assess signs of shock."
+          ],
+          "citations": [
+            "Ch8 \u00a78-1, p.41\u201341",
+            "Ch6 \u00a76-5, p.35\u201335"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Penetrating abdominal wound with organ evisceration",
+          "state": "P",
+          "question": "Is there any evidence of pain or discomfort in the casualty?",
+          "user_answer": "No hypothermia, no head injury",
+          "success": true,
+          "error": null,
+          "response_time": 35.18126082420349,
+          "checklist": [
+            "Check for signs of hypothermia (numbness, pale or yellowish skin, etc.)",
+            "Maintain casualty's body heat with insulation and/or warm fluids, if available."
+          ],
+          "citations": [
+            "Ch12 \u00a712-3, p.57\u201357",
+            "Ch12 \u00a712-10, p.58\u201358"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Penetrating abdominal wound with organ evisceration",
+          "state": "A2",
+          "question": "Does the casualty have any known allergies to antibiotics and does the penetrating abdominal wound require antibiotic treatment?",
+          "user_answer": "Severe abdominal pain (9/10)",
+          "success": true,
+          "error": null,
+          "response_time": 33.804779052734375,
+          "checklist": [
+            "Assess the pain level",
+            "Inspect for distention, contusions, penetration, eviscerations or obvious bleeding.",
+            "Expose the wound."
+          ],
+          "citations": [
+            "Ch17 \u00a717-2, p.79\u201379",
+            "Ch17 \u00a717-1, p.79\u201379",
+            "Ch17 \u00a717-2, p.79\u201379"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Penetrating abdominal wound with organ evisceration",
+          "state": "W",
+          "question": "Is there any distention, penetration, evisceration, or obvious bleeding observed at the wound site?",
+          "user_answer": "Yes, penetrating wound requires antibiotics, no allergies",
+          "success": true,
+          "error": null,
+          "response_time": 32.416972160339355,
+          "checklist": [
+            "Check for internal organ damage and large blood vessel injuries",
+            "Determine the presence of any allergies to antibiotics"
+          ],
+          "citations": [
+            "Ch17 \u00a717-1, p.79\u201379",
+            "Ch2 \u00a72-1, p.21\u201321"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Penetrating abdominal wound with organ evisceration",
+          "state": "S",
+          "question": "Is there any distention, penetration, eviscerations or obvious bleeding observed?",
+          "user_answer": "Abdominal evisceration visible, no other injuries",
+          "success": true,
+          "error": null,
+          "response_time": 33.699333906173706,
+          "checklist": [
+            "Inspect for distention, contusions, penetration, eviscerations or obvious bleeding.",
+            "Verify the presence of an abdominal wound."
+          ],
+          "citations": [
+            "Ch17 \u00a717-2, p.79\u201379",
+            "Ch17 \u00a717-1, p.79\u201379"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.7,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Penetrating abdominal wound with organ evisceration",
+          "state": "END",
+          "question": "Is there any evidence of internal organ evisceration or active bleeding?",
+          "user_answer": "No fractures detected",
+          "success": true,
+          "error": null,
+          "response_time": 33.60946011543274,
+          "checklist": [
+            "Check the distal pulse after immobilizing the suspected fracture.",
+            "Apply a rigid splint to the suspected fractured limb."
+          ],
+          "citations": [
+            "Ch13 \u00a713-6, p.63\u201363",
+            "Ch13 \u00a713-7, p.63\u201363"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.7,
+          "answer_quality_score": 1.0
+        }
+      ]
+    },
+    {
+      "scenario_name": "Minor Injury",
+      "scenario_description": "Minor laceration to the hand",
+      "overall_success": true,
+      "completion_rate": 100.0,
+      "results": [
+        {
+          "scenario": "Minor laceration to the hand",
+          "state": "M",
+          "question": "Is there active bleeding?",
+          "user_answer": "Initial query",
+          "success": true,
+          "error": null,
+          "response_time": 13.471280097961426,
+          "checklist": [],
+          "citations": [],
+          "has_checklist": false,
+          "has_citations": false,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 0.0
+        },
+        {
+          "scenario": "Minor laceration to the hand",
+          "state": "A",
+          "question": "Is the casualty experiencing a severe airway obstruction? [Ch4 \u00a7None | p.29\u201330]",
+          "user_answer": "No, only minor bleeding from small cut",
+          "success": true,
+          "error": null,
+          "response_time": 31.19984793663025,
+          "checklist": [
+            "Is there active bleeding?",
+            "If no, is the wound gaping or large?"
+          ],
+          "citations": [
+            "Ch6 \u00a76-1 | CONTROL BLEEDING [p.35\u201335]",
+            "Ch6 \u00a76-4 | APPLY DIRECT PRESSURE [p.35\u201335]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Minor laceration to the hand",
+          "state": "R",
+          "question": "Is the casualty breathing normally and is it possible to count the number of respirations for 15 seconds?",
+          "user_answer": "Airway is clear, breathing normally",
+          "success": true,
+          "error": null,
+          "response_time": 28.97992992401123,
+          "checklist": [
+            "Open the airway using the jaw thrust maneuver",
+            "Check for breathing as described in Ch3 \u00a73-5"
+          ],
+          "citations": [
+            "ID:tc4-02.1:ch3:3-4@Base",
+            "ID:tc4-02.1:ch3:3-5@Base"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Minor laceration to the hand",
+          "state": "C",
+          "question": "Does the casualty have a carotid pulse?",
+          "user_answer": "Breathing is normal",
+          "success": true,
+          "error": null,
+          "response_time": 30.772958993911743,
+          "checklist": [
+            "Check the casualty's breathing rate.",
+            "Look for any signs of respiratory distress."
+          ],
+          "citations": [
+            "Ch15 \u00a715-2, p.71\u201371",
+            "Ch3 \u00a73-5, p.26\u201326"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Minor laceration to the hand",
+          "state": "H",
+          "question": "Is the casualty experiencing signs of hypothermia?",
+          "user_answer": "Strong pulse, good circulation",
+          "success": true,
+          "error": null,
+          "response_time": 31.250595808029175,
+          "checklist": [
+            "Check pulse quality",
+            "Assess skin color/temperature"
+          ],
+          "citations": [
+            "Ch6 \u00a76-5, p.35\u201335",
+            "Not found"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 0.92
+        },
+        {
+          "scenario": "Minor laceration to the hand",
+          "state": "P",
+          "question": "Does the casualty exhibit any signs of frostbite and if so, what is their reported pain level?",
+          "user_answer": "No hypothermia, no head injury",
+          "success": true,
+          "error": null,
+          "response_time": 33.65044116973877,
+          "checklist": [
+            "Check for signs of hypothermia such as shivering, cold skin, and slurred speech."
+          ],
+          "citations": [
+            "Ch12 \u00a712-3, p.57\u201357"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.8,
+          "answer_quality_score": 0.8400000000000001
+        },
+        {
+          "scenario": "Minor laceration to the hand",
+          "state": "A2",
+          "question": "Is there an active infection or allergy to antibiotics in the hand laceration?",
+          "user_answer": "Mild pain (3/10)",
+          "success": true,
+          "error": null,
+          "response_time": 31.381008863449097,
+          "checklist": [
+            "Evaluate the pain level",
+            "Assess for any signs of nerve agent poisoning"
+          ],
+          "citations": [
+            "Ch2 \u00a72-1 | Evaluate A Casualty (081-COM-1001) [p.21\u201321]",
+            "Ch9 \u00a79-1 | FIRST AID FOR NERVE AGENT INJURY [p.43\u201343]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Minor laceration to the hand",
+          "state": "W",
+          "question": "Is the dressing on the hand wound still intact and in place? Are there any signs of missed injuries, burns or eviscerations around the wound?",
+          "user_answer": "No, minor injury doesn't require antibiotics",
+          "success": true,
+          "error": null,
+          "response_time": 35.30981397628784,
+          "checklist": [
+            "Check for signs of penetrating wound, such as foreign bodies or protruding (impaled) objects."
+          ],
+          "citations": [
+            "[Ch24 \u00a724-6 | Protruding (Impaled) Objects. (See Task 081-833-0039.) | p.101\u2013101]"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.8,
+          "answer_quality_score": 0.8400000000000001
+        },
+        {
+          "scenario": "Minor laceration to the hand",
+          "state": "S",
+          "question": "Is there any evidence of a fracture in the hand?",
+          "user_answer": "Small cut on hand, no other injuries",
+          "success": true,
+          "error": null,
+          "response_time": 34.49502897262573,
+          "checklist": [
+            "Inspect the wound for missed injuries",
+            "Verify all dressings and seals"
+          ],
+          "citations": [
+            "Ch2 \u00a72-1 | Evaluate A Casualty (081-COM-1001) | p.21\u201321",
+            "Ch17 \u00a717-2 | Abdominal Injuries (081-831-0028) | p.79\u201379"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 1.0,
+          "answer_quality_score": 1.0
+        },
+        {
+          "scenario": "Minor laceration to the hand",
+          "state": "END",
+          "question": "Is there deformity, tenderness, swelling, pain, or inability to move the injured hand?",
+          "user_answer": "No fractures detected",
+          "success": true,
+          "error": null,
+          "response_time": 32.473331928253174,
+          "checklist": [
+            "Check for any signs of fractures.",
+            "Immobilize the suspected fractured area using a rigid splint."
+          ],
+          "citations": [
+            "Ch13 \u00a713-2, p.63\u201363",
+            "Ch13 \u00a713-6, p.63\u201363"
+          ],
+          "has_checklist": true,
+          "has_citations": true,
+          "question_quality_score": 0.7,
+          "answer_quality_score": 1.0
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "overall_metrics": {
+      "total_scenarios": 6,
+      "successful_scenarios": 6,
+      "scenario_success_rate": 100.0,
+      "total_interactions": 60,
+      "successful_interactions": 60,
+      "interaction_success_rate": 100.0,
+      "average_response_time": 31.741476678848265,
+      "average_question_quality": 0.8966666666666666,
+      "average_answer_quality": 0.888,
+      "checklist_coverage": 90.0,
+      "citation_coverage": 90.0
+    },
+    "state_metrics": {
+      "M": {
+        "success_count": 6,
+        "total_attempts": 6,
+        "success_rate": 100.0,
+        "sample_questions": [
+          "Is there any distention, contusion, penetration, evisceration or obvious bleeding observed?",
+          "Is there any active bleeding or large gaping wounds requiring tourniquet, packing, or direct pressure for control?",
+          "Is there active bleeding that requires control?"
+        ]
+      },
+      "A": {
+        "success_count": 6,
+        "total_attempts": 6,
+        "success_rate": 100.0,
+        "sample_questions": [
+          "Is an improvised occlusive chest seal applied over the open chest wound?",
+          "Is the casualty breathing normally?",
+          "Is the airway clear or obstructed?"
+        ]
+      },
+      "R": {
+        "success_count": 6,
+        "total_attempts": 6,
+        "success_rate": 100.0,
+        "sample_questions": [
+          "Is the casualty breathing normally? (Observable signs: chest rising and falling, airflow, respiration rate)",
+          "Is the casualty able to breathe normally? If not, what is the respiratory rate for 15 seconds?",
+          "Is the casualty breathing adequately?"
+        ]
+      },
+      "C": {
+        "success_count": 6,
+        "total_attempts": 6,
+        "success_rate": 100.0,
+        "sample_questions": [
+          "Is the casualty's carotid pulse detectable within 10 seconds?",
+          "Is there a carotid pulse present and what is the casualty's skin color and temperature?",
+          "Is there a carotid pulse present and is the casualty breathing normally?"
+        ]
+      },
+      "H": {
+        "success_count": 6,
+        "total_attempts": 6,
+        "success_rate": 100.0,
+        "sample_questions": [
+          "Is the casualty being kept warm and insulated?",
+          "Is the casualty's skin or clothing wet? (Ch12 \u00a7None [p.57\u201358])",
+          "Is the casualty experiencing decreased alertness or confusion?"
+        ]
+      },
+      "P": {
+        "success_count": 6,
+        "total_attempts": 6,
+        "success_rate": 100.0,
+        "sample_questions": [
+          "Does the casualty report any persistent or worsening pain after controlling active bleeding from the gunshot wound?",
+          "Is the casualty experiencing significant pain due to the burns?",
+          "Is the casualty experiencing any signs of pain or discomfort? (Focus on eye injuries and level of consciousness)"
+        ]
+      },
+      "A2": {
+        "success_count": 6,
+        "total_attempts": 6,
+        "success_rate": 100.0,
+        "sample_questions": [
+          "Is there active bleeding or any signs of penetrating wound? If yes, is the casualty aware of any known allergies to antibiotics?",
+          "Is there any evidence of burns on the casualty? (If yes, proceed with treatment as per Chapter 7, Task 081COM-1007.) Has the casualty reported any allergies to antibiotics?",
+          "Is there any evidence of eye injury or the casualty wearing contact lenses?"
+        ]
+      },
+      "W": {
+        "success_count": 6,
+        "total_attempts": 6,
+        "success_rate": 100.0,
+        "sample_questions": [
+          "Is there any evidence of new or missed wounds on the casualty?",
+          "Is there any evidence of wounds on the casualty?",
+          "Is there any evidence of wounds on the casualty?"
+        ]
+      },
+      "S": {
+        "success_count": 6,
+        "total_attempts": 6,
+        "success_rate": 100.0,
+        "sample_questions": [
+          "Is there any deformity, tenderness, swelling, pain, inability to move the injured part, protruding bone, or discolored skin at the injury site?",
+          "Is the suspected fracture immobilized and distal pulse checked after splinting?",
+          "Is there any evidence of altered pulse after immobilizing and splinting the suspected fracture?"
+        ]
+      }
+    },
+    "question_quality": {
+      "examiner_style": 0,
+      "anatomical_mismatch": 0,
+      "stage_inappropriate": 12,
+      "too_complex": 10,
+      "good_questions": 38,
+      "total_questions": 60
+    }
+  }
+}

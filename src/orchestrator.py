@@ -199,9 +199,7 @@ class Orchestrator:
     retrieval_threshold: float = 0.005  # Lower threshold for better coverage
     ce_threshold: float = 0.0001  # Cross-encoder threshold (very low for maximum coverage)
     max_chunks: int = 6  # Fewer chunks for more focused retrieval
-    temperature: float = 0.1  # Slight randomness for more natural questions
-    question_temperature: float = 0.2  # Higher temp for question generation
-    answer_temperature: float = 0.0  # Zero temp for deterministic answers
+    temperature: float = 0.1  # Balanced temperature for all interactions
 
     def __post_init__(self):
         # Initialise finite‑state machine and retriever
@@ -245,78 +243,9 @@ class Orchestrator:
         return state_keywords.get(state, "")
 
 
-    def _filter_anatomically_relevant_content(self, win_hits: List[Dict], query: str) -> List[Dict]:
-        """Filter out anatomically irrelevant content based on the scenario.
-        
-        Parameters
-        ----------
-        win_hits : List[Dict]
-            List of retrieved windows
-        query : str
-            The user's medical scenario query
-            
-        Returns
-        -------
-        List[Dict]
-            Filtered list of windows with anatomically relevant content
-        """
-        query_lower = query.lower()
-        
-        # Identify anatomical regions mentioned in the scenario
-        mentioned_anatomy = set()
-        if any(term in query_lower for term in ["chest", "thoracic", "rib", "lung"]):
-            mentioned_anatomy.add("chest")
-        if any(term in query_lower for term in ["head", "skull", "brain", "cranium"]):
-            mentioned_anatomy.add("head")
-        if any(term in query_lower for term in ["leg", "thigh", "calf", "femur", "tibia"]):
-            mentioned_anatomy.add("leg")
-        if any(term in query_lower for term in ["arm", "forearm", "humerus", "radius", "ulna"]):
-            mentioned_anatomy.add("arm")
-        if any(term in query_lower for term in ["abdomen", "abdominal", "stomach", "belly"]):
-            mentioned_anatomy.add("abdomen")
-        
-        # If no specific anatomy mentioned, return all content
-        if not mentioned_anatomy:
-            return win_hits
-        
-        # Filter windows based on anatomical relevance
-        filtered_hits = []
-        for window in win_hits:
-            text = window.get("text", "").lower()
-            
-            # Check if content mentions the relevant anatomy
-            is_relevant = False
-            
-            # For chest scenarios, prioritize chest-related content but allow general content
-            if "chest" in mentioned_anatomy:
-                if any(term in text for term in ["chest", "thoracic", "rib", "lung", "breathing", "respiration"]):
-                    is_relevant = True
-                # Also allow general medical content
-                elif any(term in text for term in ["bleeding", "hemorrhage", "shock", "pulse", "circulation", "airway"]):
-                    is_relevant = True
-            # For non-chest scenarios, exclude chest-specific content but allow general content
-            else:
-                # Exclude chest-specific content
-                if any(term in text for term in ["chest", "thoracic", "rib", "lung", "chest seal", "occlusive"]):
-                    is_relevant = False
-                # Allow general medical content
-                elif any(term in text for term in ["bleeding", "hemorrhage", "shock", "pulse", "circulation", "airway", "breathing", "respiration"]):
-                    is_relevant = True
-                # Allow anatomy-specific content
-                elif "head" in mentioned_anatomy and any(term in text for term in ["head", "skull", "brain", "cranium", "consciousness"]):
-                    is_relevant = True
-                elif ("leg" in mentioned_anatomy or "arm" in mentioned_anatomy) and any(term in text for term in ["leg", "thigh", "calf", "femur", "tibia", "arm", "forearm", "humerus", "radius", "ulna", "extremity", "limb"]):
-                    is_relevant = True
-                elif "abdomen" in mentioned_anatomy and any(term in text for term in ["abdomen", "abdominal", "stomach", "belly", "evisceration"]):
-                    is_relevant = True
-            
-            if is_relevant:
-                filtered_hits.append(window)
-        
-        return filtered_hits if filtered_hits else win_hits  # Return original if no matches
 
 
-    def _call_llm(self, prompt: str, is_question: bool = False) -> Optional[Dict[str, Any]]:
+    def _call_llm(self, prompt: str) -> Optional[Dict[str, Any]]:
         """Send a prompt to the LLM server and parse the response.
 
         The LLM is expected to return a JSON string.  On failure or invalid
@@ -326,16 +255,12 @@ class Orchestrator:
         ----------
         prompt : str
             The prompt to send to the LLM
-        is_question : bool
-            Whether this is for question generation (uses higher temperature)
         """
-        # Use different temperatures for questions vs answers
-        temp = self.question_temperature if is_question else self.answer_temperature
         
         payload = {
             "model": self.llm_model,
             "prompt": prompt,
-            "temperature": temp,
+            "temperature": self.temperature,
             "format": "json",
             "stream": False  # Disable streaming for easier parsing
         }
@@ -406,8 +331,8 @@ class Orchestrator:
                 "message": "I cannot advise — no relevant content found."
             }
         
-        # Step 1.5: Filter anatomically irrelevant content
-        win_hits = self._filter_anatomically_relevant_content(win_hits[:20], query)
+        # Step 1.5: Use top 20 results directly (anatomical filtering removed for simplicity)
+        win_hits = win_hits[:20]
         
         # Step 1.6: Re-rank with cross-encoder for better precision
         win_hits = self.reranker.rerank(stage_specific_query, win_hits)[:self.max_chunks]
@@ -444,7 +369,7 @@ class Orchestrator:
         )
         prompt = f"{SYSTEM_PROMPT}\n\n{user_prompt}"
         # Send to LLM with appropriate temperature
-        resp = self._call_llm(prompt, is_question=(not user_answer))
+        resp = self._call_llm(prompt)
         if not resp:
             return {
                 "state": state,
@@ -541,7 +466,7 @@ class Orchestrator:
                         excerpts=next_excerpts,
                     )
                     next_prompt = f"{SYSTEM_PROMPT}\n\n{next_user_prompt}"
-                    next_resp = self._call_llm(next_prompt, is_question=True)
+                    next_resp = self._call_llm(next_prompt)
                     if next_resp and next_resp.get("question"):
                         next_question = next_resp.get("question")
                     else:
@@ -553,7 +478,7 @@ class Orchestrator:
                 next_question = "MARCH-PAWS assessment complete. All critical systems have been evaluated."
             
             return {
-                "state": state,  # Current state that we just processed
+                "state": next_state,  # The state the question is for (next state)
                 "checklist": checklist,
                 "citations": citations,
                 "question": next_question,
