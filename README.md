@@ -4,24 +4,52 @@ This project contains a robust, production-ready implementation of an offline Re
 
 The code is designed to run on a laptop‑class machine completely offline. Internet connectivity is **not** required at inference time once the model weights and indexes have been prepared. The only external dependency at runtime is a local Large Language Model (LLM) such as Mistral‑7B served via [Ollama](https://github.com/ollama/ollama).
 
+## 🚀 Recent Achievements & Improvements
+
+### ✅ **Consistency & Quality Improvements**
+- **Fixed Examiner-Style Questions**: Eliminated "Is it necessary to..." and "What actions..." questions
+- **Anatomical Consistency**: Questions now match scenario anatomy (no chest questions for arm injuries)
+- **Stage-Specific Focus**: Each MARCH-PAWS stage generates appropriate questions only
+- **Robust Prompt Engineering**: Enhanced prompts prevent cross-stage contamination
+
+### ✅ **Advanced Retrieval System**
+- **Hybrid Retrieval**: BM25 + FAISS + Cross-encoder with Reciprocal Rank Fusion (RRF)
+- **Adaptive α Parameter**: Dynamic weighting based on query characteristics
+- **Memory-Optimized FAISS**: Uses `IndexFlatIP` with memory mapping for efficiency
+- **Lemmatized BM25**: Better lexical matching with NLTK lemmatization
+- **Cross-Encoder Re-ranking**: `cross-encoder/ms-marco-MiniLM-L-6-v2` for precision
+
+### ✅ **Optimized Performance**
+- **Temperature Differentiation**: Higher temp (0.2) for questions, zero temp for answers
+- **Lowered Thresholds**: Better coverage with `retrieval_threshold=0.005`
+- **Focused Retrieval**: Reduced `max_chunks=6` for more relevant content
+- **HTTP Keep-Alive**: Persistent connections for faster LLM communication
+
+### ✅ **Production-Ready Features**
+- **Streamlit Web Interface**: User-friendly medical guidance application
+- **Comprehensive Error Handling**: Multiple guardrails prevent hallucinations
+- **Memory Efficiency**: Optimized for laptops and small devices (4.5-7.5GB RAM)
+- **Offline Operation**: Complete independence from internet connectivity
+
 ## Key Features
 
-- **Intelligent Stage-Specific Question Generation**: The system generates contextually appropriate questions for each MARCH-PAWS stage, ignoring anatomical location bias
-- **Advanced Hybrid Retrieval**: Combines BM25 lexical search with FAISS dense vector search using Reciprocal Rank Fusion (RRF)
-- **Cross-Encoder Re-ranking**: Uses `cross-encoder/ms-marco-MiniLM-L-6-v2` for precise relevance scoring
-- **Window-Based Chunking**: Overlapping text windows with semantic boundary detection for better context preservation
-- **Memory-Optimized FAISS**: Uses `IndexFlatIP` with memory mapping for efficient retrieval
-- **Robust Prompt Engineering**: Stage-specific definitions prevent inappropriate question generation
-- **Streamlit Web Interface**: User-friendly web application for interactive medical guidance
-- **Comprehensive Error Handling**: Multiple guardrails prevent hallucinations and ensure medical accuracy
+- **🎯 Intelligent Stage-Specific Question Generation**: Contextually appropriate questions for each MARCH-PAWS stage, ignoring anatomical location bias
+- **🔍 Advanced Hybrid Retrieval**: Combines BM25 lexical search with FAISS dense vector search using Reciprocal Rank Fusion (RRF)
+- **🎯 Cross-Encoder Re-ranking**: Uses `cross-encoder/ms-marco-MiniLM-L-6-v2` for precise relevance scoring
+- **📄 Window-Based Chunking**: Overlapping text windows with semantic boundary detection for better context preservation
+- **💾 Memory-Optimized FAISS**: Uses `IndexFlatIP` with memory mapping for efficient retrieval
+- **📝 Robust Prompt Engineering**: Stage-specific definitions prevent inappropriate question generation
+- **🌐 Streamlit Web Interface**: User-friendly web application for interactive medical guidance
+- **🛡️ Comprehensive Error Handling**: Multiple guardrails prevent hallucinations and ensure medical accuracy
+- **⚡ Performance Optimized**: Designed for small devices with SLMs (4.5-7.5GB RAM usage)
 
 ## Repository Structure
 
 ```
-rag_marchpaws/
+marchpaws_rag/
 ├── data/                              # Data directory
-│   ├── manual.pdf                     # Source PDF manual (not included)
-│   ├── sections.jsonl                 # Extracted sections from PDF
+│   ├── tc4-02.1wc1x2.pdf             # Source PDF manual (TCCC Handbook)
+│   ├── tc4-02.1_sections.jsonl       # Extracted sections from PDF
 │   ├── windows.jsonl                  # Windowed text chunks
 │   ├── window_metadata.json           # Window metadata
 │   ├── window_embeddings.npy          # Dense embeddings
@@ -29,7 +57,7 @@ rag_marchpaws/
 │   ├── window_bm25_index.pkl          # BM25 index
 │   └── embedding_info.json            # Embedding metadata
 ├── src/
-│   ├── ingest_pdf.py                  # PDF extraction and section parsing
+│   ├── parse_tc4021.py               # PDF extraction and section parsing
 │   ├── make_windows.py                # Window-based chunking
 │   ├── build_window_bm25.py           # BM25 index construction
 │   ├── embed_windows.py               # Dense embedding generation
@@ -55,16 +83,16 @@ pip install -r requirements.txt
 
 ### 2. Prepare Your PDF Manual
 
-Place your medical manual PDF in `data/manual.pdf` (e.g., TCCC Handbook).
+Place your medical manual PDF in `data/tc4-02.1wc1x2.pdf` (TCCC Handbook included).
 
 ### 3. Extract and Process the PDF
 
 ```bash
 # Extract sections from PDF
-python src/ingest_pdf.py --pdf data/manual.pdf --out data/sections.jsonl
+python src/parse_tc4021.py --pdf data/tc4-02.1wc1x2.pdf --out data/tc4-02.1_sections.jsonl
 
 # Create overlapping text windows
-python src/make_windows.py --sections data/sections.jsonl --out data/windows.jsonl
+python src/make_windows.py --sections data/tc4-02.1_sections.jsonl --out data/windows.jsonl
 
 # Build BM25 index with lemmatization
 python src/build_window_bm25.py --windows data/windows.jsonl --out data/window_bm25_index.pkl
@@ -113,7 +141,7 @@ The system enforces the following medical assessment sequence:
 ### Retrieval System
 
 - **Hybrid Retrieval**: Combines BM25 lexical search with FAISS dense vector search
-- **Reciprocal Rank Fusion (RRF)**: Intelligently combines results from both retrieval methods
+- **Reciprocal Rank Fusion (RRF)**: Intelligently combines results from both retrieval methods with adaptive α
 - **Cross-Encoder Re-ranking**: Uses `cross-encoder/ms-marco-MiniLM-L-6-v2` for precise relevance scoring
 - **Lemmatization**: BM25 queries are lemmatized for better lexical matching
 - **Memory Optimization**: Uses `IndexFlatIP` with memory mapping for efficient retrieval
@@ -131,6 +159,7 @@ The system enforces the following medical assessment sequence:
 - **Bias Prevention**: Instructions to ignore anatomical location bias in question generation
 - **Consistency Guidelines**: Ensures questions focus on stage requirements, not injury location
 - **Medical Accuracy**: Uses appropriate medical terminology and procedures
+- **Question vs Answer Differentiation**: Different temperature settings for natural questions vs deterministic answers
 
 ### Performance Optimizations
 
@@ -138,7 +167,7 @@ The system enforces the following medical assessment sequence:
 - **Sentence-Transformer Warmup**: JIT compilation optimization for faster inference
 - **Batched Cross-Encoder**: Efficient re-ranking of multiple query-result pairs
 - **HTTP Keep-Alive**: Persistent connections for LLM communication
-- **Temperature Control**: Deterministic responses with `temperature=0.0`
+- **Temperature Control**: Different temperatures for questions (0.2) and answers (0.0)
 
 ## Configuration
 
@@ -152,9 +181,9 @@ export LLM_MODEL="mistral:latest"                          # LLM model name
 ### Retrieval Parameters
 
 - `k=20`: Number of initial candidates retrieved
-- `max_chunks=8`: Maximum chunks used in final response
+- `max_chunks=6`: Maximum chunks used in final response (optimized)
 - `ce_threshold=0.0001`: Cross-encoder score threshold
-- `retrieval_threshold=0.01`: Minimum relevance score for responses
+- `retrieval_threshold=0.005`: Minimum relevance score for responses (lowered for better coverage)
 
 ## Usage Examples
 
@@ -192,6 +221,7 @@ print(f"State: {result['state']}")
 - **JSON Schema Validation**: Enforces structured output format
 - **Stage Focus Validation**: Prevents inappropriate question generation
 - **Medical Accuracy**: Grounds all responses in source documentation
+- **Anatomical Consistency**: Questions match scenario anatomy
 
 ### Error Handling
 
@@ -199,6 +229,30 @@ print(f"State: {result['state']}")
 - **Timeout Protection**: Prevents hanging on LLM requests
 - **Memory Management**: Efficient handling of large embedding files
 - **Robust Parsing**: Handles various LLM response formats
+- **Validation Loops**: Regenerates responses on validation failure
+
+## Memory Usage & Device Compatibility
+
+### Memory Requirements
+
+| Component | Memory Usage |
+|-----------|-------------|
+| Mistral 7B (4-bit) | ~4GB |
+| Sentence-Transformer | ~150MB |
+| Cross-Encoder | ~150MB |
+| FAISS Index | ~50MB |
+| BM25 Index | ~20MB |
+| Python Runtime | ~100MB |
+| **Total** | **~4.5GB** |
+
+### Device Compatibility
+
+| Device Type | RAM | Feasibility | Recommended |
+|-------------|-----|-------------|-------------|
+| High-end Laptop | 16GB+ | ✅ Excellent | Full features |
+| Mid-range Laptop | 8GB | ✅ Good | Optimized settings |
+| Low-end Laptop | 4GB | ⚠️ Tight | Use Phi-3 Mini |
+| Raspberry Pi 5 | 8GB | ✅ Good | Sequential processing |
 
 ## Dependencies
 
@@ -232,17 +286,39 @@ print(f"State: {result['state']}")
 
 3. **Memory Issues**
    - Use smaller batch sizes in `embed_windows.py`
-   - Consider using quantized models
+   - Consider using quantized models (Phi-3 Mini for 4GB devices)
 
 4. **Inconsistent Questions**
    - Check stage definitions in `src/prompts.py`
-   - Verify LLM temperature is set to 0.0
+   - Verify LLM temperature settings (0.2 for questions, 0.0 for answers)
+
+5. **Anatomical Inconsistency**
+   - Ensure proper stage definitions are being used
+   - Check that anatomical filtering is working correctly
 
 ### Performance Tuning
 
 - **Increase Retrieval Candidates**: Modify `k` parameter in `orchestrator.py`
 - **Adjust Cross-Encoder Threshold**: Tune `ce_threshold` for your use case
 - **Optimize Window Size**: Modify `window_size` in `make_windows.py`
+- **Memory Optimization**: Use quantized models for smaller devices
+
+## Future Enhancements
+
+### Planned Improvements
+
+- **Agentic Architecture**: Parallel processing with specialized agents
+- **Async Processing**: Non-blocking operations for better performance
+- **Advanced Validation**: ML-based quality assessment
+- **Multi-Modal Support**: Image and text processing capabilities
+- **Real-time Collaboration**: Multi-user support for medical teams
+
+### Research Directions
+
+- **Federated Learning**: Privacy-preserving model updates
+- **Edge Deployment**: Optimized for mobile and embedded devices
+- **Medical Validation**: Integration with medical knowledge bases
+- **Performance Benchmarking**: Comprehensive evaluation metrics
 
 ## License
 
@@ -254,3 +330,18 @@ This code is provided for educational and research purposes only. It is **not** 
 - **Mistral AI** for the open-source language model
 - **Hugging Face** for the sentence-transformers and cross-encoder models
 - **Streamlit** for the web interface framework
+- **GitHub** for hosting and version control
+
+## Contributing
+
+We welcome contributions! Please see our [GitHub repository](https://github.com/rahul370139/marchpaws_rag) for:
+- Issue reporting
+- Feature requests
+- Pull requests
+- Documentation improvements
+
+---
+
+**Repository**: [https://github.com/rahul370139/marchpaws_rag](https://github.com/rahul370139/marchpaws_rag)
+
+**Last Updated**: January 2025
