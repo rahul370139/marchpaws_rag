@@ -1,0 +1,3637 @@
+{
+  "test_metadata": {
+    "test_name": "Ultimate Comprehensive Test Suite V2",
+    "test_version": "v2.0",
+    "timestamp": "2025-09-14T11:59:14.003517",
+    "total_scenarios": 10,
+    "scenarios_added": 10
+  },
+  "scenarios": [
+    {
+      "scenario_name": "Complex Multi-Trauma with Shock",
+      "scenario_description": "Motorcycle accident with multiple injuries: open femur fracture with bleeding, chest trauma, head injury, and signs of shock",
+      "scenario_type": "complex-medical",
+      "user_answers": [
+        "Yes, massive bleeding from the thigh, patient is pale and unresponsive",
+        "Airway is compromised - patient is unconscious with snoring sounds",
+        "Breathing is irregular and shallow, chest wound is bubbling",
+        "No radial pulse detected, patient is in severe shock",
+        "Patient is unconscious and hypothermic from blood loss",
+        "Patient is unresponsive to pain stimuli",
+        "Open fractures require antibiotics, no known allergies",
+        "Multiple injuries: thigh laceration, chest wound, head injury",
+        "Obvious femur fracture, needs immediate splinting and evacuation"
+      ],
+      "expected_states": [
+        "M",
+        "A",
+        "R",
+        "C",
+        "H",
+        "P",
+        "A2",
+        "W",
+        "S"
+      ],
+      "expected_refusal": false,
+      "difficulty_level": "High",
+      "medical_complexity": "Critical",
+      "results": [
+        {
+          "state": "M",
+          "question": "Is there any life-threatening bleeding from the open femur fracture that requires tourniquet application or direct pressure?",
+          "user_answer": "",
+          "response": {
+            "state": "M",
+            "checklist": [],
+            "citations": [],
+            "question": "Is there any life-threatening bleeding from the open femur fracture that requires tourniquet application or direct pressure?",
+            "state_complete": false,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 7.483067035675049,
+          "overall_quality_score": 0.405,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.0,
+          "citation_accuracy_score": 0.0,
+          "checklist": [],
+          "citations": []
+        },
+        {
+          "state": "A",
+          "question": "Is there any obstruction in the patient's airway due to chest trauma, swelling, or secretions?",
+          "user_answer": "Yes, massive bleeding from the thigh, patient is pale and unresponsive",
+          "response": {
+            "state": "A",
+            "checklist": [
+              "Apply direct pressure to the bleeding thigh wound",
+              "Check for distal pulse after applying direct pressure"
+            ],
+            "citations": [
+              "Ch6 \u00a76-4 (Base)",
+              "Ch6 \u00a76-5 (Base)"
+            ],
+            "question": "Is there any obstruction in the patient's airway due to chest trauma, swelling, or secretions?",
+            "question_state": "A",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 15.570909023284912,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Apply direct pressure to the bleeding thigh wound",
+            "Check for distal pulse after applying direct pressure"
+          ],
+          "citations": [
+            "Ch6 \u00a76-4 (Base)",
+            "Ch6 \u00a76-5 (Base)"
+          ]
+        },
+        {
+          "state": "R",
+          "question": "Is the patient's breathing affected by the chest trauma or any other injuries?",
+          "user_answer": "Airway is compromised - patient is unconscious with snoring sounds",
+          "response": {
+            "state": "R",
+            "checklist": [
+              "Assess the airway using jaw thrust method due to suspected spinal injury",
+              "Confirm if the patient is breathing spontaneously"
+            ],
+            "citations": [
+              "Ch3 \u00a73-4 (Base)",
+              "Ch14 \u00a714-1 (Base)"
+            ],
+            "question": "Is the patient's breathing affected by the chest trauma or any other injuries?",
+            "question_state": "R",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 14.514597177505493,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the airway using jaw thrust method due to suspected spinal injury",
+            "Confirm if the patient is breathing spontaneously"
+          ],
+          "citations": [
+            "Ch3 \u00a73-4 (Base)",
+            "Ch14 \u00a714-1 (Base)"
+          ]
+        },
+        {
+          "state": "C",
+          "question": "What is the patient's pulse quality - is it strong, weak, or absent due to multiple injuries and potential blood loss?",
+          "user_answer": "Breathing is irregular and shallow, chest wound is bubbling",
+          "response": {
+            "state": "C",
+            "checklist": [
+              "Assess the airway and open it using the head-tilt chin-lift method (Ch3 \u00a73-3)",
+              "Monitor for signs of shock such as pale skin, restlessness, rapid breathing, etc. (Ch8 \u00a78-1)",
+              "Check for chest wounds and apply direct pressure if bleeding is observed"
+            ],
+            "citations": [
+              "Ch3 \u00a73-3 (Base)",
+              "Ch8 \u00a78-1 (Base)"
+            ],
+            "question": "What is the patient's pulse quality - is it strong, weak, or absent due to multiple injuries and potential blood loss?",
+            "question_state": "C",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 18.59493613243103,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the airway and open it using the head-tilt chin-lift method (Ch3 \u00a73-3)",
+            "Monitor for signs of shock such as pale skin, restlessness, rapid breathing, etc. (Ch8 \u00a78-1)",
+            "Check for chest wounds and apply direct pressure if bleeding is observed"
+          ],
+          "citations": [
+            "Ch3 \u00a73-3 (Base)",
+            "Ch8 \u00a78-1 (Base)"
+          ]
+        },
+        {
+          "state": "H",
+          "question": "Is the patient showing signs of hypothermia due to heat loss from multiple injuries and exposure?",
+          "user_answer": "No radial pulse detected, patient is in severe shock",
+          "response": {
+            "state": "H",
+            "checklist": [
+              "Apply a rigid splint to the affected limb",
+              "Monitor vital signs closely for signs of shock"
+            ],
+            "citations": [
+              "Ch13 \u00a713-6 (Base)",
+              "Ch2 \u00a72-1 (Base)"
+            ],
+            "question": "Is the patient showing signs of hypothermia due to heat loss from multiple injuries and exposure?",
+            "question_state": "H",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 13.318169832229614,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Apply a rigid splint to the affected limb",
+            "Monitor vital signs closely for signs of shock"
+          ],
+          "citations": [
+            "Ch13 \u00a713-6 (Base)",
+            "Ch2 \u00a72-1 (Base)"
+          ]
+        },
+        {
+          "state": "P",
+          "question": "Can the patient rate their pain level from the open femur fracture, chest trauma, and head injury on a scale?",
+          "user_answer": "Patient is unconscious and hypothermic from blood loss",
+          "response": {
+            "state": "P",
+            "checklist": [
+              "Maintain body temperature to prevent further hypothermia - use warm blankets or warm IV fluids if available",
+              "Monitor vital signs closely for any changes",
+              "Assess and manage any ongoing bleeding as a priority due to blood loss-induced hypothermia",
+              "Evaluate the patient's head injury according to the MARCH-PAWS protocol"
+            ],
+            "citations": [
+              "Ch12 \u00a712-10 (Base)",
+              "Ch2 \u00a72-1 (Base)"
+            ],
+            "question": "Can the patient rate their pain level from the open femur fracture, chest trauma, and head injury on a scale?",
+            "question_state": "P",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 18.634191036224365,
+          "overall_quality_score": 0.892,
+          "question_quality_score": 0.8,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Maintain body temperature to prevent further hypothermia - use warm blankets or warm IV fluids if available",
+            "Monitor vital signs closely for any changes",
+            "Assess and manage any ongoing bleeding as a priority due to blood loss-induced hypothermia",
+            "Evaluate the patient's head injury according to the MARCH-PAWS protocol"
+          ],
+          "citations": [
+            "Ch12 \u00a712-10 (Base)",
+            "Ch2 \u00a72-1 (Base)"
+          ]
+        },
+        {
+          "state": "A2",
+          "question": "Does the patient have any known allergies to antibiotics, given the multiple injuries including an open femur fracture, chest trauma, head injury, and signs of shock?",
+          "user_answer": "Patient is unresponsive to pain stimuli",
+          "response": {
+            "state": "A2",
+            "checklist": [
+              "Assess the level of consciousness using the AVPU method (Ch7 \u00a77-1)",
+              "Begin assessment and treatment of life-threatening conditions and other serious wounds (Ch2 \u00a72-1)"
+            ],
+            "citations": [
+              "Ch7 \u00a77-1 (Base)",
+              "Ch2 \u00a72-1 (Base)"
+            ],
+            "question": "Does the patient have any known allergies to antibiotics, given the multiple injuries including an open femur fracture, chest trauma, head injury, and signs of shock?",
+            "question_state": "A2",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 15.618210077285767,
+          "overall_quality_score": 0.919,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.7,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the level of consciousness using the AVPU method (Ch7 \u00a77-1)",
+            "Begin assessment and treatment of life-threatening conditions and other serious wounds (Ch2 \u00a72-1)"
+          ],
+          "citations": [
+            "Ch7 \u00a77-1 (Base)",
+            "Ch2 \u00a72-1 (Base)"
+          ]
+        },
+        {
+          "state": "W",
+          "question": "Are there any additional wounds, burns, or eviscerations that might have been missed during the initial assessment?",
+          "user_answer": "Open fractures require antibiotics, no known allergies",
+          "response": {
+            "state": "W",
+            "checklist": [
+              "Apply a rigid splint to the injured extremity with the limb in the position of function",
+              "Record treatment given on the TCCC Card (DD Form 1380)"
+            ],
+            "citations": [
+              "Ch13 \u00a713-6 (Base)",
+              "Ch13 \u00a713-23 (Base)"
+            ],
+            "question": "Are there any additional wounds, burns, or eviscerations that might have been missed during the initial assessment?",
+            "question_state": "W",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 15.197151899337769,
+          "overall_quality_score": 0.892,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.6,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Apply a rigid splint to the injured extremity with the limb in the position of function",
+            "Record treatment given on the TCCC Card (DD Form 1380)"
+          ],
+          "citations": [
+            "Ch13 \u00a713-6 (Base)",
+            "Ch13 \u00a713-23 (Base)"
+          ]
+        },
+        {
+          "state": "S",
+          "question": "Are there any fractures or deformities in the femur area that need immediate splinting?",
+          "user_answer": "Multiple injuries: thigh laceration, chest wound, head injury",
+          "response": {
+            "state": "S",
+            "checklist": [
+              "Reassess the chest wound",
+              "Inspect for signs of evisceration or additional injuries",
+              "Apply a rigid splint to the thigh laceration if necessary"
+            ],
+            "citations": [
+              "Ch13 \u00a713-6 (Base)",
+              "Ch13 \u00a713-16 (Base)"
+            ],
+            "question": "Are there any fractures or deformities in the femur area that need immediate splinting?",
+            "question_state": "S",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 13.744263172149658,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Reassess the chest wound",
+            "Inspect for signs of evisceration or additional injuries",
+            "Apply a rigid splint to the thigh laceration if necessary"
+          ],
+          "citations": [
+            "Ch13 \u00a713-6 (Base)",
+            "Ch13 \u00a713-16 (Base)"
+          ]
+        },
+        {
+          "state": "END",
+          "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+          "user_answer": "Obvious femur fracture, needs immediate splinting and evacuation",
+          "response": {
+            "state": "END",
+            "checklist": [
+              "Apply a rigid splint to the injured femur following the instructions in Ch13 \u00a713-6 (Base)",
+              "Secure the splint to the injured extremity with the limb in the position of function, as described in Ch13 \u00a713-16 (Base)"
+            ],
+            "citations": [
+              "Ch13 \u00a713-6 (Base)",
+              "Ch13 \u00a713-16 (Base)"
+            ],
+            "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+            "question_state": "END",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 11.991883993148804,
+          "overall_quality_score": 0.89875,
+          "question_quality_score": 0.75,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Apply a rigid splint to the injured femur following the instructions in Ch13 \u00a713-6 (Base)",
+            "Secure the splint to the injured extremity with the limb in the position of function, as described in Ch13 \u00a713-16 (Base)"
+          ],
+          "citations": [
+            "Ch13 \u00a713-6 (Base)",
+            "Ch13 \u00a713-16 (Base)"
+          ]
+        }
+      ],
+      "overall_success": true,
+      "completion_rate": 111.11111111111111,
+      "avg_quality_score": 0.897975,
+      "avg_response_time": 14.466737937927245,
+      "citation_accuracy": 0.9,
+      "refusal_accuracy": 100.0
+    },
+    {
+      "scenario_name": "Burn Victim with Inhalation Injury",
+      "scenario_description": "House fire victim with extensive burns, facial burns, hoarse voice, and possible inhalation injury",
+      "scenario_type": "medical",
+      "user_answers": [
+        "No external bleeding, but severe burns present",
+        "Airway compromised - hoarse voice, singed nasal hairs",
+        "Breathing is labored with stridor, possible inhalation injury",
+        "Weak pulse due to fluid loss from burns",
+        "Patient is hypothermic from heat loss through burns",
+        "Severe pain from burns, patient is conscious but distressed",
+        "Burns require antibiotics, no known allergies",
+        "Extensive burns on face, arms, and torso",
+        "No fractures, but burns may affect mobility"
+      ],
+      "expected_states": [
+        "M",
+        "A",
+        "R",
+        "C",
+        "H",
+        "P",
+        "A2",
+        "W",
+        "S"
+      ],
+      "expected_refusal": false,
+      "difficulty_level": "High",
+      "medical_complexity": "Critical",
+      "results": [
+        {
+          "state": "M",
+          "question": "Is there any life-threatening bleeding from burn injuries or other areas that requires immediate pressure or tourniquet application?",
+          "user_answer": "",
+          "response": {
+            "state": "M",
+            "checklist": [],
+            "citations": [],
+            "question": "Is there any life-threatening bleeding from burn injuries or other areas that requires immediate pressure or tourniquet application?",
+            "state_complete": false,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 4.020090103149414,
+          "overall_quality_score": 0.405,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.0,
+          "citation_accuracy_score": 0.0,
+          "checklist": [],
+          "citations": []
+        },
+        {
+          "state": "A",
+          "question": "Is the house fire victim's airway patent, or is there an obstruction due to burns, secretions, or debris from the inhalation injury?",
+          "user_answer": "No external bleeding, but severe burns present",
+          "response": {
+            "state": "A",
+            "checklist": [
+              "Assess the patient for signs of shock due to severe burns",
+              "Apply sterile dressing to the burn sites as necessary"
+            ],
+            "citations": [
+              "Ch2 \u00a72-1 (Base)",
+              "Ch7 \u00a77-2 (Base)"
+            ],
+            "question": "Is the house fire victim's airway patent, or is there an obstruction due to burns, secretions, or debris from the inhalation injury?",
+            "question_state": "A",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 15.248371839523315,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the patient for signs of shock due to severe burns",
+            "Apply sterile dressing to the burn sites as necessary"
+          ],
+          "citations": [
+            "Ch2 \u00a72-1 (Base)",
+            "Ch7 \u00a77-2 (Base)"
+          ]
+        },
+        {
+          "state": "R",
+          "question": "Is the patient's breathing affected by the inhalation injury or burns to the face?",
+          "user_answer": "Airway compromised - hoarse voice, singed nasal hairs",
+          "response": {
+            "state": "R",
+            "checklist": [
+              "Open the airway using headtilt chinlift method (no suspected spinal injury) or jaw thrust maneuver (trauma observed or suspected spinal injury)",
+              "Monitor for signs of breathing",
+              "Prepare to administer rescue breathing if necessary"
+            ],
+            "citations": [
+              "Ch14 \u00a714-1 (Base)",
+              "Ch3 \u00a73-7 (Base)",
+              "Ch14 \u00a714-1 (Base)"
+            ],
+            "question": "Is the patient's breathing affected by the inhalation injury or burns to the face?",
+            "question_state": "R",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 17.355576038360596,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Open the airway using headtilt chinlift method (no suspected spinal injury) or jaw thrust maneuver (trauma observed or suspected spinal injury)",
+            "Monitor for signs of breathing",
+            "Prepare to administer rescue breathing if necessary"
+          ],
+          "citations": [
+            "Ch14 \u00a714-1 (Base)",
+            "Ch3 \u00a73-7 (Base)",
+            "Ch14 \u00a714-1 (Base)"
+          ]
+        },
+        {
+          "state": "C",
+          "question": "What is the patient's mental state, and what is the quality of their peripheral pulses?",
+          "user_answer": "Breathing is labored with stridor, possible inhalation injury",
+          "response": {
+            "state": "C",
+            "checklist": [
+              "Assess and manage possible inhalation injury",
+              "Monitor for signs of respiratory distress or bronchospasm",
+              "Consider administering rescue breathing if necessary"
+            ],
+            "citations": [
+              "Ch14 \u00a714-1 (Base)",
+              "Ch10 \u00a710-8 (Base)",
+              "Ch3 \u00a73-7 (Base)"
+            ],
+            "question": "What is the patient's mental state, and what is the quality of their peripheral pulses?",
+            "question_state": "C",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 17.100300788879395,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess and manage possible inhalation injury",
+            "Monitor for signs of respiratory distress or bronchospasm",
+            "Consider administering rescue breathing if necessary"
+          ],
+          "citations": [
+            "Ch14 \u00a714-1 (Base)",
+            "Ch10 \u00a710-8 (Base)",
+            "Ch3 \u00a73-7 (Base)"
+          ]
+        },
+        {
+          "state": "H",
+          "question": "Is the house fire victim exhibiting signs of hypothermia due to burns and exposure?",
+          "user_answer": "Weak pulse due to fluid loss from burns",
+          "response": {
+            "state": "H",
+            "checklist": [
+              "Assess for signs of hypothermia (pale skin, shivering)",
+              "Monitor vital signs closely",
+              "Begin rewarming techniques (remove wet clothing, cover with insulating material or blanket, avoid unnecessary movement)"
+            ],
+            "citations": [
+              "Ch12 \u00a712-7 (Base)",
+              "Ch12 \u00a712-3 (Base)",
+              "Ch12 \u00a712-7 (Base)"
+            ],
+            "question": "Is the house fire victim exhibiting signs of hypothermia due to burns and exposure?",
+            "question_state": "H",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 17.180415153503418,
+          "overall_quality_score": 0.919,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.7,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess for signs of hypothermia (pale skin, shivering)",
+            "Monitor vital signs closely",
+            "Begin rewarming techniques (remove wet clothing, cover with insulating material or blanket, avoid unnecessary movement)"
+          ],
+          "citations": [
+            "Ch12 \u00a712-7 (Base)",
+            "Ch12 \u00a712-3 (Base)",
+            "Ch12 \u00a712-7 (Base)"
+          ]
+        },
+        {
+          "state": "P",
+          "question": "Is the patient with extensive burns able to rate their pain level from the burns?",
+          "user_answer": "Patient is hypothermic from heat loss through burns",
+          "response": {
+            "state": "P",
+            "checklist": [
+              "Assess and monitor the patient's temperature regularly",
+              "Cover the burn areas with a clean, dry, and sterile dressing to prevent further heat loss",
+              "Begin active rewarming techniques if necessary (e.g., warm water immersion or warm intravenous fluids)",
+              "Continuously monitor for signs of frostbite as well"
+            ],
+            "citations": [
+              "Ch12 \u00a712-3 (Base)",
+              "Ch7 \u00a77-2 (Base)",
+              "Ch12 \u00a712-10 (Base)",
+              "Ch2 \u00a72-1 (Base)"
+            ],
+            "question": "Is the patient with extensive burns able to rate their pain level from the burns?",
+            "question_state": "P",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 19.286503076553345,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess and monitor the patient's temperature regularly",
+            "Cover the burn areas with a clean, dry, and sterile dressing to prevent further heat loss",
+            "Begin active rewarming techniques if necessary (e.g., warm water immersion or warm intravenous fluids)",
+            "Continuously monitor for signs of frostbite as well"
+          ],
+          "citations": [
+            "Ch12 \u00a712-3 (Base)",
+            "Ch7 \u00a77-2 (Base)",
+            "Ch12 \u00a712-10 (Base)",
+            "Ch2 \u00a72-1 (Base)"
+          ]
+        },
+        {
+          "state": "A2",
+          "question": "Does the house fire victim have any known allergies to antibiotics, especially those commonly used for burn injuries?",
+          "user_answer": "Severe pain from burns, patient is conscious but distressed",
+          "response": {
+            "state": "A2",
+            "checklist": [
+              "Assess pain level using a validated pain scale",
+              "Administer appropriate analgesia as per the casualty's combat pill pack (if available)",
+              "Monitor the patient for signs of shock or respiratory distress"
+            ],
+            "citations": [
+              "Ch2 \u00a72-1 (Base)",
+              "Ch2 \u00a72-6 (Base)",
+              "Ch7 \u00a77-2 (Base)"
+            ],
+            "question": "Does the house fire victim have any known allergies to antibiotics, especially those commonly used for burn injuries?",
+            "question_state": "A2",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 16.57200598716736,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess pain level using a validated pain scale",
+            "Administer appropriate analgesia as per the casualty's combat pill pack (if available)",
+            "Monitor the patient for signs of shock or respiratory distress"
+          ],
+          "citations": [
+            "Ch2 \u00a72-1 (Base)",
+            "Ch2 \u00a72-6 (Base)",
+            "Ch7 \u00a77-2 (Base)"
+          ]
+        },
+        {
+          "state": "W",
+          "question": "Are there any additional wounds, burns, or eviscerations that weren't initially visible on the house fire victim?",
+          "user_answer": "Burns require antibiotics, no known allergies",
+          "response": {
+            "state": "W",
+            "checklist": [
+              "Assess the extent and location of burn injuries",
+              "Determine if antibiotics are necessary for the burn wounds (Ch7 \u00a77-2)",
+              "Document any known allergies to antibiotics",
+              "Prepare for medical evacuation (Ch27 \u00a727-6)"
+            ],
+            "citations": [
+              "Ch7 \u00a77-2 (Base)",
+              "Ch7 \u00a77-2 (Base)"
+            ],
+            "question": "Are there any additional wounds, burns, or eviscerations that weren't initially visible on the house fire victim?",
+            "question_state": "W",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 18.861970901489258,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the extent and location of burn injuries",
+            "Determine if antibiotics are necessary for the burn wounds (Ch7 \u00a77-2)",
+            "Document any known allergies to antibiotics",
+            "Prepare for medical evacuation (Ch27 \u00a727-6)"
+          ],
+          "citations": [
+            "Ch7 \u00a77-2 (Base)",
+            "Ch7 \u00a77-2 (Base)"
+          ]
+        },
+        {
+          "state": "S",
+          "question": "Is there any evidence of fracture or deformity in the burned areas that may require splinting?",
+          "user_answer": "Extensive burns on face, arms, and torso",
+          "response": {
+            "state": "S",
+            "checklist": [
+              "Inspect the burns on face, arms, and torso for depth and extent",
+              "Cover any thermal burns with a field jacket or nonsynthetic material to prevent further heat loss"
+            ],
+            "citations": [
+              "Ch7 \u00a77-2 (Base)",
+              "Ch7 \u00a77-2 (Base)"
+            ],
+            "question": "Is there any evidence of fracture or deformity in the burned areas that may require splinting?",
+            "question_state": "S",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 14.106189012527466,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Inspect the burns on face, arms, and torso for depth and extent",
+            "Cover any thermal burns with a field jacket or nonsynthetic material to prevent further heat loss"
+          ],
+          "citations": [
+            "Ch7 \u00a77-2 (Base)",
+            "Ch7 \u00a77-2 (Base)"
+          ]
+        },
+        {
+          "state": "END",
+          "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+          "user_answer": "No fractures, but burns may affect mobility",
+          "response": {
+            "state": "END",
+            "checklist": [
+              "Assess the extent of burns and their potential impact on mobility",
+              "Apply a rigid splint to immobilize any suspected fractures",
+              "Prepare cravats for applying the rigid splint",
+              "Monitor the casualty for signs of shock or complications due to burns"
+            ],
+            "citations": [
+              "Ch7 \u00a77-2 (Base)",
+              "Ch13 \u00a713-6 (Base)",
+              "Ch13 \u00a713-16 (Base)",
+              "Ch13 \u00a713-1 (Base)"
+            ],
+            "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+            "question_state": "END",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 14.66144609451294,
+          "overall_quality_score": 0.89875,
+          "question_quality_score": 0.75,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the extent of burns and their potential impact on mobility",
+            "Apply a rigid splint to immobilize any suspected fractures",
+            "Prepare cravats for applying the rigid splint",
+            "Monitor the casualty for signs of shock or complications due to burns"
+          ],
+          "citations": [
+            "Ch7 \u00a77-2 (Base)",
+            "Ch13 \u00a713-6 (Base)",
+            "Ch13 \u00a713-16 (Base)",
+            "Ch13 \u00a713-1 (Base)"
+          ]
+        }
+      ],
+      "overall_success": true,
+      "completion_rate": 111.11111111111111,
+      "avg_quality_score": 0.9168749999999999,
+      "avg_response_time": 15.43928689956665,
+      "citation_accuracy": 0.9,
+      "refusal_accuracy": 100.0
+    },
+    {
+      "scenario_name": "Pediatric Emergency",
+      "scenario_description": "5-year-old child with severe abdominal pain, vomiting, fever, and signs of dehydration",
+      "scenario_type": "medical-edge-case",
+      "user_answers": [
+        "No bleeding visible",
+        "Child is crying and talking, airway is clear",
+        "Breathing is normal but child is distressed",
+        "Weak pulse, signs of dehydration",
+        "No hypothermia, child feels warm to touch",
+        "Child reports severe stomach pain, crying continuously",
+        "Food poisoning may require antibiotics, check for allergies",
+        "No visible wounds, just abdominal distension",
+        "No fractures detected"
+      ],
+      "expected_states": [
+        "M",
+        "A",
+        "R",
+        "C",
+        "H",
+        "P",
+        "A2",
+        "W",
+        "S"
+      ],
+      "expected_refusal": false,
+      "difficulty_level": "Medium",
+      "medical_complexity": "Moderate",
+      "results": [
+        {
+          "state": "M",
+          "question": "Is there any life-threatening bleeding from the abdomen that requires immediate pressure, packing, or potential tourniquet application?",
+          "user_answer": "",
+          "response": {
+            "state": "M",
+            "checklist": [],
+            "citations": [],
+            "question": "Is there any life-threatening bleeding from the abdomen that requires immediate pressure, packing, or potential tourniquet application?",
+            "state_complete": false,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 4.49838399887085,
+          "overall_quality_score": 0.405,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.0,
+          "citation_accuracy_score": 0.0,
+          "checklist": [],
+          "citations": []
+        },
+        {
+          "state": "A",
+          "question": "Is the 5-year-old child's airway clear or is there any obstruction due to vomit, secretions, or foreign objects?",
+          "user_answer": "No bleeding visible",
+          "response": {
+            "state": "A",
+            "checklist": [
+              "Monitor the patient for signs and symptoms of shock (pale skin, restlessness or nervousness, thirst, severe bleeding, confusion, rapid breathing, blotchy blue skin, nausea and/or vomiting) - [Ch8 \u00a78-1, p.41\u201341]",
+              "Continue with the MARCH-PAWS protocol as no life-threatening bleeding has been detected"
+            ],
+            "citations": [
+              "Ch8 \u00a78-1 (Base)"
+            ],
+            "question": "Is the 5-year-old child's airway clear or is there any obstruction due to vomit, secretions, or foreign objects?",
+            "question_state": "A",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 19.509282112121582,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Monitor the patient for signs and symptoms of shock (pale skin, restlessness or nervousness, thirst, severe bleeding, confusion, rapid breathing, blotchy blue skin, nausea and/or vomiting) - [Ch8 \u00a78-1, p.41\u201341]",
+            "Continue with the MARCH-PAWS protocol as no life-threatening bleeding has been detected"
+          ],
+          "citations": [
+            "Ch8 \u00a78-1 (Base)"
+          ]
+        },
+        {
+          "state": "R",
+          "question": "Is the 5-year-old child's breathing pattern normal or is it affected by the abdominal pain, vomiting, fever, and signs of dehydration?",
+          "user_answer": "Child is crying and talking, airway is clear",
+          "response": {
+            "state": "R",
+            "checklist": [
+              "Monitor the child's airway status",
+              "Continue to check for breathing"
+            ],
+            "citations": [
+              "Ch3 \u00a73-7 (Base)",
+              "Ch3 \u00a73-8 (Base)"
+            ],
+            "question": "Is the 5-year-old child's breathing pattern normal or is it affected by the abdominal pain, vomiting, fever, and signs of dehydration?",
+            "question_state": "R",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 15.97585391998291,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Monitor the child's airway status",
+            "Continue to check for breathing"
+          ],
+          "citations": [
+            "Ch3 \u00a73-7 (Base)",
+            "Ch3 \u00a73-8 (Base)"
+          ]
+        },
+        {
+          "state": "C",
+          "question": "What is the child's pulse quality - is it strong, weak, or absent due to dehydration and potential shock?",
+          "user_answer": "Breathing is normal but child is distressed",
+          "response": {
+            "state": "C",
+            "checklist": [
+              "Monitor the child for signs and symptoms of shock (pale skin, restlessness or nervousness, thirst, severe bleeding, confusion, rapid breathing, blotchy blue skin, nausea and/or vomiting) - [Ch8 \u00a78-1 (Base)]",
+              "Check the carotid pulse to determine if CPR is necessary. If a pulse is present, continue monitoring the child's breathing rate - [Ch14 \u00a714-3 (Base)]"
+            ],
+            "citations": [
+              "Ch8 \u00a78-1 (Base)",
+              "Ch14 \u00a714-3 (Base)"
+            ],
+            "question": "What is the child's pulse quality - is it strong, weak, or absent due to dehydration and potential shock?",
+            "question_state": "C",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 20.627070903778076,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Monitor the child for signs and symptoms of shock (pale skin, restlessness or nervousness, thirst, severe bleeding, confusion, rapid breathing, blotchy blue skin, nausea and/or vomiting) - [Ch8 \u00a78-1 (Base)]",
+            "Check the carotid pulse to determine if CPR is necessary. If a pulse is present, continue monitoring the child's breathing rate - [Ch14 \u00a714-3 (Base)]"
+          ],
+          "citations": [
+            "Ch8 \u00a78-1 (Base)",
+            "Ch14 \u00a714-3 (Base)"
+          ]
+        },
+        {
+          "state": "H",
+          "question": "Is the child exhibiting signs of hypothermia due to fever, vomiting, and potential dehydration?",
+          "user_answer": "Weak pulse, signs of dehydration",
+          "response": {
+            "state": "H",
+            "checklist": [
+              "Assess the child's pulse rate and compare it with normal ranges for children (70 to 120 heartbeats per minute) - [Ch1 \u00a71-26 (Base)]",
+              "Monitor for signs of dehydration such as dizziness, headache, loss of appetite, nausea, weakness, and clumsy/unsteady walk - [Ch11 \u00a711-4 (Base)]"
+            ],
+            "citations": [
+              "Ch1 \u00a71-26 (Base)",
+              "Ch11 \u00a711-4 (Base)"
+            ],
+            "question": "Is the child exhibiting signs of hypothermia due to fever, vomiting, and potential dehydration?",
+            "question_state": "H",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 18.137882232666016,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the child's pulse rate and compare it with normal ranges for children (70 to 120 heartbeats per minute) - [Ch1 \u00a71-26 (Base)]",
+            "Monitor for signs of dehydration such as dizziness, headache, loss of appetite, nausea, weakness, and clumsy/unsteady walk - [Ch11 \u00a711-4 (Base)]"
+          ],
+          "citations": [
+            "Ch1 \u00a71-26 (Base)",
+            "Ch11 \u00a711-4 (Base)"
+          ]
+        },
+        {
+          "state": "P",
+          "question": "Is the child able to rate their abdominal pain level on a scale of 1-10?",
+          "user_answer": "No hypothermia, child feels warm to touch",
+          "response": {
+            "state": "P",
+            "checklist": [
+              "Continue monitoring the child for signs of heat exhaustion",
+              "Ensure the child is kept warm and hydrated"
+            ],
+            "citations": [
+              "Ch11 \u00a711-4 (Base)",
+              "Ch11 \u00a711-1 (Base)"
+            ],
+            "question": "Is the child able to rate their abdominal pain level on a scale of 1-10?",
+            "question_state": "P",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 15.053277969360352,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Continue monitoring the child for signs of heat exhaustion",
+            "Ensure the child is kept warm and hydrated"
+          ],
+          "citations": [
+            "Ch11 \u00a711-4 (Base)",
+            "Ch11 \u00a711-1 (Base)"
+          ]
+        },
+        {
+          "state": "A2",
+          "question": "Does the 5-year-old child have any known allergies to antibiotics, especially since they have a penetrating abdominal injury?",
+          "user_answer": "Child reports severe stomach pain, crying continuously",
+          "response": {
+            "state": "A2",
+            "checklist": [
+              "Assess the child for signs of heat illness such as cramps, heat exhaustion, or heat stroke \u2013 refer to HEAT ILLNESS [Ch11 \u00a711-1, p.53\u201353]",
+              "Reassure the child and quickly survey the situation \u2013 refer to SURVEY [Ch27 \u00a727-1, p.109\u2013109]"
+            ],
+            "citations": [
+              "Ch11 \u00a711-1 (Base)"
+            ],
+            "question": "Does the 5-year-old child have any known allergies to antibiotics, especially since they have a penetrating abdominal injury?",
+            "question_state": "A2",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 18.1998929977417,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the child for signs of heat illness such as cramps, heat exhaustion, or heat stroke \u2013 refer to HEAT ILLNESS [Ch11 \u00a711-1, p.53\u201353]",
+            "Reassure the child and quickly survey the situation \u2013 refer to SURVEY [Ch27 \u00a727-1, p.109\u2013109]"
+          ],
+          "citations": [
+            "Ch11 \u00a711-1 (Base)"
+          ]
+        },
+        {
+          "state": "W",
+          "question": "Are there any additional wounds, burns, or eviscerations that might have been missed during the assessment of the 5-year-old child's abdominal injury?",
+          "user_answer": "Food poisoning may require antibiotics, check for allergies",
+          "response": {
+            "state": "W",
+            "checklist": [
+              "Check for known allergies to antibiotics.",
+              "If no allergies are present, administer antibiotics for penetrating wounds."
+            ],
+            "citations": [],
+            "question": "Are there any additional wounds, burns, or eviscerations that might have been missed during the assessment of the 5-year-old child's abdominal injury?",
+            "question_state": "W",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 11.784463167190552,
+          "overall_quality_score": 0.675,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 0.0,
+          "checklist": [
+            "Check for known allergies to antibiotics.",
+            "If no allergies are present, administer antibiotics for penetrating wounds."
+          ],
+          "citations": []
+        },
+        {
+          "state": "S",
+          "question": "Is there any evidence of fracture or deformity in the abdomen that requires splinting?",
+          "user_answer": "No visible wounds, just abdominal distension",
+          "response": {
+            "state": "S",
+            "checklist": [
+              "Re-inspect the child for missed injuries, burns or eviscerations",
+              "Verify all dressings and seals on the child"
+            ],
+            "citations": [],
+            "question": "Is there any evidence of fracture or deformity in the abdomen that requires splinting?",
+            "question_state": "S",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 13.86075496673584,
+          "overall_quality_score": 0.675,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 0.0,
+          "checklist": [
+            "Re-inspect the child for missed injuries, burns or eviscerations",
+            "Verify all dressings and seals on the child"
+          ],
+          "citations": []
+        },
+        {
+          "state": "END",
+          "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+          "user_answer": "No fractures detected",
+          "response": {
+            "state": "END",
+            "checklist": [
+              "Prepare cravats for splinting",
+              "Apply a rigid splint to the suspected fracture site"
+            ],
+            "citations": [
+              "Ch13 \u00a713-6 (Base)",
+              "Ch13 \u00a713-16 (Base)"
+            ],
+            "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+            "question_state": "END",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 10.55912709236145,
+          "overall_quality_score": 0.89875,
+          "question_quality_score": 0.75,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Prepare cravats for splinting",
+            "Apply a rigid splint to the suspected fracture site"
+          ],
+          "citations": [
+            "Ch13 \u00a713-6 (Base)",
+            "Ch13 \u00a713-16 (Base)"
+          ]
+        }
+      ],
+      "overall_success": true,
+      "completion_rate": 111.11111111111111,
+      "avg_quality_score": 0.854575,
+      "avg_response_time": 14.820598936080932,
+      "citation_accuracy": 0.7,
+      "refusal_accuracy": 100.0
+    },
+    {
+      "scenario_name": "Elderly Fall with Hip Fracture",
+      "scenario_description": "85-year-old patient who fell down stairs with severe hip pain, unable to bear weight, and signs of confusion",
+      "scenario_type": "medical",
+      "user_answers": [
+        "No external bleeding visible",
+        "Patient is conscious but confused, airway is clear",
+        "Breathing is normal but patient is in pain",
+        "Weak pulse, patient appears pale",
+        "Patient is hypothermic and confused from shock",
+        "Severe hip pain, patient rates it 9/10",
+        "No antibiotics needed, no known allergies",
+        "No visible wounds, just hip deformity",
+        "Obvious hip fracture, leg is shortened and externally rotated"
+      ],
+      "expected_states": [
+        "M",
+        "A",
+        "R",
+        "C",
+        "H",
+        "P",
+        "A2",
+        "W",
+        "S"
+      ],
+      "expected_refusal": false,
+      "difficulty_level": "Medium",
+      "medical_complexity": "Moderate",
+      "results": [
+        {
+          "state": "M",
+          "question": "Is there any life-threatening bleeding from the hip or other areas that requires tourniquet application or direct pressure?",
+          "user_answer": "",
+          "response": {
+            "state": "M",
+            "checklist": [],
+            "citations": [],
+            "question": "Is there any life-threatening bleeding from the hip or other areas that requires tourniquet application or direct pressure?",
+            "state_complete": false,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 4.410318851470947,
+          "overall_quality_score": 0.405,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.0,
+          "citation_accuracy_score": 0.0,
+          "checklist": [],
+          "citations": []
+        },
+        {
+          "state": "A",
+          "question": "Is the patient's airway clear or is there any obstruction due to tongue, vomit, or foreign objects, given the confusion and inability to maintain a position after falling down stairs?",
+          "user_answer": "No external bleeding visible",
+          "response": {
+            "state": "A",
+            "checklist": [
+              "Check the patient for signs and symptoms of shock (pale skin, restlessness, confusion)",
+              "Apply direct pressure to any visible wounds [Ch6 \u00a76-4 (Base)]"
+            ],
+            "citations": [
+              "Ch8 \u00a78-1 (Base)",
+              "Ch6 \u00a76-4 (Base)"
+            ],
+            "question": "Is the patient's airway clear or is there any obstruction due to tongue, vomit, or foreign objects, given the confusion and inability to maintain a position after falling down stairs?",
+            "question_state": "A",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 17.190783977508545,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Check the patient for signs and symptoms of shock (pale skin, restlessness, confusion)",
+            "Apply direct pressure to any visible wounds [Ch6 \u00a76-4 (Base)]"
+          ],
+          "citations": [
+            "Ch8 \u00a78-1 (Base)",
+            "Ch6 \u00a76-4 (Base)"
+          ]
+        },
+        {
+          "state": "R",
+          "question": "Is the 85-year-old patient's breathing rate or pattern abnormal due to the fall down stairs with severe hip pain?",
+          "user_answer": "Patient is conscious but confused, airway is clear",
+          "response": {
+            "state": "R",
+            "checklist": [
+              "Confirm airway remains patent by using the AVPU mnemonic",
+              "Monitor patient for signs of shock",
+              "Transport the patient to the evacuation site"
+            ],
+            "citations": [
+              "Ch7 \u00a77-1 (Base)",
+              "Ch2 \u00a72-9 (Base)",
+              "Ch2 \u00a72-8 (Base)"
+            ],
+            "question": "Is the 85-year-old patient's breathing rate or pattern abnormal due to the fall down stairs with severe hip pain?",
+            "question_state": "R",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 16.439970016479492,
+          "overall_quality_score": 0.9055,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.6499999999999999,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Confirm airway remains patent by using the AVPU mnemonic",
+            "Monitor patient for signs of shock",
+            "Transport the patient to the evacuation site"
+          ],
+          "citations": [
+            "Ch7 \u00a77-1 (Base)",
+            "Ch2 \u00a72-9 (Base)",
+            "Ch2 \u00a72-8 (Base)"
+          ]
+        },
+        {
+          "state": "C",
+          "question": "Is the patient's pulse present and strong, or is it weak due to potential internal bleeding?",
+          "user_answer": "Breathing is normal but patient is in pain",
+          "response": {
+            "state": "C",
+            "checklist": [
+              "Assess the patient for signs of shock as they are in pain - Monitor for cold skin, shivering, or rapid breathing ([Ch12 \u00a712-3, p.57\u201357])",
+              "Ask the patient if they are okay using a loud, calm voice and gently shake or tap their shoulder ([Ch7 \u00a77-1, p.22\u201322])"
+            ],
+            "citations": [
+              "Ch12 \u00a712-3 (Base)",
+              "Ch7 \u00a77-1 (Base)"
+            ],
+            "question": "Is the patient's pulse present and strong, or is it weak due to potential internal bleeding?",
+            "question_state": "C",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 16.90566396713257,
+          "overall_quality_score": 0.9055,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.6499999999999999,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the patient for signs of shock as they are in pain - Monitor for cold skin, shivering, or rapid breathing ([Ch12 \u00a712-3, p.57\u201357])",
+            "Ask the patient if they are okay using a loud, calm voice and gently shake or tap their shoulder ([Ch7 \u00a77-1, p.22\u201322])"
+          ],
+          "citations": [
+            "Ch12 \u00a712-3 (Base)",
+            "Ch7 \u00a77-1 (Base)"
+          ]
+        },
+        {
+          "state": "H",
+          "question": "Is the 85-year-old patient exhibiting signs of hypothermia due to exposure and potential head injury?",
+          "user_answer": "Weak pulse, patient appears pale",
+          "response": {
+            "state": "H",
+            "checklist": [
+              "Assess for hypothermia signs such as shivering, cold skin, and slow pulse \u2013 begin active rewarming if present [Ch12 \u00a712-3 (Base)]",
+              "Monitor the patient for shock and treat as appropriate [Ch2 \u00a72-9 (Base)]",
+              "Continually reassess casualty until a medical person arrives or the patient arrives at a military treatment facility [Ch2 \u00a72-9 (Base)]"
+            ],
+            "citations": [
+              "Ch12 \u00a712-3 (Base)",
+              "Ch2 \u00a72-9 (Base)"
+            ],
+            "question": "Is the 85-year-old patient exhibiting signs of hypothermia due to exposure and potential head injury?",
+            "question_state": "H",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 18.91857409477234,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess for hypothermia signs such as shivering, cold skin, and slow pulse \u2013 begin active rewarming if present [Ch12 \u00a712-3 (Base)]",
+            "Monitor the patient for shock and treat as appropriate [Ch2 \u00a72-9 (Base)]",
+            "Continually reassess casualty until a medical person arrives or the patient arrives at a military treatment facility [Ch2 \u00a72-9 (Base)]"
+          ],
+          "citations": [
+            "Ch12 \u00a712-3 (Base)",
+            "Ch2 \u00a72-9 (Base)"
+          ]
+        },
+        {
+          "state": "P",
+          "question": "Is the 85-year-old patient able to rate their hip pain level on a scale of 1-10?",
+          "user_answer": "Patient is hypothermic and confused from shock",
+          "response": {
+            "state": "P",
+            "checklist": [
+              "Initiate active rewarming of the patient",
+              "Monitor for signs of frostbite (numbness, tingling, blisters, swelling, pale or waxy skin)",
+              "Maintain body temperature with insulation and blankets",
+              "Transport the patient to the evacuation site"
+            ],
+            "citations": [
+              "Ch12 \u00a712-3 (Base)",
+              "Ch12 \u00a712-10 (Base)",
+              "Ch12 \u00a712-10 (Base)",
+              "Ch2 \u00a72-8 (Base)"
+            ],
+            "question": "Is the 85-year-old patient able to rate their hip pain level on a scale of 1-10?",
+            "question_state": "P",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 19.19037628173828,
+          "overall_quality_score": 0.8919999999999999,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.5999999999999999,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Initiate active rewarming of the patient",
+            "Monitor for signs of frostbite (numbness, tingling, blisters, swelling, pale or waxy skin)",
+            "Maintain body temperature with insulation and blankets",
+            "Transport the patient to the evacuation site"
+          ],
+          "citations": [
+            "Ch12 \u00a712-3 (Base)",
+            "Ch12 \u00a712-10 (Base)",
+            "Ch12 \u00a712-10 (Base)",
+            "Ch2 \u00a72-8 (Base)"
+          ]
+        },
+        {
+          "state": "A2",
+          "question": "Does the 85-year-old patient have any known allergies to antibiotics, given the penetrating wound from falling down stairs?",
+          "user_answer": "Severe hip pain, patient rates it 9/10",
+          "response": {
+            "state": "A2",
+            "checklist": [
+              "Assess the level of consciousness using the AVPU method (Ch7 \u00a77-1)",
+              "Determine the pain level and administer pain medications if available (Ch2 \u00a72-6)",
+              "Reassure the patient and quickly survey the situation (Ch27 \u00a727-1)"
+            ],
+            "citations": [
+              "Ch7 \u00a77-1 (Base)",
+              "Ch2 \u00a72-6 (Base)"
+            ],
+            "question": "Does the 85-year-old patient have any known allergies to antibiotics, given the penetrating wound from falling down stairs?",
+            "question_state": "A2",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 17.334614753723145,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the level of consciousness using the AVPU method (Ch7 \u00a77-1)",
+            "Determine the pain level and administer pain medications if available (Ch2 \u00a72-6)",
+            "Reassure the patient and quickly survey the situation (Ch27 \u00a727-1)"
+          ],
+          "citations": [
+            "Ch7 \u00a77-1 (Base)",
+            "Ch2 \u00a72-6 (Base)"
+          ]
+        },
+        {
+          "state": "W",
+          "question": "Are there any additional wounds, burns, or eviscerations that might have been missed during the initial assessment of the patient's injuries?",
+          "user_answer": "No antibiotics needed, no known allergies",
+          "response": {
+            "state": "W",
+            "checklist": [
+              " {\n  \"checklist\": [\n    \"Continue evaluation of the casualty to identify and treat all life-threatening conditions and other serious wounds.\" // Ch2 \u00a72-1 (Base)\n  ],\n  \"citations\": [\"Ch2 \u00a72-1 (Base)\"]\n}"
+            ],
+            "citations": [],
+            "question": "Are there any additional wounds, burns, or eviscerations that might have been missed during the initial assessment of the patient's injuries?",
+            "question_state": "W",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 13.966665983200073,
+          "overall_quality_score": 0.5940000000000001,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.7,
+          "citation_accuracy_score": 0.0,
+          "checklist": [
+            " {\n  \"checklist\": [\n    \"Continue evaluation of the casualty to identify and treat all life-threatening conditions and other serious wounds.\" // Ch2 \u00a72-1 (Base)\n  ],\n  \"citations\": [\"Ch2 \u00a72-1 (Base)\"]\n}"
+          ],
+          "citations": []
+        },
+        {
+          "state": "S",
+          "question": "Is there any evidence of hip fracture or deformity that requires immobilization?",
+          "user_answer": "No visible wounds, just hip deformity",
+          "response": {
+            "state": "S",
+            "checklist": [
+              "Monitor the patient for signs of shock (pale skin, restlessness or nervousness, thirst, severe bleeding, confusion, rapid breathing, blotchy blue skin, nausea and/or vomiting) - [Ch8 \u00a78-1]",
+              "Assess the hip deformity for potential fracture. If a fracture is suspected, immobilize the affected area and seek medical attention immediately - [Ch13 \u00a713-1]"
+            ],
+            "citations": [
+              "Ch8 \u00a78-1 (Base)",
+              "Ch13 \u00a713-1 (Base)"
+            ],
+            "question": "Is there any evidence of hip fracture or deformity that requires immobilization?",
+            "question_state": "S",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 18.363952159881592,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Monitor the patient for signs of shock (pale skin, restlessness or nervousness, thirst, severe bleeding, confusion, rapid breathing, blotchy blue skin, nausea and/or vomiting) - [Ch8 \u00a78-1]",
+            "Assess the hip deformity for potential fracture. If a fracture is suspected, immobilize the affected area and seek medical attention immediately - [Ch13 \u00a713-1]"
+          ],
+          "citations": [
+            "Ch8 \u00a78-1 (Base)",
+            "Ch13 \u00a713-1 (Base)"
+          ]
+        },
+        {
+          "state": "END",
+          "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+          "user_answer": "Obvious hip fracture, leg is shortened and externally rotated",
+          "response": {
+            "state": "END",
+            "checklist": [
+              "Apply a rigid splint to the fractured hip following the instructions in Ch13 \u00a713-6 | APPLY A RIGID SPLINT",
+              "Secure the splint to the injured extremity with the limb in the position of function, as described in Ch13 \u00a713-16 | Prepare Cravats"
+            ],
+            "citations": [
+              "Ch13 \u00a713-6 (Base)",
+              "Ch13 \u00a713-16 (Base)"
+            ],
+            "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+            "question_state": "END",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 13.039201021194458,
+          "overall_quality_score": 0.89875,
+          "question_quality_score": 0.75,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Apply a rigid splint to the fractured hip following the instructions in Ch13 \u00a713-6 | APPLY A RIGID SPLINT",
+            "Secure the splint to the injured extremity with the limb in the position of function, as described in Ch13 \u00a713-16 | Prepare Cravats"
+          ],
+          "citations": [
+            "Ch13 \u00a713-6 (Base)",
+            "Ch13 \u00a713-16 (Base)"
+          ]
+        }
+      ],
+      "overall_success": true,
+      "completion_rate": 111.11111111111111,
+      "avg_quality_score": 0.854675,
+      "avg_response_time": 15.576012110710144,
+      "citation_accuracy": 0.8,
+      "refusal_accuracy": 100.0
+    },
+    {
+      "scenario_name": "Allergic Reaction with Anaphylaxis",
+      "scenario_description": "Patient with bee sting allergy showing signs of anaphylaxis: difficulty breathing, facial swelling, hives, and rapid pulse",
+      "scenario_type": "medical",
+      "user_answers": [
+        "No bleeding from the sting site",
+        "Airway is compromised - facial swelling and difficulty breathing",
+        "Breathing is labored with wheezing",
+        "Rapid pulse at 140 bpm, signs of shock",
+        "No hypothermia, patient feels warm",
+        "Patient reports severe itching and burning sensation",
+        "Anaphylaxis requires epinephrine, patient has known allergies",
+        "Visible hives and swelling at sting site",
+        "No fractures, but patient may collapse"
+      ],
+      "expected_states": [
+        "M",
+        "A",
+        "R",
+        "C",
+        "H",
+        "P",
+        "A2",
+        "W",
+        "S"
+      ],
+      "expected_refusal": false,
+      "difficulty_level": "High",
+      "medical_complexity": "Critical",
+      "results": [
+        {
+          "state": "M",
+          "question": "Is there any life-threatening bleeding (extremity, junctional, axial) that requires immediate tourniquet application or direct pressure?",
+          "user_answer": "",
+          "response": {
+            "state": "M",
+            "checklist": [],
+            "citations": [],
+            "question": "Is there any life-threatening bleeding (extremity, junctional, axial) that requires immediate tourniquet application or direct pressure?",
+            "state_complete": false,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 4.664183855056763,
+          "overall_quality_score": 0.405,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.0,
+          "citation_accuracy_score": 0.0,
+          "checklist": [],
+          "citations": []
+        },
+        {
+          "state": "A",
+          "question": "Is the patient's airway obstructed due to facial swelling from anaphylaxis?",
+          "user_answer": "No bleeding from the sting site",
+          "response": {
+            "state": "A",
+            "checklist": [
+              "Monitor the patient for signs of anaphylaxis such as difficulty breathing, facial swelling, hives, and rapid pulse",
+              "Administer first aid for bee stings or bites by exposing the injury site if no bleeding is observed (Ch10 \u00a710-1)",
+              "Monitor the patient's vital signs for signs of shock such as pale skin, restlessness, thirst, severe bleeding, confusion, rapid breathing, blotchy blue skin, nausea and/or vomiting (Ch8 \u00a78-1)"
+            ],
+            "citations": [
+              "Ch10 \u00a710-1 (Base)",
+              "Ch8 \u00a78-1 (Base)"
+            ],
+            "question": "Is the patient's airway obstructed due to facial swelling from anaphylaxis?",
+            "question_state": "A",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 21.10971999168396,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Monitor the patient for signs of anaphylaxis such as difficulty breathing, facial swelling, hives, and rapid pulse",
+            "Administer first aid for bee stings or bites by exposing the injury site if no bleeding is observed (Ch10 \u00a710-1)",
+            "Monitor the patient's vital signs for signs of shock such as pale skin, restlessness, thirst, severe bleeding, confusion, rapid breathing, blotchy blue skin, nausea and/or vomiting (Ch8 \u00a78-1)"
+          ],
+          "citations": [
+            "Ch10 \u00a710-1 (Base)",
+            "Ch8 \u00a78-1 (Base)"
+          ]
+        },
+        {
+          "state": "R",
+          "question": "Is the patient's respiratory rate affected by anaphylaxis symptoms, such as difficulty breathing?",
+          "user_answer": "Airway is compromised - facial swelling and difficulty breathing",
+          "response": {
+            "state": "R",
+            "checklist": [
+              "Assess for signs of anaphylaxis such as chest tightness, coughing, and difficulty breathing",
+              "Initiate mouth-to-nose breathing if the airway is compromised (Mouth-to-Nose Method) [Ch14 \u00a714-5 (Base)]"
+            ],
+            "citations": [
+              "Ch10 \u00a710-8 (Base)",
+              "Ch14 \u00a714-5 (Base)"
+            ],
+            "question": "Is the patient's respiratory rate affected by anaphylaxis symptoms, such as difficulty breathing?",
+            "question_state": "R",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 16.888291120529175,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess for signs of anaphylaxis such as chest tightness, coughing, and difficulty breathing",
+            "Initiate mouth-to-nose breathing if the airway is compromised (Mouth-to-Nose Method) [Ch14 \u00a714-5 (Base)]"
+          ],
+          "citations": [
+            "Ch10 \u00a710-8 (Base)",
+            "Ch14 \u00a714-5 (Base)"
+          ]
+        },
+        {
+          "state": "C",
+          "question": "Is the patient's pulse quality affected by anaphylaxis, and is it strong, weak, or absent?",
+          "user_answer": "Breathing is labored with wheezing",
+          "response": {
+            "state": "C",
+            "checklist": [
+              "Assess for signs of anaphylaxis such as facial swelling and hives",
+              "Monitor the patient's respiratory status closely"
+            ],
+            "citations": [
+              "Ch10 \u00a710-1 (Base)"
+            ],
+            "question": "Is the patient's pulse quality affected by anaphylaxis, and is it strong, weak, or absent?",
+            "question_state": "C",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 13.515782833099365,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess for signs of anaphylaxis such as facial swelling and hives",
+            "Monitor the patient's respiratory status closely"
+          ],
+          "citations": [
+            "Ch10 \u00a710-1 (Base)"
+          ]
+        },
+        {
+          "state": "H",
+          "question": "Is the patient exhibiting signs of hypothermia due to rapid pulse and facial swelling from anaphylaxis?",
+          "user_answer": "Rapid pulse at 140 bpm, signs of shock",
+          "response": {
+            "state": "H",
+            "checklist": [
+              "Assess the patient for signs of heat stroke",
+              "Begin cooling measures if heat stroke is suspected"
+            ],
+            "citations": [
+              "Ch11 \u00a711-7 (Base)",
+              "Ch11 \u00a711-10 (Base)"
+            ],
+            "question": "Is the patient exhibiting signs of hypothermia due to rapid pulse and facial swelling from anaphylaxis?",
+            "question_state": "H",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 13.821414947509766,
+          "overall_quality_score": 0.919,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.7,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the patient for signs of heat stroke",
+            "Begin cooling measures if heat stroke is suspected"
+          ],
+          "citations": [
+            "Ch11 \u00a711-7 (Base)",
+            "Ch11 \u00a711-10 (Base)"
+          ]
+        },
+        {
+          "state": "P",
+          "question": "Is the patient experiencing pain from the bee sting, and can they rate it on a scale?",
+          "user_answer": "No hypothermia, patient feels warm",
+          "response": {
+            "state": "P",
+            "checklist": [
+              "Monitor the patient for signs of heat exhaustion",
+              "Continue to assess the patient for other symptoms related to anaphylaxis such as difficulty breathing, facial swelling, hives"
+            ],
+            "citations": [
+              "Ch11 \u00a711-4 (Base)",
+              "Ch10 \u00a710-1 (Base)"
+            ],
+            "question": "Is the patient experiencing pain from the bee sting, and can they rate it on a scale?",
+            "question_state": "P",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 15.410112142562866,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Monitor the patient for signs of heat exhaustion",
+            "Continue to assess the patient for other symptoms related to anaphylaxis such as difficulty breathing, facial swelling, hives"
+          ],
+          "citations": [
+            "Ch11 \u00a711-4 (Base)",
+            "Ch10 \u00a710-1 (Base)"
+          ]
+        },
+        {
+          "state": "A2",
+          "question": "Does the patient have any known allergies to antibiotics, given the anaphylaxis symptoms and bee sting allergy?",
+          "user_answer": "Patient reports severe itching and burning sensation",
+          "response": {
+            "state": "A2",
+            "checklist": [
+              "Expose the injury site",
+              "Reassure the casualty"
+            ],
+            "citations": [
+              "Ch10 \u00a710-1 (Base)"
+            ],
+            "question": "Does the patient have any known allergies to antibiotics, given the anaphylaxis symptoms and bee sting allergy?",
+            "question_state": "A2",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 14.246077060699463,
+          "overall_quality_score": 0.8245,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.3499999999999999,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Expose the injury site",
+            "Reassure the casualty"
+          ],
+          "citations": [
+            "Ch10 \u00a710-1 (Base)"
+          ]
+        },
+        {
+          "state": "W",
+          "question": "Are there any additional wounds, burns, or eviscerations that might have been missed during the treatment of facial swelling, hives, and rapid pulse due to anaphylaxis?",
+          "user_answer": "Anaphylaxis requires epinephrine, patient has known allergies",
+          "response": {
+            "state": "W",
+            "checklist": [
+              "Administer epinephrine as per anaphylaxis protocol (Ch10 \u00a710-12)",
+              "Monitor patient's condition closely for signs of improvement or deterioration"
+            ],
+            "citations": [
+              "Ch10 \u00a710-12 (Base)"
+            ],
+            "question": "Are there any additional wounds, burns, or eviscerations that might have been missed during the treatment of facial swelling, hives, and rapid pulse due to anaphylaxis?",
+            "question_state": "W",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 15.277143001556396,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Administer epinephrine as per anaphylaxis protocol (Ch10 \u00a710-12)",
+            "Monitor patient's condition closely for signs of improvement or deterioration"
+          ],
+          "citations": [
+            "Ch10 \u00a710-12 (Base)"
+          ]
+        },
+        {
+          "state": "S",
+          "question": "Is there any evidence of fracture or deformity in the patient's body that requires immobilization with a splint?",
+          "user_answer": "Visible hives and swelling at sting site",
+          "response": {
+            "state": "S",
+            "checklist": [
+              "Expose the hive and swelling site",
+              "Monitor for signs of anaphylaxis such as difficulty breathing or facial swelling"
+            ],
+            "citations": [
+              "Ch10 \u00a710-1 (Base)"
+            ],
+            "question": "Is there any evidence of fracture or deformity in the patient's body that requires immobilization with a splint?",
+            "question_state": "S",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 12.876217126846313,
+          "overall_quality_score": 0.8785,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.5499999999999999,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Expose the hive and swelling site",
+            "Monitor for signs of anaphylaxis such as difficulty breathing or facial swelling"
+          ],
+          "citations": [
+            "Ch10 \u00a710-1 (Base)"
+          ]
+        },
+        {
+          "state": "END",
+          "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+          "user_answer": "No fractures, but patient may collapse",
+          "response": {
+            "state": "END",
+            "checklist": [
+              "Monitor the patient for signs of anaphylaxis such as chest tightness, cough, swelling around lips and tongue, bronchospasm, dyspnea, abdominal cramps, anxiety - [Ch10 \u00a710-8 (Base)]",
+              "Ensure the injury site is exposed to allow for observation - [Ch10 \u00a710-1 (Base)]"
+            ],
+            "citations": [
+              "Ch10 \u00a710-8 (Base)",
+              "Ch10 \u00a710-1 (Base)"
+            ],
+            "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+            "question_state": "END",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 14.031579971313477,
+          "overall_quality_score": 0.89875,
+          "question_quality_score": 0.75,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Monitor the patient for signs of anaphylaxis such as chest tightness, cough, swelling around lips and tongue, bronchospasm, dyspnea, abdominal cramps, anxiety - [Ch10 \u00a710-8 (Base)]",
+            "Ensure the injury site is exposed to allow for observation - [Ch10 \u00a710-1 (Base)]"
+          ],
+          "citations": [
+            "Ch10 \u00a710-8 (Base)",
+            "Ch10 \u00a710-1 (Base)"
+          ]
+        }
+      ],
+      "overall_success": true,
+      "completion_rate": 111.11111111111111,
+      "avg_quality_score": 0.887175,
+      "avg_response_time": 14.184052205085754,
+      "citation_accuracy": 0.9,
+      "refusal_accuracy": 100.0
+    },
+    {
+      "scenario_name": "Stroke with Neurological Deficit",
+      "scenario_description": "65-year-old patient with sudden onset of facial droop, slurred speech, and weakness on one side of the body",
+      "scenario_type": "medical",
+      "user_answers": [
+        "No bleeding visible",
+        "Airway is clear but speech is slurred",
+        "Breathing is normal",
+        "Irregular pulse, possible atrial fibrillation",
+        "No hypothermia, but patient is confused",
+        "Patient cannot rate pain due to confusion",
+        "No antibiotics needed, no known allergies",
+        "No visible wounds, but facial asymmetry present",
+        "No fractures, but weakness in left arm and leg"
+      ],
+      "expected_states": [
+        "M",
+        "A",
+        "R",
+        "C",
+        "H",
+        "P",
+        "A2",
+        "W",
+        "S"
+      ],
+      "expected_refusal": false,
+      "difficulty_level": "High",
+      "medical_complexity": "Critical",
+      "results": [
+        {
+          "state": "M",
+          "question": "Is there any life-threatening bleeding from the facial injury that requires packing and direct pressure?",
+          "user_answer": "",
+          "response": {
+            "state": "M",
+            "checklist": [],
+            "citations": [],
+            "question": "Is there any life-threatening bleeding from the facial injury that requires packing and direct pressure?",
+            "state_complete": false,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 4.130889892578125,
+          "overall_quality_score": 0.405,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.0,
+          "citation_accuracy_score": 0.0,
+          "checklist": [],
+          "citations": []
+        },
+        {
+          "state": "A",
+          "question": "Is the patient's airway clear or is there any slurred speech, difficulty breathing, or stridor (high-pitched sound during breathing) indicative of an obstructed airway?",
+          "user_answer": "No bleeding visible",
+          "response": {
+            "state": "A",
+            "checklist": [
+              "Check the patient for signs and symptoms of shock (pale skin, restlessness or nervousness, thirst, severe bleeding, confusion, rapid breathing, blotchy blue skin, nausea and/or vomiting)",
+              "Apply direct pressure to any visible wounds as they are not life-threatening (expose the wound, place sterile gauze or dressing over the injury site and apply fingertips, palm or entire surface of one hand and apply direct pressure)"
+            ],
+            "citations": [
+              "Ch8 \u00a78-1 (Base)",
+              "Ch6 \u00a76-4 (Base)"
+            ],
+            "question": "Is the patient's airway clear or is there any slurred speech, difficulty breathing, or stridor (high-pitched sound during breathing) indicative of an obstructed airway?",
+            "question_state": "A",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 20.44910216331482,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Check the patient for signs and symptoms of shock (pale skin, restlessness or nervousness, thirst, severe bleeding, confusion, rapid breathing, blotchy blue skin, nausea and/or vomiting)",
+            "Apply direct pressure to any visible wounds as they are not life-threatening (expose the wound, place sterile gauze or dressing over the injury site and apply fingertips, palm or entire surface of one hand and apply direct pressure)"
+          ],
+          "citations": [
+            "Ch8 \u00a78-1 (Base)",
+            "Ch6 \u00a76-4 (Base)"
+          ]
+        },
+        {
+          "state": "R",
+          "question": "Is there any abnormal breathing pattern observed in the 65-year-old patient with facial droop, slurred speech, and weakness on one side of the body?",
+          "user_answer": "Airway is clear but speech is slurred",
+          "response": {
+            "state": "R",
+            "checklist": [
+              "Confirm the level of consciousness using the AVPU mnemonic",
+              "Check for airway obstruction",
+              "If airway is clear but speech is slurred, perform the jaw thrust maneuver to open the airway"
+            ],
+            "citations": [
+              "Ch7 \u00a77-1 (Base)",
+              "Ch4 \u00a74-1 (Base)",
+              "Ch3 \u00a73-4 (Base)"
+            ],
+            "question": "Is there any abnormal breathing pattern observed in the 65-year-old patient with facial droop, slurred speech, and weakness on one side of the body?",
+            "question_state": "R",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 19.04179573059082,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Confirm the level of consciousness using the AVPU mnemonic",
+            "Check for airway obstruction",
+            "If airway is clear but speech is slurred, perform the jaw thrust maneuver to open the airway"
+          ],
+          "citations": [
+            "Ch7 \u00a77-1 (Base)",
+            "Ch4 \u00a74-1 (Base)",
+            "Ch3 \u00a73-4 (Base)"
+          ]
+        },
+        {
+          "state": "C",
+          "question": "Is there any change in the patient's pulse quality, skin color/temperature, or mental state that may indicate shock due to the sudden onset of facial droop and weakness?",
+          "user_answer": "Breathing is normal",
+          "response": {
+            "state": "C",
+            "checklist": [
+              "Monitor the patient's breathing for any abnormalities or changes",
+              "Maintain the chinlift method to ensure airway is patent"
+            ],
+            "citations": [
+              "Ch14 \u00a714-3 (Base)",
+              "Ch14 \u00a714-2 (Base)"
+            ],
+            "question": "Is there any change in the patient's pulse quality, skin color/temperature, or mental state that may indicate shock due to the sudden onset of facial droop and weakness?",
+            "question_state": "C",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 17.37663984298706,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Monitor the patient's breathing for any abnormalities or changes",
+            "Maintain the chinlift method to ensure airway is patent"
+          ],
+          "citations": [
+            "Ch14 \u00a714-3 (Base)",
+            "Ch14 \u00a714-2 (Base)"
+          ]
+        },
+        {
+          "state": "H",
+          "question": "Is the patient exhibiting signs of hypothermia due to sudden onset of facial droop, slurred speech, and weakness?",
+          "user_answer": "Irregular pulse, possible atrial fibrillation",
+          "response": {
+            "state": "H",
+            "checklist": [
+              "Assess for signs of hypothermia (pale skin, shivering, slow heart rate) as reported by the user",
+              "Monitor the patient's body temperature",
+              "Implement rewarming techniques such as removing wet clothing, covering with insulating material, and avoiding unnecessary movement [Ch12 \u00a712-7 (Base)]"
+            ],
+            "citations": [
+              "Ch12 \u00a712-3 (Base)",
+              "Ch12 \u00a712-7 (Base)"
+            ],
+            "question": "Is the patient exhibiting signs of hypothermia due to sudden onset of facial droop, slurred speech, and weakness?",
+            "question_state": "H",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 17.258435249328613,
+          "overall_quality_score": 0.919,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.7,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess for signs of hypothermia (pale skin, shivering, slow heart rate) as reported by the user",
+            "Monitor the patient's body temperature",
+            "Implement rewarming techniques such as removing wet clothing, covering with insulating material, and avoiding unnecessary movement [Ch12 \u00a712-7 (Base)]"
+          ],
+          "citations": [
+            "Ch12 \u00a712-3 (Base)",
+            "Ch12 \u00a712-7 (Base)"
+          ]
+        },
+        {
+          "state": "P",
+          "question": "Is the patient able to rate their facial pain level on a scale of 1-10?",
+          "user_answer": "No hypothermia, but patient is confused",
+          "response": {
+            "state": "P",
+            "checklist": [
+              "Monitor patient for signs of hypothermia (e.g., shivering, cold skin, slow heart rate)",
+              "Assess the patient's level of consciousness and check for any signs of head injury",
+              "Maintain the environment warm to prevent further heat loss"
+            ],
+            "citations": [
+              "Ch12 \u00a712-3 (Base)",
+              "Ch12 \u00a712-1 (Base)"
+            ],
+            "question": "Is the patient able to rate their facial pain level on a scale of 1-10?",
+            "question_state": "P",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 18.350616216659546,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Monitor patient for signs of hypothermia (e.g., shivering, cold skin, slow heart rate)",
+            "Assess the patient's level of consciousness and check for any signs of head injury",
+            "Maintain the environment warm to prevent further heat loss"
+          ],
+          "citations": [
+            "Ch12 \u00a712-3 (Base)",
+            "Ch12 \u00a712-1 (Base)"
+          ]
+        },
+        {
+          "state": "A2",
+          "question": "Does the patient with sudden onset of facial droop, slurred speech, and weakness on one side of the body have any known allergies to antibiotics?",
+          "user_answer": "Patient cannot rate pain due to confusion",
+          "response": {
+            "state": "A2",
+            "checklist": [
+              "Assess the level of consciousness using AVPU mnemonic",
+              "Reassure the patient as needed"
+            ],
+            "citations": [
+              "Ch7 \u00a77-1 (Base)"
+            ],
+            "question": "Does the patient with sudden onset of facial droop, slurred speech, and weakness on one side of the body have any known allergies to antibiotics?",
+            "question_state": "A2",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 14.25935983657837,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the level of consciousness using AVPU mnemonic",
+            "Reassure the patient as needed"
+          ],
+          "citations": [
+            "Ch7 \u00a77-1 (Base)"
+          ]
+        },
+        {
+          "state": "W",
+          "question": "Are there any additional wounds, burns, or eviscerations that might have been missed during the initial assessment?",
+          "user_answer": "No antibiotics needed, no known allergies",
+          "response": {
+            "state": "W",
+            "checklist": [
+              "No action needed as no antibiotics are required and there are no known allergies."
+            ],
+            "citations": [],
+            "question": "Are there any additional wounds, burns, or eviscerations that might have been missed during the initial assessment?",
+            "question_state": "W",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 14.025478839874268,
+          "overall_quality_score": 0.648,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 0.0,
+          "checklist": [
+            "No action needed as no antibiotics are required and there are no known allergies."
+          ],
+          "citations": []
+        },
+        {
+          "state": "S",
+          "question": "Is there any evidence of facial bone fracture or deformity that requires immobilization?",
+          "user_answer": "No visible wounds, but facial asymmetry present",
+          "response": {
+            "state": "S",
+            "checklist": [
+              "Check the carotid pulse for at least 5 seconds and no more than 10 seconds to assess if a pulse is present",
+              "Monitor the patient for signs of shock such as sweaty but cool skin, pale skin, restlessness or nervousness, thirst, severe bleeding, confusion, rapid breathing, blotchy blue skin, nausea, and/or vomiting"
+            ],
+            "citations": [
+              "Ch8 \u00a78-1 (Base)",
+              "Ch8 \u00a78-1 (Base)"
+            ],
+            "question": "Is there any evidence of facial bone fracture or deformity that requires immobilization?",
+            "question_state": "S",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 19.683916091918945,
+          "overall_quality_score": 0.919,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.7,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Check the carotid pulse for at least 5 seconds and no more than 10 seconds to assess if a pulse is present",
+            "Monitor the patient for signs of shock such as sweaty but cool skin, pale skin, restlessness or nervousness, thirst, severe bleeding, confusion, rapid breathing, blotchy blue skin, nausea, and/or vomiting"
+          ],
+          "citations": [
+            "Ch8 \u00a78-1 (Base)",
+            "Ch8 \u00a78-1 (Base)"
+          ]
+        },
+        {
+          "state": "END",
+          "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+          "user_answer": "No fractures, but weakness in left arm and leg",
+          "response": {
+            "state": "END",
+            "checklist": [
+              "Assess and treat the patient's more serious injuries first",
+              "Apply a rigid splint to the suspected fracture of the left arm or leg following the instructions in [Ch13 \u00a713-6 (Base)]",
+              "Record treatment given on the TCCC Card (DD Form 1380) if the fracture is of the femur, as per [Ch13 \u00a713-23 (Base)]"
+            ],
+            "citations": [
+              "Ch13 \u00a713-6 (Base)",
+              "Ch13 \u00a713-1 (Base)",
+              "Ch13 \u00a713-23 (Base)"
+            ],
+            "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+            "question_state": "END",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 14.339461088180542,
+          "overall_quality_score": 0.89875,
+          "question_quality_score": 0.75,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess and treat the patient's more serious injuries first",
+            "Apply a rigid splint to the suspected fracture of the left arm or leg following the instructions in [Ch13 \u00a713-6 (Base)]",
+            "Record treatment given on the TCCC Card (DD Form 1380) if the fracture is of the femur, as per [Ch13 \u00a713-23 (Base)]"
+          ],
+          "citations": [
+            "Ch13 \u00a713-6 (Base)",
+            "Ch13 \u00a713-1 (Base)",
+            "Ch13 \u00a713-23 (Base)"
+          ]
+        }
+      ],
+      "overall_success": true,
+      "completion_rate": 111.11111111111111,
+      "avg_quality_score": 0.873575,
+      "avg_response_time": 15.89156949520111,
+      "citation_accuracy": 0.8,
+      "refusal_accuracy": 100.0
+    },
+    {
+      "scenario_name": "Drug Overdose with Respiratory Depression",
+      "scenario_description": "Unconscious patient found with empty pill bottles, slow breathing, pinpoint pupils, and signs of overdose",
+      "scenario_type": "medical",
+      "user_answers": [
+        "No bleeding visible",
+        "Airway is compromised - patient is unconscious",
+        "Breathing is very slow and shallow, 6 breaths per minute",
+        "Weak pulse, patient is pale",
+        "Patient is hypothermic and unconscious",
+        "Patient is unresponsive to pain",
+        "Overdose may require naloxone, check for allergies",
+        "No visible wounds, but empty pill bottles nearby",
+        "No fractures detected"
+      ],
+      "expected_states": [
+        "M",
+        "A",
+        "R",
+        "C",
+        "H",
+        "P",
+        "A2",
+        "W",
+        "S"
+      ],
+      "expected_refusal": false,
+      "difficulty_level": "High",
+      "medical_complexity": "Critical",
+      "results": [
+        {
+          "state": "M",
+          "question": "Is there any life-threatening bleeding (extremity, junctional, axial) that requires tourniquet application or direct pressure?",
+          "user_answer": "",
+          "response": {
+            "state": "M",
+            "checklist": [],
+            "citations": [],
+            "question": "Is there any life-threatening bleeding (extremity, junctional, axial) that requires tourniquet application or direct pressure?",
+            "state_complete": false,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 4.524656772613525,
+          "overall_quality_score": 0.405,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.0,
+          "citation_accuracy_score": 0.0,
+          "checklist": [],
+          "citations": []
+        },
+        {
+          "state": "A",
+          "question": "Is the patient's airway obstructed due to signs of overdose (e.g., tongue, vomit, secretions)?",
+          "user_answer": "No bleeding visible",
+          "response": {
+            "state": "A",
+            "checklist": [
+              "Check the casualty for signs and symptoms of shock - rapid breathing (Citation: Ch8 \u00a78-1 (Base))",
+              "Initiate mouth-to-nose breathing if the airway is compromised (Citation: Ch14 \u00a714-5 (Base))"
+            ],
+            "citations": [
+              "Ch8 \u00a78-1 (Base)",
+              "Ch14 \u00a714-5 (Base)"
+            ],
+            "question": "Is the patient's airway obstructed due to signs of overdose (e.g., tongue, vomit, secretions)?",
+            "question_state": "A",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 18.564314126968384,
+          "overall_quality_score": 0.919,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.7,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Check the casualty for signs and symptoms of shock - rapid breathing (Citation: Ch8 \u00a78-1 (Base))",
+            "Initiate mouth-to-nose breathing if the airway is compromised (Citation: Ch14 \u00a714-5 (Base))"
+          ],
+          "citations": [
+            "Ch8 \u00a78-1 (Base)",
+            "Ch14 \u00a714-5 (Base)"
+          ]
+        },
+        {
+          "state": "R",
+          "question": "Is the patient's breathing pattern irregular or shallow due to overdose symptoms?",
+          "user_answer": "Airway is compromised - patient is unconscious",
+          "response": {
+            "state": "R",
+            "checklist": [
+              "Open the airway using the jaw thrust method",
+              "Check for breathing"
+            ],
+            "citations": [
+              "Ch3 \u00a73-4 (Base)",
+              "Ch3 \u00a73-7 (Base)"
+            ],
+            "question": "Is the patient's breathing pattern irregular or shallow due to overdose symptoms?",
+            "question_state": "R",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 14.197429895401001,
+          "overall_quality_score": 0.9055,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.6499999999999999,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Open the airway using the jaw thrust method",
+            "Check for breathing"
+          ],
+          "citations": [
+            "Ch3 \u00a73-4 (Base)",
+            "Ch3 \u00a73-7 (Base)"
+          ]
+        },
+        {
+          "state": "C",
+          "question": "Is the patient's pulse present and strong, or is it weak due to potential overdose-induced shock?",
+          "user_answer": "Breathing is very slow and shallow, 6 breaths per minute",
+          "response": {
+            "state": "C",
+            "checklist": [
+              "Monitor breathing rate closely (6 breaths per minute)",
+              "Check for signs of hypothermia such as shivering or cold skin",
+              "Continue with rapid and accurate evaluation of the casualty to identify other life-threatening conditions"
+            ],
+            "citations": [
+              "Ch2 \u00a72-1 (Base)",
+              "Ch12 \u00a712-3 (Base)",
+              "Ch2 \u00a72-1 (Base)"
+            ],
+            "question": "Is the patient's pulse present and strong, or is it weak due to potential overdose-induced shock?",
+            "question_state": "C",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 14.891860961914062,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Monitor breathing rate closely (6 breaths per minute)",
+            "Check for signs of hypothermia such as shivering or cold skin",
+            "Continue with rapid and accurate evaluation of the casualty to identify other life-threatening conditions"
+          ],
+          "citations": [
+            "Ch2 \u00a72-1 (Base)",
+            "Ch12 \u00a712-3 (Base)",
+            "Ch2 \u00a72-1 (Base)"
+          ]
+        },
+        {
+          "state": "H",
+          "question": "Is the patient exhibiting signs of hypothermia due to being unconscious and exposed, or from potential overdose?",
+          "user_answer": "Weak pulse, patient is pale",
+          "response": {
+            "state": "H",
+            "checklist": [
+              "Check pulse rate and rhythm",
+              "Assess skin temperature and color"
+            ],
+            "citations": [
+              "Ch2 \u00a72-1 (Base)",
+              "Ch12 \u00a712-3 (Base)"
+            ],
+            "question": "Is the patient exhibiting signs of hypothermia due to being unconscious and exposed, or from potential overdose?",
+            "question_state": "H",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 12.549824953079224,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Check pulse rate and rhythm",
+            "Assess skin temperature and color"
+          ],
+          "citations": [
+            "Ch2 \u00a72-1 (Base)",
+            "Ch12 \u00a712-3 (Base)"
+          ]
+        },
+        {
+          "state": "P",
+          "question": "Is the patient able to rate their pain level, despite being unconscious, on a scale of 1-10 (with 10 being the highest)?",
+          "user_answer": "Patient is hypothermic and unconscious",
+          "response": {
+            "state": "P",
+            "checklist": [
+              "Wrap the patient in warm blankets or foil emergency blanket to prevent heat loss",
+              "Monitor the patient's temperature regularly"
+            ],
+            "citations": [
+              "Ch12 \u00a712-3 (Base)",
+              "Ch12 \u00a712-3 (Base)"
+            ],
+            "question": "Is the patient able to rate their pain level, despite being unconscious, on a scale of 1-10 (with 10 being the highest)?",
+            "question_state": "P",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 15.510457038879395,
+          "overall_quality_score": 0.8785,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.5499999999999999,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Wrap the patient in warm blankets or foil emergency blanket to prevent heat loss",
+            "Monitor the patient's temperature regularly"
+          ],
+          "citations": [
+            "Ch12 \u00a712-3 (Base)",
+            "Ch12 \u00a712-3 (Base)"
+          ]
+        },
+        {
+          "state": "A2",
+          "question": "Does the patient have any known allergies to antibiotics, given the signs of overdose and potential complications?",
+          "user_answer": "Patient is unresponsive to pain",
+          "response": {
+            "state": "A2",
+            "checklist": [
+              "Assess the level of consciousness using the AVPU method (Ch7 \u00a77-1)",
+              "Record any first aid administered and other relevant information (Ch25 \u00a725-8)"
+            ],
+            "citations": [
+              "Ch7 \u00a77-1 (Base)"
+            ],
+            "question": "Does the patient have any known allergies to antibiotics, given the signs of overdose and potential complications?",
+            "question_state": "A2",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 15.244398832321167,
+          "overall_quality_score": 0.892,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.6,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the level of consciousness using the AVPU method (Ch7 \u00a77-1)",
+            "Record any first aid administered and other relevant information (Ch25 \u00a725-8)"
+          ],
+          "citations": [
+            "Ch7 \u00a77-1 (Base)"
+          ]
+        },
+        {
+          "state": "W",
+          "question": "Are there any additional wounds, burns, or eviscerations that might have been missed during the initial assessment of the unconscious patient?",
+          "user_answer": "Overdose may require naloxone, check for allergies",
+          "response": {
+            "state": "W",
+            "checklist": [
+              "Check for potential allergies to naloxone",
+              "Administer naloxone if no known allergy"
+            ],
+            "citations": [
+              "Ch2 \u00a72-1 (Base)"
+            ],
+            "question": "Are there any additional wounds, burns, or eviscerations that might have been missed during the initial assessment of the unconscious patient?",
+            "question_state": "W",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 13.618009090423584,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Check for potential allergies to naloxone",
+            "Administer naloxone if no known allergy"
+          ],
+          "citations": [
+            "Ch2 \u00a72-1 (Base)"
+          ]
+        },
+        {
+          "state": "S",
+          "question": "Is there any evidence of fracture or deformity in the unconscious patient that requires immediate splinting?",
+          "user_answer": "No visible wounds, but empty pill bottles nearby",
+          "response": {
+            "state": "S",
+            "checklist": [
+              "Inspect the casualty for signs of nerve agent poisoning",
+              "Record first aid administered and other information on DD Form 1380"
+            ],
+            "citations": [
+              "Ch9 \u00a79-6 (Base)"
+            ],
+            "question": "Is there any evidence of fracture or deformity in the unconscious patient that requires immediate splinting?",
+            "question_state": "S",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 13.748761177062988,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Inspect the casualty for signs of nerve agent poisoning",
+            "Record first aid administered and other information on DD Form 1380"
+          ],
+          "citations": [
+            "Ch9 \u00a79-6 (Base)"
+          ]
+        },
+        {
+          "state": "END",
+          "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+          "user_answer": "No fractures detected",
+          "response": {
+            "state": "END",
+            "checklist": [
+              "Prepare cravats for splinting",
+              "Apply a rigid splint to the suspected fracture"
+            ],
+            "citations": [
+              "Ch13 \u00a713-6 (Base)",
+              "Ch13 \u00a713-16 (Base)"
+            ],
+            "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+            "question_state": "END",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 10.109460830688477,
+          "overall_quality_score": 0.89875,
+          "question_quality_score": 0.75,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Prepare cravats for splinting",
+            "Apply a rigid splint to the suspected fracture"
+          ],
+          "citations": [
+            "Ch13 \u00a713-6 (Base)",
+            "Ch13 \u00a713-16 (Base)"
+          ]
+        }
+      ],
+      "overall_success": true,
+      "completion_rate": 111.11111111111111,
+      "avg_quality_score": 0.8844749999999999,
+      "avg_response_time": 13.29591736793518,
+      "citation_accuracy": 0.9,
+      "refusal_accuracy": 100.0
+    },
+    {
+      "scenario_name": "Heat Stroke in Athlete",
+      "scenario_description": "Marathon runner found unconscious with high body temperature, dry skin, and altered mental status",
+      "scenario_type": "medical",
+      "user_answers": [
+        "No bleeding visible",
+        "Airway is clear but patient is unconscious",
+        "Breathing is rapid and shallow",
+        "Rapid weak pulse, signs of dehydration",
+        "Patient is hyperthermic, body temperature feels very hot",
+        "Patient is unconscious, cannot assess pain",
+        "Heat stroke requires cooling, no antibiotics needed",
+        "No visible wounds, just signs of heat exposure",
+        "No fractures, but patient may have muscle cramps"
+      ],
+      "expected_states": [
+        "M",
+        "A",
+        "R",
+        "C",
+        "H",
+        "P",
+        "A2",
+        "W",
+        "S"
+      ],
+      "expected_refusal": false,
+      "difficulty_level": "Medium",
+      "medical_complexity": "Moderate",
+      "results": [
+        {
+          "state": "M",
+          "question": "Is there any life-threatening bleeding from the marathon runner that requires tourniquet application or direct pressure?",
+          "user_answer": "",
+          "response": {
+            "state": "M",
+            "checklist": [],
+            "citations": [],
+            "question": "Is there any life-threatening bleeding from the marathon runner that requires tourniquet application or direct pressure?",
+            "state_complete": false,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 4.269208908081055,
+          "overall_quality_score": 0.405,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.0,
+          "citation_accuracy_score": 0.0,
+          "checklist": [],
+          "citations": []
+        },
+        {
+          "state": "A",
+          "question": "Is the marathon runner's airway clear or is there any obstruction due to altered mental status, vomit, or secretions?",
+          "user_answer": "No bleeding visible",
+          "response": {
+            "state": "A",
+            "checklist": [
+              "Evaluate the casualty for life-threatening conditions and other serious wounds.",
+              "Monitor for signs of hypothermia such as shivering, cold skin, or slurred speech.",
+              "Implement first aid for hypothermia by removing the casualty from the cold environment, replacing wet clothing with dry clothing, covering the casualty with insulating material or blanket, wrapping the casualty from head to toe, avoiding unnecessary movement from the casualty, and seeking medical aid if possible.",
+              "Evacuate the casualty to the nearest medical treatment facility as soon as possible if heat stroke is suspected."
+            ],
+            "citations": [
+              "Ch2 \u00a72-1 (Base)",
+              "Ch12 \u00a712-3 (Base)",
+              "Ch12 \u00a712-7 (Base)",
+              "Ch11 \u00a711-7 (Base)"
+            ],
+            "question": "Is the marathon runner's airway clear or is there any obstruction due to altered mental status, vomit, or secretions?",
+            "question_state": "A",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 23.28391194343567,
+          "overall_quality_score": 0.919,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.7,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Evaluate the casualty for life-threatening conditions and other serious wounds.",
+            "Monitor for signs of hypothermia such as shivering, cold skin, or slurred speech.",
+            "Implement first aid for hypothermia by removing the casualty from the cold environment, replacing wet clothing with dry clothing, covering the casualty with insulating material or blanket, wrapping the casualty from head to toe, avoiding unnecessary movement from the casualty, and seeking medical aid if possible.",
+            "Evacuate the casualty to the nearest medical treatment facility as soon as possible if heat stroke is suspected."
+          ],
+          "citations": [
+            "Ch2 \u00a72-1 (Base)",
+            "Ch12 \u00a712-3 (Base)",
+            "Ch12 \u00a712-7 (Base)",
+            "Ch11 \u00a711-7 (Base)"
+          ]
+        },
+        {
+          "state": "R",
+          "question": "Is the marathon runner's breathing pattern normal or is it affected by the high body temperature, dry skin, and altered mental status?",
+          "user_answer": "Airway is clear but patient is unconscious",
+          "response": {
+            "state": "R",
+            "checklist": [
+              "Confirm airway remains patent",
+              "Cover the patient with insulating material or blanket",
+              "Avoid unnecessary movement from the patient",
+              "Seek medical aid immediately"
+            ],
+            "citations": [
+              "Ch12 \u00a712-7 (Base)",
+              "Ch12 \u00a712-3 (Base)",
+              "Ch12 \u00a712-7 (Base)",
+              "Ch11 \u00a711-7 (Base)"
+            ],
+            "question": "Is the marathon runner's breathing pattern normal or is it affected by the high body temperature, dry skin, and altered mental status?",
+            "question_state": "R",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 17.63865900039673,
+          "overall_quality_score": 0.9864999999999999,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.95,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Confirm airway remains patent",
+            "Cover the patient with insulating material or blanket",
+            "Avoid unnecessary movement from the patient",
+            "Seek medical aid immediately"
+          ],
+          "citations": [
+            "Ch12 \u00a712-7 (Base)",
+            "Ch12 \u00a712-3 (Base)",
+            "Ch12 \u00a712-7 (Base)",
+            "Ch11 \u00a711-7 (Base)"
+          ]
+        },
+        {
+          "state": "C",
+          "question": "What is the patient's pulse quality?",
+          "user_answer": "Breathing is rapid and shallow",
+          "response": {
+            "state": "C",
+            "checklist": [
+              "Remove the casualty from cold environment",
+              "Replace wet clothing with dry clothing",
+              "Cover the casualty with insulating material or blanket",
+              "Wrap the casualty from head to toe",
+              "Avoid unnecessary movement from the casualty",
+              "If casualty is conscious, slowly give high caloric sweet warm fluids"
+            ],
+            "citations": [
+              "Ch12 \u00a712-7 (Base)"
+            ],
+            "question": "What is the patient's pulse quality?",
+            "question_state": "C",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 16.36349582672119,
+          "overall_quality_score": 0.7975,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.24999999999999983,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Remove the casualty from cold environment",
+            "Replace wet clothing with dry clothing",
+            "Cover the casualty with insulating material or blanket",
+            "Wrap the casualty from head to toe",
+            "Avoid unnecessary movement from the casualty",
+            "If casualty is conscious, slowly give high caloric sweet warm fluids"
+          ],
+          "citations": [
+            "Ch12 \u00a712-7 (Base)"
+          ]
+        },
+        {
+          "state": "H",
+          "question": "Is the marathon runner exhibiting signs of hypothermia, such as cold skin or low body temperature?",
+          "user_answer": "Rapid weak pulse, signs of dehydration",
+          "response": {
+            "state": "H",
+            "checklist": [
+              "Assess for signs of heat exhaustion: rapid weak pulse, signs of dehydration (dizziness, headache, loss of appetite, nausea, clumsy/unsteady walk, muscle cramps)",
+              "Monitor body temperature and skin condition: cool, moist, pale or gray skin",
+              "Implement first aid for hypothermia: remove the patient from cold environment, replace wet clothing with dry, cover with insulating material or blanket, wrap from head to toe, avoid unnecessary movement, give high caloric sweet warm fluids if conscious, seek medical aid, evacuate as soon as possible with the patient lying down",
+              "Monitor vital signs closely and consider evacuation to a medical treatment facility if heat stroke is suspected"
+            ],
+            "citations": [
+              "Ch11 \u00a711-4 (Base)",
+              "Ch12 \u00a712-3 (Base)",
+              "Ch12 \u00a712-7 (Base)",
+              "Ch11 \u00a711-7 (Base)"
+            ],
+            "question": "Is the marathon runner exhibiting signs of hypothermia, such as cold skin or low body temperature?",
+            "question_state": "H",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 23.98845601081848,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess for signs of heat exhaustion: rapid weak pulse, signs of dehydration (dizziness, headache, loss of appetite, nausea, clumsy/unsteady walk, muscle cramps)",
+            "Monitor body temperature and skin condition: cool, moist, pale or gray skin",
+            "Implement first aid for hypothermia: remove the patient from cold environment, replace wet clothing with dry, cover with insulating material or blanket, wrap from head to toe, avoid unnecessary movement, give high caloric sweet warm fluids if conscious, seek medical aid, evacuate as soon as possible with the patient lying down",
+            "Monitor vital signs closely and consider evacuation to a medical treatment facility if heat stroke is suspected"
+          ],
+          "citations": [
+            "Ch11 \u00a711-4 (Base)",
+            "Ch12 \u00a712-3 (Base)",
+            "Ch12 \u00a712-7 (Base)",
+            "Ch11 \u00a711-7 (Base)"
+          ]
+        },
+        {
+          "state": "P",
+          "question": "Is the marathon runner able to rate their current pain level, considering they may be unconscious?",
+          "user_answer": "Patient is hyperthermic, body temperature feels very hot",
+          "response": {
+            "state": "P",
+            "checklist": [
+              "Remove the patient from the cold environment",
+              "Replace wet clothing with dry clothing",
+              "Cover the patient with insulating material or blanket",
+              "Wrap the patient from head to toe"
+            ],
+            "citations": [
+              "Ch12 \u00a712-7 (Base)"
+            ],
+            "question": "Is the marathon runner able to rate their current pain level, considering they may be unconscious?",
+            "question_state": "P",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 15.848887205123901,
+          "overall_quality_score": 0.865,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.4999999999999999,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Remove the patient from the cold environment",
+            "Replace wet clothing with dry clothing",
+            "Cover the patient with insulating material or blanket",
+            "Wrap the patient from head to toe"
+          ],
+          "citations": [
+            "Ch12 \u00a712-7 (Base)"
+          ]
+        },
+        {
+          "state": "A2",
+          "question": "Does the marathon runner have any known allergies to antibiotics, given the high body temperature, dry skin, and altered mental status?",
+          "user_answer": "Patient is unconscious, cannot assess pain",
+          "response": {
+            "state": "A2",
+            "checklist": [
+              "Assess level of consciousness using AVPU method",
+              "Monitor for signs of heat stroke"
+            ],
+            "citations": [
+              "Ch7 \u00a77-1 (Base)",
+              "Ch11 \u00a711-7 (Base)"
+            ],
+            "question": "Does the marathon runner have any known allergies to antibiotics, given the high body temperature, dry skin, and altered mental status?",
+            "question_state": "A2",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 12.40152096748352,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess level of consciousness using AVPU method",
+            "Monitor for signs of heat stroke"
+          ],
+          "citations": [
+            "Ch7 \u00a77-1 (Base)",
+            "Ch11 \u00a711-7 (Base)"
+          ]
+        },
+        {
+          "state": "W",
+          "question": "Are there any additional wounds, burns, or eviscerations that might have been missed during the assessment of the marathon runner?",
+          "user_answer": "Heat stroke requires cooling, no antibiotics needed",
+          "response": {
+            "state": "W",
+            "checklist": [
+              "Initiate cooling measures for heat stroke",
+              "Transport the patient to the nearest medical facility immediately"
+            ],
+            "citations": [
+              "Ch11 \u00a711-7 (Base)"
+            ],
+            "question": "Are there any additional wounds, burns, or eviscerations that might have been missed during the assessment of the marathon runner?",
+            "question_state": "W",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 11.745614051818848,
+          "overall_quality_score": 0.8785,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.5499999999999999,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Initiate cooling measures for heat stroke",
+            "Transport the patient to the nearest medical facility immediately"
+          ],
+          "citations": [
+            "Ch11 \u00a711-7 (Base)"
+          ]
+        },
+        {
+          "state": "S",
+          "question": "Is there any evidence of fracture or deformity in the marathon runner's body that requires immediate splinting?",
+          "user_answer": "No visible wounds, just signs of heat exposure",
+          "response": {
+            "state": "S",
+            "checklist": [
+              "Monitor the patient for signs of heat stroke (e.g., altered mental status, high body temperature, dry skin)",
+              "Evacuate the patient to the nearest medical treatment facility as soon as possible if heat stroke is suspected"
+            ],
+            "citations": [
+              "Ch11 \u00a711-7 (Base)",
+              "Ch11 \u00a711-1 (Base)"
+            ],
+            "question": "Is there any evidence of fracture or deformity in the marathon runner's body that requires immediate splinting?",
+            "question_state": "S",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 14.12719988822937,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Monitor the patient for signs of heat stroke (e.g., altered mental status, high body temperature, dry skin)",
+            "Evacuate the patient to the nearest medical treatment facility as soon as possible if heat stroke is suspected"
+          ],
+          "citations": [
+            "Ch11 \u00a711-7 (Base)",
+            "Ch11 \u00a711-1 (Base)"
+          ]
+        },
+        {
+          "state": "END",
+          "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+          "user_answer": "No fractures, but patient may have muscle cramps",
+          "response": {
+            "state": "END",
+            "checklist": [
+              "Monitor the patient for signs of heat stroke",
+              "Do not apply a rigid splint as no fractures were reported"
+            ],
+            "citations": [
+              "Ch11 \u00a711-7 (Base)",
+              "Ch13 \u00a713-1 (Base)"
+            ],
+            "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+            "question_state": "END",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 8.904361009597778,
+          "overall_quality_score": 0.89875,
+          "question_quality_score": 0.75,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Monitor the patient for signs of heat stroke",
+            "Do not apply a rigid splint as no fractures were reported"
+          ],
+          "citations": [
+            "Ch11 \u00a711-7 (Base)",
+            "Ch13 \u00a713-1 (Base)"
+          ]
+        }
+      ],
+      "overall_success": true,
+      "completion_rate": 111.11111111111111,
+      "avg_quality_score": 0.8696249999999999,
+      "avg_response_time": 14.857131481170654,
+      "citation_accuracy": 0.9,
+      "refusal_accuracy": 100.0
+    },
+    {
+      "scenario_name": "Cooking Recipe Query",
+      "scenario_description": "How do I make chocolate chip cookies?",
+      "scenario_type": "non-medical",
+      "user_answers": [],
+      "expected_states": [],
+      "expected_refusal": true,
+      "difficulty_level": "Low",
+      "medical_complexity": "None",
+      "results": [
+        {
+          "state": "M",
+          "question": "",
+          "user_answer": "",
+          "response": {
+            "state": "M",
+            "refusal": true,
+            "message": "I cannot advise \u2014 this appears to be a non-medical query. I can only help with medical and trauma-related questions."
+          },
+          "success": true,
+          "refusal_detected": true,
+          "error": null,
+          "response_time": 0.002604961395263672,
+          "overall_quality_score": 0.0,
+          "question_quality_score": 0.0,
+          "checklist_quality_score": 0.0,
+          "citation_accuracy_score": 0.0,
+          "checklist": [],
+          "citations": []
+        }
+      ],
+      "overall_success": true,
+      "completion_rate": 100.0,
+      "avg_quality_score": 0.0,
+      "avg_response_time": 0.002604961395263672,
+      "citation_accuracy": 0.0,
+      "refusal_accuracy": 100.0
+    },
+    {
+      "scenario_name": "Minor Cut with Infection",
+      "scenario_description": "Small cut on finger that has become red, swollen, and painful with pus",
+      "scenario_type": "medical-edge-case",
+      "user_answers": [
+        "No life-threatening bleeding, just small cut",
+        "Airway is clear, patient is breathing normally",
+        "Breathing is normal",
+        "Normal pulse, no signs of systemic infection",
+        "No hypothermia, but finger feels warm",
+        "Moderate pain at cut site, rates 4/10",
+        "Infected cut may need antibiotics, no known allergies",
+        "Small infected cut on index finger",
+        "No fractures, just soft tissue infection"
+      ],
+      "expected_states": [
+        "M",
+        "A",
+        "R",
+        "C",
+        "H",
+        "P",
+        "A2",
+        "W",
+        "S"
+      ],
+      "expected_refusal": false,
+      "difficulty_level": "Low",
+      "medical_complexity": "Minor",
+      "results": [
+        {
+          "state": "M",
+          "question": "Is there any life-threatening bleeding from the finger that requires packing and direct pressure?",
+          "user_answer": "",
+          "response": {
+            "state": "M",
+            "checklist": [],
+            "citations": [],
+            "question": "Is there any life-threatening bleeding from the finger that requires packing and direct pressure?",
+            "state_complete": false,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 3.9466662406921387,
+          "overall_quality_score": 0.405,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.0,
+          "citation_accuracy_score": 0.0,
+          "checklist": [],
+          "citations": []
+        },
+        {
+          "state": "A",
+          "question": "Is there any obstruction in the casualty's airway due to swelling or pus from the finger injury?",
+          "user_answer": "No life-threatening bleeding, just small cut",
+          "response": {
+            "state": "A",
+            "checklist": [
+              "Check the small cut for signs of infection such as redness, swelling, and pain",
+              "Apply direct pressure to the small cut using sterile gauze or dressing as described in [Ch6 \u00a76-4 (Base)]"
+            ],
+            "citations": [
+              "Ch12 \u00a712-18 (Base)",
+              "Ch6 \u00a76-4 (Base)"
+            ],
+            "question": "Is there any obstruction in the casualty's airway due to swelling or pus from the finger injury?",
+            "question_state": "A",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 16.83872890472412,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Check the small cut for signs of infection such as redness, swelling, and pain",
+            "Apply direct pressure to the small cut using sterile gauze or dressing as described in [Ch6 \u00a76-4 (Base)]"
+          ],
+          "citations": [
+            "Ch12 \u00a712-18 (Base)",
+            "Ch6 \u00a76-4 (Base)"
+          ]
+        },
+        {
+          "state": "R",
+          "question": "Is there any change in the patient's normal breathing pattern due to the finger injury?",
+          "user_answer": "Airway is clear, patient is breathing normally",
+          "response": {
+            "state": "R",
+            "checklist": [
+              "Confirm airway remains patent",
+              "Monitor for signs of obstruction"
+            ],
+            "citations": [
+              "Ch14 \u00a714-1 (Base)",
+              "Ch4 \u00a74-1 (Base)"
+            ],
+            "question": "Is there any change in the patient's normal breathing pattern due to the finger injury?",
+            "question_state": "R",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 15.481189250946045,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Confirm airway remains patent",
+            "Monitor for signs of obstruction"
+          ],
+          "citations": [
+            "Ch14 \u00a714-1 (Base)",
+            "Ch4 \u00a74-1 (Base)"
+          ]
+        },
+        {
+          "state": "C",
+          "question": "Is there any change in the patient's skin color or temperature, particularly around the affected finger area?",
+          "user_answer": "Breathing is normal",
+          "response": {
+            "state": "C",
+            "checklist": [
+              "Monitor the swelling, redness, and pain in the affected area",
+              "Continue to assess for any signs of infection such as itching or burning sensation"
+            ],
+            "citations": [
+              "Ch12 \u00a712-18 (Base)",
+              "Ch12 \u00a712-20 (Base)"
+            ],
+            "question": "Is there any change in the patient's skin color or temperature, particularly around the affected finger area?",
+            "question_state": "C",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 14.981320142745972,
+          "overall_quality_score": 0.919,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.7,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Monitor the swelling, redness, and pain in the affected area",
+            "Continue to assess for any signs of infection such as itching or burning sensation"
+          ],
+          "citations": [
+            "Ch12 \u00a712-18 (Base)",
+            "Ch12 \u00a712-20 (Base)"
+          ]
+        },
+        {
+          "state": "H",
+          "question": "Is the patient exhibiting signs of hypothermia due to finger injury and potential exposure?",
+          "user_answer": "Normal pulse, no signs of systemic infection",
+          "response": {
+            "state": "H",
+            "checklist": [
+              "Assess the pulse quality at the radial artery",
+              "Monitor for signs of infection such as swelling, redness, or itching"
+            ],
+            "citations": [
+              "Ch1 \u00a71-29 (Base)",
+              "Ch12 \u00a712-18 (Base)"
+            ],
+            "question": "Is the patient exhibiting signs of hypothermia due to finger injury and potential exposure?",
+            "question_state": "H",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 14.451030969619751,
+          "overall_quality_score": 0.973,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 0.9,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the pulse quality at the radial artery",
+            "Monitor for signs of infection such as swelling, redness, or itching"
+          ],
+          "citations": [
+            "Ch1 \u00a71-29 (Base)",
+            "Ch12 \u00a712-18 (Base)"
+          ]
+        },
+        {
+          "state": "P",
+          "question": "Is there any pain associated with the red, swollen, and pus-filled cut on the finger?",
+          "user_answer": "No hypothermia, but finger feels warm",
+          "response": {
+            "state": "P",
+            "checklist": [
+              "Monitor the finger for signs of frostbite (numbness, tingling, blistering, swelling, or tender areas) as it may still be at risk",
+              "Continue to prevent heat loss from the rest of the body"
+            ],
+            "citations": [
+              "Ch12 \u00a712-10 (Base)",
+              "Ch12 \u00a712-3 (Base)"
+            ],
+            "question": "Is there any pain associated with the red, swollen, and pus-filled cut on the finger?",
+            "question_state": "P",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 17.163758993148804,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Monitor the finger for signs of frostbite (numbness, tingling, blistering, swelling, or tender areas) as it may still be at risk",
+            "Continue to prevent heat loss from the rest of the body"
+          ],
+          "citations": [
+            "Ch12 \u00a712-10 (Base)",
+            "Ch12 \u00a712-3 (Base)"
+          ]
+        },
+        {
+          "state": "A2",
+          "question": "Does the patient with a red, swollen, and painful finger wound with pus have any known allergies to antibiotics?",
+          "user_answer": "Moderate pain at cut site, rates 4/10",
+          "response": {
+            "state": "A2",
+            "checklist": [
+              "Quickly survey the situation as per Ch27 \u00a727-1 (Base)",
+              "Assess the pain level at the cut site using a pain scale such as Visual Analog Scale (VAS) or Numerical Rating Scale (NRS). The reported pain level is moderate, 4/10. [Ch27 \u00a727-1 (Base)]",
+              "Expose the injury site as first aid for insect bites or stings without causing further injury. [Ch10 \u00a710-1 (Base)]"
+            ],
+            "citations": [
+              "Ch10 \u00a710-1 (Base)"
+            ],
+            "question": "Does the patient with a red, swollen, and painful finger wound with pus have any known allergies to antibiotics?",
+            "question_state": "A2",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 19.10831117630005,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Quickly survey the situation as per Ch27 \u00a727-1 (Base)",
+            "Assess the pain level at the cut site using a pain scale such as Visual Analog Scale (VAS) or Numerical Rating Scale (NRS). The reported pain level is moderate, 4/10. [Ch27 \u00a727-1 (Base)]",
+            "Expose the injury site as first aid for insect bites or stings without causing further injury. [Ch10 \u00a710-1 (Base)]"
+          ],
+          "citations": [
+            "Ch10 \u00a710-1 (Base)"
+          ]
+        },
+        {
+          "state": "W",
+          "question": "Is there any pus or signs of infection around the cut on the finger?",
+          "user_answer": "Infected cut may need antibiotics, no known allergies",
+          "response": {
+            "state": "W",
+            "checklist": [
+              "Assess the wound for signs of infection (redness, swelling, pus)",
+              "Clean and cover the wound with a sterile dressing",
+              "Monitor the wound for any changes or worsening symptoms",
+              "Consider administering antibiotics if the infection persists or worsens"
+            ],
+            "citations": [
+              "Ch10 \u00a710-1 (Base)",
+              "Ch2 \u00a72-1 (Base)"
+            ],
+            "question": "Is there any pus or signs of infection around the cut on the finger?",
+            "question_state": "W",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 17.650021076202393,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Assess the wound for signs of infection (redness, swelling, pus)",
+            "Clean and cover the wound with a sterile dressing",
+            "Monitor the wound for any changes or worsening symptoms",
+            "Consider administering antibiotics if the infection persists or worsens"
+          ],
+          "citations": [
+            "Ch10 \u00a710-1 (Base)",
+            "Ch2 \u00a72-1 (Base)"
+          ]
+        },
+        {
+          "state": "S",
+          "question": "Is there any evidence of a fracture or deformity in the affected finger that requires splinting?",
+          "user_answer": "Small infected cut on index finger",
+          "response": {
+            "state": "S",
+            "checklist": [
+              "Inspect the infected cut on index finger for signs of infection such as redness, swelling, and pus.",
+              "Assess the patient's pain level and provide appropriate pain relief medication if necessary."
+            ],
+            "citations": [
+              "Ch12 \u00a712-18 (Base)",
+              "Ch2 \u00a72-6 (Base)"
+            ],
+            "question": "Is there any evidence of a fracture or deformity in the affected finger that requires splinting?",
+            "question_state": "S",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 17.027181148529053,
+          "overall_quality_score": 1.0,
+          "question_quality_score": 1.0,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Inspect the infected cut on index finger for signs of infection such as redness, swelling, and pus.",
+            "Assess the patient's pain level and provide appropriate pain relief medication if necessary."
+          ],
+          "citations": [
+            "Ch12 \u00a712-18 (Base)",
+            "Ch2 \u00a72-6 (Base)"
+          ]
+        },
+        {
+          "state": "END",
+          "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+          "user_answer": "No fractures, just soft tissue infection",
+          "response": {
+            "state": "END",
+            "checklist": [
+              "Prepare a cravat for splinting (Ch13 \u00a713-16)",
+              "Apply and secure the splint to the injured extremity with the limb in the position of function (Ch13 \u00a713-16)"
+            ],
+            "citations": [
+              "Ch13 \u00a713-16 (Base)",
+              "Ch13 \u00a713-16 (Base)"
+            ],
+            "question": "MARCH-PAWS assessment complete. All critical systems have been evaluated.",
+            "question_state": "END",
+            "state_complete": true,
+            "refusal": false
+          },
+          "success": true,
+          "refusal_detected": false,
+          "error": null,
+          "response_time": 12.692742824554443,
+          "overall_quality_score": 0.89875,
+          "question_quality_score": 0.75,
+          "checklist_quality_score": 1.0,
+          "citation_accuracy_score": 1.0,
+          "checklist": [
+            "Prepare a cravat for splinting (Ch13 \u00a713-16)",
+            "Apply and secure the splint to the injured extremity with the limb in the position of function (Ch13 \u00a713-16)"
+          ],
+          "citations": [
+            "Ch13 \u00a713-16 (Base)",
+            "Ch13 \u00a713-16 (Base)"
+          ]
+        }
+      ],
+      "overall_success": true,
+      "completion_rate": 111.11111111111111,
+      "avg_quality_score": 0.9168749999999999,
+      "avg_response_time": 14.934095072746278,
+      "citation_accuracy": 0.9,
+      "refusal_accuracy": 100.0
+    }
+  ],
+  "metrics": {
+    "overall_metrics": {
+      "total_scenarios": 10,
+      "successful_scenarios": 10,
+      "scenario_success_rate": 100.0,
+      "total_interactions": 91,
+      "successful_interactions": 91,
+      "interaction_success_rate": 100.0,
+      "average_response_time": 13.34680064678192,
+      "average_quality_score": 0.8839805555555554,
+      "average_citation_accuracy": 0.8555555555555556,
+      "refusal_accuracy": 100.0
+    },
+    "scenario_type_metrics": {
+      "medical_scenarios": {
+        "total": 6,
+        "successful": 6,
+        "avg_quality_score": 0.8810666666666666,
+        "avg_completion_rate": 111.11111111111113
+      },
+      "complex_medical_scenarios": {
+        "total": 1,
+        "successful": 1,
+        "avg_quality_score": 0.897975,
+        "avg_completion_rate": 111.11111111111111
+      },
+      "edge_case_scenarios": {
+        "total": 2,
+        "successful": 2,
+        "avg_quality_score": 0.8857249999999999,
+        "avg_completion_rate": 111.11111111111111
+      },
+      "non_medical_scenarios": {
+        "total": 1,
+        "successful": 1,
+        "refusal_accuracy": 100.0
+      }
+    },
+    "difficulty_metrics": {
+      "high_difficulty": {
+        "total": 5,
+        "successful": 5,
+        "success_rate": 100.0,
+        "avg_quality_score": 0.892015
+      },
+      "medium_difficulty": {
+        "total": 3,
+        "successful": 3,
+        "success_rate": 100.0,
+        "avg_quality_score": 0.859625
+      },
+      "low_difficulty": {
+        "total": 2,
+        "successful": 2,
+        "success_rate": 100.0,
+        "avg_quality_score": 0.45843749999999994
+      }
+    }
+  }
+}

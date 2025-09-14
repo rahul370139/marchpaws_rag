@@ -7,6 +7,8 @@ from sentence_transformers import SentenceTransformer
 from pathlib import Path
 import time
 from tqdm import tqdm
+from joblib import Parallel, delayed
+import multiprocessing
 
 # Configuration
 WINDOWS_FILE = "data/windows.jsonl"
@@ -21,24 +23,67 @@ def load_windows(file_path):
     with open(file_path) as f:
         return [json.loads(line) for line in f]
 
-def embed_windows(windows, model_name=MODEL_NAME, batch_size=BATCH_SIZE):
-    """Embed windows using the specified model."""
-    print(f"Loading model: {model_name}")
+def embed_batch(texts_batch, model_name=MODEL_NAME):
+    """Embed a batch of texts using the specified model."""
     model = SentenceTransformer(model_name)
+    return model.encode(texts_batch, convert_to_numpy=True)
+
+def embed_windows_parallel(windows, model_name=MODEL_NAME, batch_size=BATCH_SIZE, n_jobs=None):
+    """Embed windows using parallel processing for faster ingestion."""
+    if n_jobs is None:
+        n_jobs = min(multiprocessing.cpu_count(), 4)  # Limit to 4 to avoid memory issues
+    
+    print(f"Using {n_jobs} parallel workers for embedding")
     
     # Extract texts for embedding
     texts = [window["text"] for window in windows]
-    print(f"Embedding {len(texts)} windows...")
+    print(f"Embedding {len(texts)} windows in parallel...")
+    
+    # Split texts into batches for parallel processing
+    text_batches = [texts[i:i + batch_size] for i in range(0, len(texts), batch_size)]
     
     start_time = time.time()
-    embeddings = model.encode(texts, batch_size=batch_size, show_progress_bar=True, convert_to_numpy=True)
+    
+    # Process batches in parallel
+    embedding_batches = Parallel(n_jobs=n_jobs, backend='threading')(
+        delayed(embed_batch)(batch, model_name) for batch in tqdm(text_batches, desc="Embedding batches")
+    )
+    
+    # Concatenate all embeddings
+    embeddings = np.vstack(embedding_batches)
+    
     end_time = time.time()
     
-    print(f"Embedding completed in {end_time - start_time:.2f} seconds")
+    print(f"Parallel embedding completed in {end_time - start_time:.2f} seconds")
     print(f"Embedding shape: {embeddings.shape}")
     print(f"Average time per window: {(end_time - start_time) / len(texts):.3f} seconds")
     
+    # Load model for return (needed for testing)
+    model = SentenceTransformer(model_name)
     return embeddings, model
+
+def embed_windows(windows, model_name=MODEL_NAME, batch_size=BATCH_SIZE, use_parallel=True):
+    """Embed windows using the specified model with optional parallel processing."""
+    if use_parallel:
+        return embed_windows_parallel(windows, model_name, batch_size)
+    else:
+        # Original sequential method
+        print(f"Loading model: {model_name}")
+        model = SentenceTransformer(model_name)
+        
+        # Extract texts for embedding
+        texts = [window["text"] for window in windows]
+        print(f"Embedding {len(texts)} windows...")
+        
+        start_time = time.time()
+        embeddings = model.encode(texts, batch_size=batch_size, show_progress_bar=True, convert_to_numpy=True)
+        end_time = time.time()
+        
+        print(f"Embedding completed in {end_time - start_time:.2f} seconds")
+        print(f"Embedding shape: {embeddings.shape}")
+        print(f"Average time per window: {(end_time - start_time) / len(texts):.3f} seconds")
+        
+        return embeddings, model
 
 def save_embeddings(embeddings, windows, model_info):
     """Save embeddings, metadata, and model info."""
@@ -86,7 +131,7 @@ if __name__ == "__main__":
     text_lengths = [len(w["text"].split()) for w in windows]
     print(f"Text length stats: min={min(text_lengths)}, max={max(text_lengths)}, avg={sum(text_lengths)/len(text_lengths):.1f}")
 
-    embeddings, model = embed_windows(windows)
+    embeddings, model = embed_windows(windows, use_parallel=True)
     
     # Prepare model info
     model_info = {

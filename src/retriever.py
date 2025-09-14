@@ -19,32 +19,20 @@ from pathlib import Path
 from typing import List, Dict, Optional, Set, Tuple
 
 import numpy as np
-import nltk
 from nltk.stem import WordNetLemmatizer
-from nltk.corpus import wordnet
 
 try:
     from rank_bm25 import BM25Okapi  # type: ignore
 except ImportError:
     BM25Okapi = None
 
-def get_wordnet_pos(word):
-    """Map POS tag to first character lemmatize() accepts."""
-    tag = nltk.pos_tag([word])[0][1][0].upper()
-    tag_dict = {"J": wordnet.ADJ,
-                "N": wordnet.NOUN,
-                "V": wordnet.VERB,
-                "R": wordnet.ADV}
-    return tag_dict.get(tag, wordnet.NOUN)
-
-def lemmatize_query(query: str, lemmatizer: WordNetLemmatizer) -> List[str]:
-    """Lemmatize query for BM25 search."""
+def light_lemmatize(query: str, lemmatizer: WordNetLemmatizer) -> List[str]:
+    """Lightweight lemmatization for BM25 search - ~10x faster than POS-aware."""
     # Convert to lowercase and split into words
     text = query.lower()
-    # Remove extra whitespace and split
     words = re.findall(r'\b\w+\b', text)
-    # Lemmatize each word
-    lemmatized_words = [lemmatizer.lemmatize(word, get_wordnet_pos(word)) for word in words]
+    # Simple lemmatization without POS tagging
+    lemmatized_words = [lemmatizer.lemmatize(word) for word in words]
     return lemmatized_words
 
 def calculate_adaptive_alpha(query: str) -> float:
@@ -118,7 +106,7 @@ class HybridRetriever:
         # Load paragraph map for expansion
         self.para_map = self._load_paragraph_map()
         
-        # Initialize lemmatizer for BM25 queries
+        # Initialize lightweight lemmatizer (no POS tagging)
         self.lemmatizer = WordNetLemmatizer()
         
         # Initialize embedding model
@@ -239,12 +227,12 @@ class HybridRetriever:
         return dense_scores
 
     def _bm25_search(self, query: str, top_n: int) -> Dict[int, float]:
-        """Perform BM25 retrieval on windows with lemmatized query."""
+        """Perform BM25 retrieval on windows with lightweight lemmatization."""
         if BM25Okapi is None:
             raise ImportError("rank_bm25 is not installed, cannot use BM25 retrieval.")
         
-        # Lemmatize query for BM25 search
-        query_words = lemmatize_query(query, self.lemmatizer)
+        # Lightweight lemmatization for BM25 search
+        query_words = light_lemmatize(query, self.lemmatizer)
         scores = self.bm25.get_scores(query_words)
         
         # Get top_n highest scoring indices
@@ -256,8 +244,8 @@ class HybridRetriever:
         if BM25Okapi is None:
             raise ImportError("rank-bm25 is not installed, cannot use BM25 retrieval.")
         
-        # Lemmatize query for BM25 search
-        query_words = lemmatize_query(query, self.lemmatizer)
+        # Lightweight lemmatization for BM25 search
+        query_words = light_lemmatize(query, self.lemmatizer)
         scores = self.bm25.get_scores(query_words)
         
         # Get top_n highest scoring indices with their ranks
@@ -267,6 +255,53 @@ class HybridRetriever:
             results.append((int(idx), float(scores[idx]), rank))
         
         return results
+    
+    def _calculate_bm25_zscore_threshold(self, query: str, top_n: int = 100) -> float:
+        """Calculate z-score based threshold for BM25 scores.
+        
+        Parameters
+        ----------
+        query : str
+            The search query
+        top_n : int
+            Number of top results to consider for threshold calculation
+            
+        Returns
+        -------
+        float
+            Z-score based threshold (max - mean) / std
+        """
+        if BM25Okapi is None:
+            return 0.005  # Fallback to static threshold
+        
+        # Lightweight lemmatization for BM25 search
+        query_words = light_lemmatize(query, self.lemmatizer)
+        scores = self.bm25.get_scores(query_words)
+        
+        # Get top_n scores for threshold calculation
+        top_scores = np.sort(scores)[-top_n:]
+        
+        if len(top_scores) < 2:
+            return 0.005  # Fallback if not enough scores
+        
+        # Calculate z-score threshold: (max - mean) / std
+        max_score = np.max(top_scores)
+        mean_score = np.mean(top_scores)
+        std_score = np.std(top_scores)
+        
+        if std_score == 0 or std_score < 1e-10:
+            # If no variance, use a more aggressive threshold based on score range
+            score_range = max_score - np.min(top_scores)
+            return max(0.001, min(0.01, score_range * 0.1))
+        
+        zscore_threshold = (max_score - mean_score) / std_score
+        
+        # Normalize to a reasonable range (0.001 to 0.01)
+        # Higher z-score means more discriminative, so lower threshold
+        # Use a more aggressive scaling factor
+        normalized_threshold = max(0.001, min(0.01, zscore_threshold * 0.01))
+        
+        return normalized_threshold
     
     def _dense_search_with_ranks(self, query: str, top_n: int) -> List[Tuple[int, float, int]]:
         """Perform dense retrieval and return (idx, score, rank) tuples."""
@@ -284,7 +319,7 @@ class HybridRetriever:
         
         return results
 
-    def search(self, query: str, state_hint: Optional[str] = None, k: int = 6, bm25_n: int = 50, faiss_n: int = 50, alpha: Optional[float] = None, bm25_query: Optional[str] = None, dense_query: Optional[str] = None) -> List[Dict]:
+    def search(self, query: str, state_hint: Optional[str] = None, k: int = 6, bm25_n: int = 50, faiss_n: int = 50, alpha: Optional[float] = None, bm25_query: Optional[str] = None, dense_query: Optional[str] = None) -> Tuple[List[Dict], float]:
         """Return the top `k` parent windows for a given query using hybrid retrieval.
 
         Parameters
@@ -304,8 +339,9 @@ class HybridRetriever:
 
         Returns
         -------
-        List[Dict]
-            List of parent window dictionaries with hybrid scores, sorted by descending score.
+        Tuple[List[Dict], float]
+            List of parent window dictionaries with hybrid scores, sorted by descending score,
+            and the calculated z-score based threshold.
         """
         # Calculate adaptive α if not provided
         if alpha is None:
@@ -328,8 +364,8 @@ class HybridRetriever:
             dense_query_final = query
 
         # Get ranked results from both retrieval methods
-        bm25_results = self._bm25_search_with_ranks(bm25_query_final, bm25_n)
-        dense_results = self._dense_search_with_ranks(dense_query_final, faiss_n)
+        bm25_results = self._bm25_search_with_ranks(bm25_query_final, int(bm25_n))
+        dense_results = self._dense_search_with_ranks(dense_query_final, int(faiss_n))
 
         # Reciprocal Rank Fusion (RRF) using original ranks
         fused: Dict[int, float] = defaultdict(float)
@@ -344,6 +380,9 @@ class HybridRetriever:
 
         # Get top-k parent windows
         sorted_windows = sorted(fused.items(), key=lambda x: -x[1])[:k]
+        
+        # Calculate z-score based threshold for this query
+        zscore_threshold = self._calculate_bm25_zscore_threshold(bm25_query_final, bm25_n)
         
         results = []
         for idx, score in sorted_windows:
@@ -362,7 +401,7 @@ class HybridRetriever:
             }
             results.append(window_result)
         
-        return results
+        return results, zscore_threshold
 
     def expand_windows(self, win_hits: List[Dict], max_paras: int = 10) -> List[Dict]:
         """Expand parent windows to child paragraphs with deduplication using round-robin.

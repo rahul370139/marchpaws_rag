@@ -7,3 +7,6 @@ sentence-transformers>=2.2.2  # optional, used for embeddings
 requests>=2.31
 optimum>=1.16.0  # for model quantization
 intel-extension-for-pytorch>=2.0.0  # for CPU optimization
+joblib>=1.3.0  # for parallel processing
+nltk>=3.8  # for lightweight lemmatization
+aiohttp>=3.8.0  # for async HTTP requests

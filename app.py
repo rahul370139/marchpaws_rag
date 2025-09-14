@@ -12,11 +12,15 @@ from pathlib import Path
 # Add src directory to path
 sys.path.append('src')
 
-from orchestrator import Orchestrator
+from src.orchestrator_async import AsyncOrchestrator
+from quality_evaluator import QualityEvaluator
+import asyncio
+import json
+from src.utils import map_citations_to_database
 
 # Page configuration
 st.set_page_config(
-    page_title="MARCH-PAWS Medical Assistant",
+    page_title="MARCH-PAWS Medical Assistant - Enhanced",
     page_icon="🏥",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -47,6 +51,12 @@ st.markdown("""
 <style>
     /* Force light theme and bright colors */
     .stApp {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    /* Strong override for assessment history expander background */
+    .stExpander, .stExpander > div, .stExpanderContent, .stExpanderContent div {
         background-color: #ffffff !important;
         color: #000000 !important;
     }
@@ -147,12 +157,132 @@ st.markdown("""
         background-color: #fff3cd;
         border: 1px solid #ffeaa7;
         border-radius: 4px;
+    }
+    .quality-score {
+        background-color: #e8f5e8;
+        border: 1px solid #4caf50;
+        border-radius: 4px;
+        padding: 0.75rem;
+        margin: 0.5rem 0;
+        font-weight: bold;
+        text-align: center;
+    }
+    .quality-excellent { background-color: #d4edda; border-color: #28a745; }
+    .quality-good { background-color: #d1ecf1; border-color: #17a2b8; }
+    .quality-fair { background-color: #fff3cd; border-color: #ffc107; }
+    .quality-poor { background-color: #f8d7da; border-color: #dc3545; }
+    .transparency-panel {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    .system-info {
+        background-color: #e3f2fd;
+        border-left: 4px solid #2196f3;
+        padding: 0.75rem;
+        margin: 0.5rem 0;
+        border-radius: 4px;
+    }
+    .performance-metric {
+        display: inline-block;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 0.5rem;
+        margin: 0.25rem;
+        text-align: center;
+        min-width: 80px;
+    }
         padding: 1rem;
         margin: 1rem 0;
     }
     
-    /* Ensure all text in expanders is black */
+    /* Ensure all text in expanders is black and background is light */
     .streamlit-expanderContent {
+        color: #000000 !important;
+        background-color: #ffffff !important;
+        background: #ffffff !important;
+    }
+    
+    /* Fix expander styling to prevent dark backgrounds */
+    .streamlit-expander {
+        background-color: #ffffff !important;
+        background: #ffffff !important;
+        border: 1px solid #dee2e6 !important;
+    }
+    
+    /* Ensure all markdown content in expanders is visible */
+    .streamlit-expanderContent .markdown-text-container,
+    .streamlit-expanderContent p,
+    .streamlit-expanderContent strong,
+    .streamlit-expanderContent ul,
+    .streamlit-expanderContent li,
+    .streamlit-expanderContent h1,
+    .streamlit-expanderContent h2,
+    .streamlit-expanderContent h3,
+    .streamlit-expanderContent h4,
+    .streamlit-expanderContent h5,
+    .streamlit-expanderContent h6,
+    .streamlit-expanderContent div,
+    .streamlit-expanderContent span {
+        color: #000000 !important;
+        background-color: transparent !important;
+    }
+    
+    /* Fix assessment history expanders specifically */
+    .streamlit-expanderContent .scenario-text,
+    .streamlit-expanderContent .question-text,
+    .streamlit-expanderContent .checklist-item,
+    .streamlit-expanderContent .citation {
+        color: #000000 !important;
+        background-color: transparent !important;
+    }
+    
+    /* Fix refusal scenario text visibility */
+    .stAlert,
+    .stAlert p,
+    .stAlert div,
+    .stAlert span {
+        color: #000000 !important;
+        background-color: #ffffff !important;
+    }
+    
+    /* Specific fix for error alerts (red boxes) */
+    .stAlert[data-testid="error"] {
+        background-color: #f8d7da !important;
+        border: 1px solid #f5c6cb !important;
+    }
+    
+    .stAlert[data-testid="error"] p,
+    .stAlert[data-testid="error"] div,
+    .stAlert[data-testid="error"] span {
+        color: #000000 !important;
+        font-weight: bold !important;
+    }
+    
+    /* Fix info alerts (blue boxes) */
+    .stAlert[data-testid="info"] {
+        background-color: #d1ecf1 !important;
+        border: 1px solid #bee5eb !important;
+    }
+    
+    .stAlert[data-testid="info"] p,
+    .stAlert[data-testid="info"] div,
+    .stAlert[data-testid="info"] span {
+        color: #000000 !important;
+    }
+    
+    /* Fix warning alerts (yellow boxes) */
+    .stAlert[data-testid="warning"] {
+        background-color: #fff3cd !important;
+        border: 1px solid #ffeaa7 !important;
+    }
+    
+    .stAlert[data-testid="warning"] p,
+    .stAlert[data-testid="warning"] div,
+    .stAlert[data-testid="warning"] span {
         color: #000000 !important;
     }
     
@@ -164,12 +294,20 @@ st.markdown("""
     .streamlit-expanderHeader:visited,
     .streamlit-expanderHeader:link {
         color: #000000 !important;
-        background-color: #ffffff !important;
-        background: #ffffff !important;
+        background-color: #f8f9fa !important;
+        background: #f8f9fa !important;
         background-image: none !important;
-        border: 2px solid #28a745 !important;
-        border-radius: 8px !important;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+        border: 1px solid #dee2e6 !important;
+        border-radius: 4px !important;
+        box-shadow: none !important;
+    }
+    
+    /* Ensure expander header text is always visible */
+    .streamlit-expanderHeader p,
+    .streamlit-expanderHeader div,
+    .streamlit-expanderHeader span {
+        color: #000000 !important;
+        background-color: transparent !important;
     }
     
     /* Target ALL possible child elements */
@@ -231,6 +369,90 @@ st.markdown("""
         color: #000000 !important;
     }
     
+    /* CRITICAL FIX: Override expander content background */
+    .streamlit-expanderContent {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 1px solid #dee2e6 !important;
+        border-top: none !important;
+    }
+    
+    /* Fix the dark expander content that appears when expanded */
+    .streamlit-expanderContent > div,
+    .streamlit-expanderContent > .element-container,
+    .streamlit-expanderContent > .stContainer,
+    .streamlit-expanderContent > .block-container {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    /* Target specific Streamlit components inside expanders */
+    .streamlit-expanderContent .stContainer > div,
+    .streamlit-expanderContent .element-container > div,
+    .streamlit-expanderContent .block-container > div {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    /* Fix any nested containers */
+    .streamlit-expanderContent div[data-testid="stContainer"],
+    .streamlit-expanderContent div[data-testid="element-container"],
+    .streamlit-expanderContent div[data-testid="block-container"] {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    /* Nuclear option for expander content */
+    [class*="expanderContent"] {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    /* AGGRESSIVE FIX for dynamically generated assessment history expanders */
+    .streamlit-expanderContent[style*="background"],
+    .streamlit-expanderContent[style*="color"] {
+        background-color: #ffffff !important;
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    /* Target expanders that are expanded by default */
+    .streamlit-expanderContent[aria-expanded="true"],
+    .streamlit-expanderContent[data-expanded="true"] {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    /* Force override any inline styles */
+    .streamlit-expanderContent[style] {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    /* Target the specific assessment history section */
+    div[data-testid="stExpander"] .streamlit-expanderContent {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    /* Ultra aggressive: target by parent context */
+    .element-container:has(.streamlit-expanderContent) .streamlit-expanderContent,
+    .stContainer:has(.streamlit-expanderContent) .streamlit-expanderContent {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    /* Force override for all possible Streamlit expander variations */
+    [data-testid="stExpander"] .streamlit-expanderContent,
+    [data-testid="stExpander"] > div > div,
+    [data-testid="stExpander"] .streamlit-expanderContent > div,
+    [data-testid="stExpander"] .streamlit-expanderContent .element-container,
+    [data-testid="stExpander"] .streamlit-expanderContent .stContainer {
+        background-color: #ffffff !important;
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+    
     /* Make question text bright and clear */
     .question-text {
         font-size: 1.2rem;
@@ -256,22 +478,195 @@ st.markdown("""
         margin: 0.5rem 0;
         box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
+
+    /* Native <details>/<summary> fix for Streamlit expander */
+    details,
+    details[open],
+    details > summary,
+    details[open] > summary,
+    details > div,
+    details[open] > div {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
 </style>
+
+<script>
+// Force fix expander content styling after page load
+function fixExpanderStyling() {
+    const expanderContents = document.querySelectorAll('.streamlit-expanderContent');
+    expanderContents.forEach(content => {
+        content.style.backgroundColor = '#ffffff';
+        content.style.color = '#000000';
+        content.style.background = '#ffffff';
+        
+        // Fix nested divs
+        const nestedDivs = content.querySelectorAll('div');
+        nestedDivs.forEach(div => {
+            div.style.backgroundColor = '#ffffff';
+            div.style.color = '#000000';
+            div.style.background = '#ffffff';
+        });
+    });
+}
+
+// Run immediately
+fixExpanderStyling();
+
+// Run after DOM changes (for dynamically generated content)
+const observer = new MutationObserver(fixExpanderStyling);
+observer.observe(document.body, { childList: true, subtree: true });
+
+// Also run periodically as a fallback
+setInterval(fixExpanderStyling, 1000);
+</script>
 """, unsafe_allow_html=True)
 
 @st.cache_resource
-def load_orchestrator():
-    """Load the MARCH-PAWS orchestrator with caching."""
+def load_system():
+    """Load the enhanced MARCH-PAWS system with async orchestrator and quality evaluator."""
     try:
-        orc = Orchestrator(
+        # Load quality evaluator
+        evaluator = QualityEvaluator()
+        
+        # Load async orchestrator
+        orchestrator = AsyncOrchestrator(
             bm25_path='data/window_bm25_index.pkl',
             embeddings_path='data/window_embeddings.npy',
             metadata_path='data/window_metadata.json'
         )
-        return orc
+        
+        return {
+            'orchestrator': orchestrator,
+            'evaluator': evaluator,
+            'status': 'ready'
+        }
     except Exception as e:
-        st.error(f"Failed to load MARCH-PAWS system: {e}")
+        st.error(f"Failed to load system: {e}")
         return None
+
+async def initialize_orchestrator(orchestrator):
+    """Initialize the async orchestrator."""
+    try:
+        await orchestrator.__aenter__()
+        return True
+    except Exception as e:
+        st.error(f"Failed to initialize orchestrator: {e}")
+        return False
+
+def display_quality_metrics(evaluation_result):
+    """Display quality evaluation metrics with visual indicators."""
+    if not evaluation_result:
+        return
+    
+    overall_score = evaluation_result.get('overall_score', 0)
+    
+    # Determine quality level and color
+    if overall_score >= 0.9:
+        quality_level = "Excellent"
+        quality_class = "quality-excellent"
+    elif overall_score >= 0.7:
+        quality_level = "Good"
+        quality_class = "quality-good"
+    elif overall_score >= 0.5:
+        quality_level = "Fair"
+        quality_class = "quality-fair"
+    else:
+        quality_level = "Needs Improvement"
+        quality_class = "quality-poor"
+    
+    st.markdown(f'''
+    <div class="quality-score {quality_class}">
+        🎯 Quality Score: {overall_score:.3f} ({quality_level})
+    </div>
+    ''', unsafe_allow_html=True)
+    
+    # Display detailed metrics
+    col1, col2, col3, col4 = st.columns(4)
+    
+    with col1:
+        st.metric("Question Quality", f"{evaluation_result.get('question_score', 0):.3f}")
+    with col2:
+        st.metric("Citation Accuracy", f"{evaluation_result.get('citation_score', 0):.3f}")
+    with col3:
+        st.metric("Checklist Quality", f"{evaluation_result.get('checklist_score', 0):.3f}")
+    with col4:
+        st.metric("Response Time", f"{evaluation_result.get('response_time', 0):.1f}s")
+    
+    # Display recommendations and issues
+    recommendations = evaluation_result.get('recommendations', {})
+    
+    # Citation recommendations (new feature)
+    if recommendations.get('citations'):
+        with st.expander("📋 Citation Quality Feedback", expanded=False):
+            citation_recs = recommendations['citations']
+            if citation_recs:
+                st.markdown("**Issues Found:**")
+                for rec in citation_recs:
+                    st.markdown(f"• {rec}")
+            else:
+                st.success("✅ All citations are valid and unique!")
+    
+    # Question recommendations
+    if recommendations.get('question'):
+        with st.expander("❓ Question Quality Feedback", expanded=False):
+            question_recs = recommendations['question']
+            if question_recs:
+                st.markdown("**Suggestions:**")
+                for rec in question_recs:
+                    st.markdown(f"• {rec}")
+            else:
+                st.success("✅ Question quality is excellent!")
+    
+    # Checklist recommendations
+    if recommendations.get('checklist'):
+        with st.expander("✅ Checklist Quality Feedback", expanded=False):
+            checklist_recs = recommendations['checklist']
+            if checklist_recs:
+                st.markdown("**Suggestions:**")
+                for rec in checklist_recs:
+                    st.markdown(f"• {rec}")
+            else:
+                st.success("✅ Checklist quality is excellent!")
+
+def display_transparency_info():
+    """Display system transparency information."""
+    st.markdown("### 🔍 System Transparency")
+    
+    with st.expander("How the System Works", expanded=False):
+        st.markdown("""
+        **Enhanced MARCH-PAWS Medical Assistant**
+        
+        This system uses advanced AI techniques to provide medical guidance:
+        
+        **🧠 Context Engineering**: Uses 45 carefully curated examples (5 per stage) to generate scenario-specific questions
+        **📚 Hybrid Retrieval**: Combines keyword search (BM25) and semantic search (FAISS) for comprehensive content retrieval
+        **🎯 Cross-Encoder Reranking**: Uses transformer models to ensure only relevant medical content is used
+        **✅ Quality Evaluation**: Real-time assessment of question quality, citation accuracy, and checklist relevance
+        **🚫 Smart Refusal**: Automatically detects and refuses non-medical queries
+        
+        **Quality Metrics Explained:**
+        - **Question Quality**: Measures how well the question matches the medical scenario and stage requirements
+        - **Citation Accuracy**: Validates that all citations exist in the medical database
+        - **Checklist Quality**: Evaluates how actionable and relevant the recommendations are
+        - **Overall Score**: Weighted combination of all quality factors
+        """)
+    
+    with st.expander("Technical Details", expanded=False):
+        st.markdown("""
+        **System Architecture:**
+        - **Async Orchestrator**: Handles multiple operations in parallel for faster responses
+        - **WordNet + SpaCy**: Advanced natural language processing for verb detection and semantic analysis
+        - **Sigmoid Normalization**: Ensures consistent scoring across different evaluation criteria
+        - **LRU Caching**: Optimizes performance by caching frequent operations
+        - **Database Mapping**: Converts citations to standardized medical reference format
+        
+        **Performance Optimizations:**
+        - Parallel embedding generation during ingestion
+        - Optimized FAISS index with memory mapping
+        - Lightweight lemmatization for faster BM25 search
+        - Background pre-fetching of next state content
+        """)
 
 def display_stage_info(stage):
     """Display information about the current MARCH-PAWS stage."""
@@ -330,7 +725,10 @@ def main():
     """Main Streamlit application."""
     
     # Header
-    st.markdown('<h1 class="main-header">🏥 MARCH-PAWS Medical Assistant</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🏥 MARCH-PAWS Medical Assistant - Enhanced</h1>', unsafe_allow_html=True)
+    
+    # Display transparency information
+    display_transparency_info()
     
     # Sidebar
     with st.sidebar:
@@ -359,19 +757,26 @@ def main():
         
         # System status
         st.markdown("## System Status")
-        if 'orchestrator' in st.session_state and st.session_state.orchestrator:
-            st.success("✅ System Ready")
+        if 'system' in st.session_state and st.session_state.system:
+            st.success("✅ Enhanced System Ready")
+            st.info("🚀 Async Orchestrator Active")
+            st.info("📊 Quality Evaluation Enabled")
         else:
             st.error("❌ System Loading...")
     
-    # Load orchestrator
-    if 'orchestrator' not in st.session_state:
-        with st.spinner("Loading MARCH-PAWS system..."):
-            st.session_state.orchestrator = load_orchestrator()
+    # Load enhanced system
+    if 'system' not in st.session_state:
+        with st.spinner("Loading enhanced MARCH-PAWS system..."):
+            st.session_state.system = load_system()
     
-    if not st.session_state.orchestrator:
-        st.error("Failed to load MARCH-PAWS system. Please check the system configuration.")
+    if not st.session_state.system:
+        st.error("Failed to load enhanced MARCH-PAWS system. Please check the system configuration.")
         return
+    
+    # Initialize orchestrator if needed
+    if not hasattr(st.session_state.system['orchestrator'], '_initialized'):
+        with st.spinner("Initializing async orchestrator..."):
+            asyncio.run(initialize_orchestrator(st.session_state.system['orchestrator']))
     
     # Initialize session state
     if 'scenario' not in st.session_state:
@@ -382,6 +787,8 @@ def main():
         st.session_state.conversation_history = []
     if 'assessment_complete' not in st.session_state:
         st.session_state.assessment_complete = False
+    if 'quality_metrics' not in st.session_state:
+        st.session_state.quality_metrics = []
     
     # Main interface
     if not st.session_state.scenario:
@@ -399,9 +806,9 @@ def main():
                 st.session_state.conversation_history = []
                 st.session_state.assessment_complete = False
                 # Ensure state machine starts from M on every new assessment
-                if 'orchestrator' in st.session_state and st.session_state.orchestrator:
+                if 'system' in st.session_state and st.session_state.system:
                     try:
-                        st.session_state.orchestrator.sm.reset()
+                        st.session_state.system['orchestrator'].sm.reset()
                         st.session_state.current_stage = "M"
                     except Exception:
                         pass
@@ -419,16 +826,17 @@ def main():
             st.session_state.conversation_history = []
             st.session_state.assessment_complete = False
             # Reset the orchestrator FSM as well
-            if 'orchestrator' in st.session_state and st.session_state.orchestrator:
+            if 'system' in st.session_state and st.session_state.system:
                 try:
-                    st.session_state.orchestrator.sm.reset()
+                    st.session_state.system['orchestrator'].sm.reset()
                 except Exception:
                     pass
             st.rerun()
         
         # Process current stage
         if not st.session_state.assessment_complete:
-            orc = st.session_state.orchestrator
+            orc = st.session_state.system['orchestrator']
+            evaluator = st.session_state.system['evaluator']
             
             # Get current stage info
             stage_info = display_stage_info(st.session_state.current_stage)
@@ -441,7 +849,7 @@ def main():
             if not st.session_state.conversation_history:
                 # First interaction - get question
                 with st.spinner("Analyzing scenario..."):
-                    result = orc.run_step(st.session_state.scenario)
+                    result = asyncio.run(orc.run_step(st.session_state.scenario))
                 
                 if result.get('refusal'):
                     st.error(f"❌ {result.get('message', 'Unable to process this scenario.')}")
@@ -475,7 +883,7 @@ def main():
                         if user_answer.strip():
                             # Process user answer
                             with st.spinner("Processing your answer..."):
-                                result = orc.run_step(st.session_state.scenario, user_answer.strip())
+                                result = asyncio.run(orc.run_step(st.session_state.scenario, user_answer.strip()))
                             
                             if result.get('refusal'):
                                 st.error(f"❌ {result.get('message', 'Unable to process your answer.')}")
@@ -484,6 +892,24 @@ def main():
                                 current_entry['user_answer'] = user_answer.strip()
                                 current_entry['checklist'] = result.get('checklist', [])
                                 current_entry['citations'] = result.get('citations', [])
+                                
+                                # Quality evaluation
+                                mapped_citations = map_citations_to_database(
+                                    current_entry['citations'], 
+                                    evaluator.citation_data
+                                )
+                                
+                                quality_eval = evaluator.evaluate_complete_response(
+                                    current_entry['question'],
+                                    current_entry['checklist'],
+                                    mapped_citations,
+                                    current_entry['user_answer'],
+                                    current_entry['stage'],
+                                    st.session_state.scenario
+                                )
+                                
+                                current_entry['quality_evaluation'] = quality_eval
+                                st.session_state.quality_metrics.append(quality_eval)
                                 
                                 # Check if there's a next question
                                 next_question = result.get('question', '')
@@ -534,6 +960,11 @@ def main():
                             st.markdown("**References:**")
                             for citation in entry['citations']:
                                 st.markdown(f'<div class="citation">• {citation}</div>', unsafe_allow_html=True)
+                        
+                        # Quality metrics
+                        if 'quality_evaluation' in entry:
+                            st.markdown("**Quality Assessment:**")
+                            display_quality_metrics(entry['quality_evaluation'])
                     else:
                         st.info("Waiting for your answer...")
         
