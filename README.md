@@ -4,6 +4,64 @@ This project contains a robust, production-ready implementation of an offline Re
 
 The code is designed to run on a laptop‑class machine completely offline. Internet connectivity is **not** required at inference time once the model weights and indexes have been prepared. The only external dependency at runtime is a local Large Language Model (LLM) such as Mistral‑7B served via [Ollama](https://github.com/ollama/ollama).
 
+## 🛠️ Quick Setup (If You Have Data)
+
+If you already have the processed data files (`data/` folder with embeddings, BM25 index, and metadata), you can quickly set up and run the system:
+
+### Prerequisites
+- Python 3.8+ 
+- Virtual environment (recommended)
+- Ollama with Mistral-7B model installed
+
+### Quick Start (Automated)
+```bash
+# 1. Clone and navigate to project
+cd rag_marchpaws
+
+# 2. Start Ollama (in separate terminal)
+ollama serve
+ollama pull mistral:7b
+
+# 3. Run the application (handles everything automatically)
+./run_app.sh
+```
+
+### Manual Setup (Alternative)
+If you prefer manual control:
+```bash
+# 1. Clone and navigate to project
+cd rag_marchpaws
+
+# 2. Create virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 3. Install requirements
+pip install -r requirements.txt
+
+# 4. Start Ollama (in separate terminal)
+ollama serve
+ollama pull mistral:7b
+
+# 5. Run the application
+streamlit run app.py
+```
+
+### What the `run_app.sh` script does:
+- **Creates virtual environment** if it doesn't exist
+- **Installs requirements** from `requirements.txt` automatically
+- **Verifies dependencies** are working correctly
+- **Launches Streamlit web interface**
+- **Opens browser** to `http://localhost:8501`
+
+### Data Requirements
+The system expects these files in the `data/` folder:
+- `window_embeddings.npy` - FAISS embeddings
+- `window_bm25_index.pkl` - BM25 index
+- `window_metadata.json` - Window metadata
+- `windows.jsonl` - Text windows
+- `scenario_examples.json` - Few-shot examples
+
 ## 🚀 Latest Achievements & Improvements
 
 ### ✅ **100% Scenario Success Rate Achieved (V2 Extended)**
@@ -33,7 +91,7 @@ The code is designed to run on a laptop‑class machine completely offline. Inte
 
 ### ✅ **Smart Paragraph Selection (V2.0)**
 - **Cross-Encoder Paragraph Scoring**: Individual paragraphs within windows are scored using cross-encoder for optimal relevance
-- **Intelligent Selection**: Instead of taking the first paragraph from each window, the system selects the most relevant paragraphs across all windows
+- **Intelligent Selection**: The system selects the most relevant paragraphs across all windows
 - **Improved Citation Accuracy**: Citations now match the most contextually relevant content, not just window order
 - **Dynamic Version Handling**: Citation hints automatically use correct @Base/@C2 versions based on actual database content
 - **Enhanced LLM Input**: LLM receives the most relevant paragraphs with proper citation hints for better recommendations
@@ -360,15 +418,15 @@ The latest comprehensive test (V2) demonstrates exceptional performance across d
 - **Non-Medical Refusal**: 100% (1/1 scenario)
 
 #### 🏥 **Scenario Coverage**
-- **Complex Multi-Trauma**: ✅ 89.8% quality, 111.1% completion
-- **Burn Victim with Inhalation**: ✅ 91.7% quality, 111.1% completion
-- **Pediatric Emergency**: ✅ 85.5% quality, 111.1% completion
-- **Elderly Fall with Hip Fracture**: ✅ 85.5% quality, 111.1% completion
-- **Allergic Reaction with Anaphylaxis**: ✅ 88.7% quality, 111.1% completion
-- **Stroke with Neurological Deficit**: ✅ 87.4% quality, 111.1% completion
-- **Drug Overdose with Respiratory Depression**: ✅ 88.4% quality, 111.1% completion
-- **Heat Stroke in Athlete**: ✅ 87.0% quality, 111.1% completion
-- **Minor Cut with Infection**: ✅ 91.7% quality, 111.1% completion
+- **Complex Multi-Trauma**: ✅ 89.8% quality, 100% completion
+- **Burn Victim with Inhalation**: ✅ 91.7% quality, 100% completion
+- **Pediatric Emergency**: ✅ 85.5% quality, 100% completion
+- **Elderly Fall with Hip Fracture**: ✅ 85.5% quality, 100% completion
+- **Allergic Reaction with Anaphylaxis**: ✅ 88.7% quality, 100% completion
+- **Stroke with Neurological Deficit**: ✅ 87.4% quality, 100% completion
+- **Drug Overdose with Respiratory Depression**: ✅ 88.4% quality, 100% completion
+- **Heat Stroke in Athlete**: ✅ 87.0% quality, 100% completion
+- **Minor Cut with Infection**: ✅ 91.7% quality, 100% completion
 - **Non-Medical Query (Cooking)**: ✅ 100% refusal accuracy
 
 ## Usage Examples
