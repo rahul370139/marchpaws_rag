@@ -398,35 +398,55 @@ export LLM_MODEL="mistral:latest"                          # LLM model name
 
 ## Test Results & Performance
 
+### V1 Comprehensive Test Suite Results
+
+The original comprehensive test demonstrates excellent performance across 11 diverse scenarios:
+
+#### 🎯 **Overall Performance**
+- **Total Scenarios**: 11
+- **Successful Scenarios**: 11 (100% success rate)
+- **Total Interactions**: 83
+- **Successful Interactions**: 83 (100% interaction success rate)
+- **Average Response Time**: 15.05s
+- **Refusal Accuracy**: 100%
+
+#### 📊 **Quality Metrics**
+- **Overall Quality Score**: 82.1%
+- **Citation Accuracy**: 97.7%
+- **Medical Scenario Success**: 100% (6/6 scenarios)
+- **Edge Case Success**: 100% (2/2 scenarios)
+- **Non-Medical Refusal**: 100% (3/3 scenarios)
+
 ### V2 Extended Test Suite Results
 
-The latest comprehensive test (V2) demonstrates exceptional performance across diverse medical scenarios:
+The latest comprehensive test (V2) demonstrates exceptional performance across 10 additional diverse medical scenarios:
 
 #### 🎯 **Overall Performance**
 - **Total Scenarios**: 10
 - **Successful Scenarios**: 10 (100% success rate)
 - **Total Interactions**: 91
 - **Successful Interactions**: 91 (100% interaction success rate)
-- **Average Response Time**: 13.35s
+- **Average Response Time**: 12.51s
 - **Refusal Accuracy**: 100%
 
 #### 📊 **Quality Metrics**
-- **Overall Quality Score**: 88.4%
-- **Citation Accuracy**: 85.6%
-- **Medical Scenario Success**: 100% (7/7 scenarios)
+- **Overall Quality Score**: 86.9%
+- **Citation Accuracy**: 83.0%
+- **Medical Scenario Success**: 100% (6/6 scenarios)
+- **Complex Medical Success**: 100% (1/1 scenario)
 - **Edge Case Success**: 100% (2/2 scenarios)
 - **Non-Medical Refusal**: 100% (1/1 scenario)
 
-#### 🏥 **Scenario Coverage**
-- **Complex Multi-Trauma**: ✅ 89.8% quality, 100% completion
-- **Burn Victim with Inhalation**: ✅ 91.7% quality, 100% completion
-- **Pediatric Emergency**: ✅ 85.5% quality, 100% completion
-- **Elderly Fall with Hip Fracture**: ✅ 85.5% quality, 100% completion
-- **Allergic Reaction with Anaphylaxis**: ✅ 88.7% quality, 100% completion
-- **Stroke with Neurological Deficit**: ✅ 87.4% quality, 100% completion
-- **Drug Overdose with Respiratory Depression**: ✅ 88.4% quality, 100% completion
-- **Heat Stroke in Athlete**: ✅ 87.0% quality, 100% completion
-- **Minor Cut with Infection**: ✅ 91.7% quality, 100% completion
+#### 🏥 **V2 Scenario Coverage**
+- **Complex Multi-Trauma with Shock**: ✅ 82.1% quality, 100% completion
+- **Burn Victim with Inhalation Injury**: ✅ 88.7% quality, 100% completion
+- **Pediatric Emergency**: ✅ 87.2% quality, 100% completion
+- **Elderly Fall with Hip Fracture**: ✅ 84.7% quality, 100% completion
+- **Allergic Reaction with Anaphylaxis**: ✅ 89.8% quality, 100% completion
+- **Stroke with Neurological Deficit**: ✅ 86.0% quality, 100% completion
+- **Drug Overdose with Respiratory Depression**: ✅ 87.8% quality, 100% completion
+- **Heat Stroke in Athlete**: ✅ 88.6% quality, 100% completion
+- **Minor Cut with Infection**: ✅ 87.4% quality, 100% completion
 - **Non-Medical Query (Cooking)**: ✅ 100% refusal accuracy
 
 ## Usage Examples
