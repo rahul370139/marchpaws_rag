@@ -16,7 +16,7 @@ from src.orchestrator_async import AsyncOrchestrator
 from quality_evaluator import QualityEvaluator
 import asyncio
 import json
-from src.utils import map_citations_to_database
+from src.utils import map_citations_to_database, get_smart_paragraphs_from_windows
 
 # Page configuration
 st.set_page_config(
@@ -629,6 +629,155 @@ def display_quality_metrics(evaluation_result):
             else:
                 st.success("✅ Checklist quality is excellent!")
 
+def test_retrieval_for_ui(orchestrator, query):
+    """Test retrieval for UI display - synchronous version of the terminal test."""
+    try:
+        # Step 1: Retrieve windows
+        win_hits, dynamic_threshold = orchestrator.retriever.search(
+            query,
+            state_hint=None,
+            k=10,
+            bm25_n=20,
+            faiss_n=20
+        )
+        
+        if not win_hits:
+            return {
+                "error": "No relevant documents found for this scenario",
+                "windows": [],
+                "reranked": [],
+                "paragraphs": []
+            }
+        
+        # Step 2: Cross-encoder reranking
+        reranked_hits = orchestrator.reranker.rerank(query, win_hits[:10])
+        
+        # Step 3: Smart paragraph selection
+        smart_paragraphs = get_smart_paragraphs_from_windows(
+            reranked_hits[:5],  # Use top 5 windows
+            query,
+            orchestrator.reranker,
+            orchestrator.retriever,
+            max_paragraphs=8
+        )
+        
+        return {
+            "query": query,
+            "threshold": dynamic_threshold,
+            "windows": win_hits,
+            "reranked": reranked_hits,
+            "paragraphs": smart_paragraphs
+        }
+        
+    except Exception as e:
+        return {
+            "error": f"Retrieval test failed: {str(e)}",
+            "windows": [],
+            "reranked": [],
+            "paragraphs": []
+        }
+
+
+def display_retrieval_results_main_page(results):
+    """Display retrieval results on the main page."""
+    if "error" in results:
+        st.error(results["error"])
+        return
+    
+    st.markdown(f"**Query:** {results['query']}")
+    st.markdown(f"**Threshold:** {results['threshold']:.3f}")
+    
+    # Main window results
+    with st.expander("🪟 Main Window Results", expanded=False):
+        for i, window in enumerate(results['windows'][:5]):  # Show top 5
+            window_id = window.get("window_id", "Unknown")
+            score = window.get("score", 0.0)
+            chapter = window.get("chapter", "?")
+            page_start = window.get("page_start", "?")
+            page_end = window.get("page_end", "?")
+            para_count = len(window.get("paragraph_ids", []))
+            text = window.get("text", "")[:100] + "..." if len(window.get("text", "")) > 100 else window.get("text", "")
+            
+            st.markdown(f"**{i+1}. {window_id}** - Score: {score:.4f}")
+            st.markdown(f"Ch{chapter}, Pages {page_start}-{page_end}, {para_count} paragraphs")
+            
+            # Show all sections/paragraphs in this window
+            paragraph_ids = window.get("paragraph_ids", [])
+            if paragraph_ids:
+                st.markdown("**Sections in this window:**")
+                for para_id in paragraph_ids[:8]:  # Show up to 8 sections
+                    # Try to get section info from the orchestrator's retriever
+                    if hasattr(st.session_state.system['orchestrator'], 'retriever') and hasattr(st.session_state.system['orchestrator'].retriever, 'para_map'):
+                        if para_id in st.session_state.system['orchestrator'].retriever.para_map:
+                            para_data = st.session_state.system['orchestrator'].retriever.para_map[para_id]
+                            para_num = para_data.get("para", "?")
+                            version = para_data.get("version", "Base")
+                            st.markdown(f"  • §{para_num} ({version})")
+                        else:
+                            st.markdown(f"  • {para_id}")
+                    else:
+                        st.markdown(f"  • {para_id}")
+                
+                if len(paragraph_ids) > 8:
+                    st.markdown(f"  • ... and {len(paragraph_ids) - 8} more sections")
+            
+            st.markdown(f"*{text}*")
+            st.markdown("---")
+    
+    # Reranked results
+    with st.expander("🔄 Reranked Results", expanded=False):
+        for i, window in enumerate(results['reranked'][:3]):  # Show top 3
+            window_id = window.get("window_id", "Unknown")
+            score_ce = window.get("score_ce", 0.0)
+            original_score = window.get("score", 0.0)
+            chapter = window.get("chapter", "?")
+            page_start = window.get("page_start", "?")
+            page_end = window.get("page_end", "?")
+            para_count = len(window.get("paragraph_ids", []))
+            text = window.get("text", "")[:100] + "..." if len(window.get("text", "")) > 100 else window.get("text", "")
+            
+            st.markdown(f"**{i+1}. {window_id}** - CE: {score_ce:.4f} (Orig: {original_score:.4f})")
+            st.markdown(f"Ch{chapter}, Pages {page_start}-{page_end}, {para_count} paragraphs")
+            
+            # Show all sections/paragraphs in this window
+            paragraph_ids = window.get("paragraph_ids", [])
+            if paragraph_ids:
+                st.markdown("**Sections in this window:**")
+                for para_id in paragraph_ids[:6]:  # Show up to 6 sections for reranked
+                    # Try to get section info from the orchestrator's retriever
+                    if hasattr(st.session_state.system['orchestrator'], 'retriever') and hasattr(st.session_state.system['orchestrator'].retriever, 'para_map'):
+                        if para_id in st.session_state.system['orchestrator'].retriever.para_map:
+                            para_data = st.session_state.system['orchestrator'].retriever.para_map[para_id]
+                            para_num = para_data.get("para", "?")
+                            version = para_data.get("version", "Base")
+                            st.markdown(f"  • §{para_num} ({version})")
+                        else:
+                            st.markdown(f"  • {para_id}")
+                    else:
+                        st.markdown(f"  • {para_id}")
+                
+                if len(paragraph_ids) > 6:
+                    st.markdown(f"  • ... and {len(paragraph_ids) - 6} more sections")
+            
+            st.markdown(f"*{text}*")
+            st.markdown("---")
+    
+    # Smart paragraph results
+    with st.expander("📊 Smart Paragraphs", expanded=True):
+        for i, para in enumerate(results['paragraphs']):
+            chapter = para.get("chapter", "?")
+            para_id = para.get("para", "?")
+            version = para.get("version", "Base")
+            score = para.get("score_ce", 0.0)
+            para_id_full = para.get("id", "Unknown")
+            text = para.get("text", "")[:150] + "..." if len(para.get("text", "")) > 150 else para.get("text", "")
+            
+            st.markdown(f"**{i+1}. Ch{chapter} §{para_id} ({version})** - Relevance: {score:.4f}")
+            st.markdown(f"*ID: {para_id_full}*")
+            st.markdown(f"*{text}*")
+            st.markdown("---")
+
+
 def display_transparency_info():
     """Display system transparency information."""
     st.markdown("### 🔍 System Transparency")
@@ -763,6 +912,7 @@ def main():
             st.info("📊 Quality Evaluation Enabled")
         else:
             st.error("❌ System Loading...")
+        
     
     # Load enhanced system
     if 'system' not in st.session_state:
@@ -974,6 +1124,45 @@ def main():
             st.markdown("## ✅ MARCH-PAWS Assessment Complete")
             st.markdown("All critical systems have been evaluated. Review the recommendations above and follow appropriate medical protocols.")
             st.markdown("</div>", unsafe_allow_html=True)
+    
+    # Retrieval Testing Section (at bottom of page)
+    st.markdown("---")
+    st.markdown("## 🔍 Document Retrieval Testing")
+    st.markdown("Test the document retrieval system with any medical scenario:")
+    
+    # Create two columns for the testing interface
+    col1, col2 = st.columns([1, 2])
+    
+    with col1:
+        # Input for retrieval testing
+        retrieval_query = st.text_area(
+            "Enter a medical scenario:",
+            placeholder="e.g., chest wound with active bleeding\nsevere leg fracture due to accident\npatient with breathing difficulties",
+            height=100,
+            key="retrieval_query"
+        )
+        
+        if st.button("🔍 Test Retrieval", key="test_retrieval_btn", type="primary"):
+            if retrieval_query and 'system' in st.session_state and st.session_state.system:
+                with st.spinner("Testing retrieval..."):
+                    try:
+                        # Test retrieval
+                        retrieval_results = test_retrieval_for_ui(
+                            st.session_state.system['orchestrator'], 
+                            retrieval_query
+                        )
+                        st.session_state.retrieval_results = retrieval_results
+                    except Exception as e:
+                        st.error(f"Retrieval test failed: {str(e)}")
+            else:
+                st.warning("Please enter a medical scenario to test retrieval.")
+    
+    with col2:
+        # Display retrieval results
+        if 'retrieval_results' in st.session_state and st.session_state.retrieval_results:
+            display_retrieval_results_main_page(st.session_state.retrieval_results)
+        else:
+            st.info("👆 Enter a medical scenario and click 'Test Retrieval' to see results here.")
 
 if __name__ == "__main__":
     main()
