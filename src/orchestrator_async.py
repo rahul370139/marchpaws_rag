@@ -34,7 +34,7 @@ from .nodes import build_q_prompt, build_a_prompt, get_next_state_definition, ST
 from .utils import (
     run_blocking, post_json_async, post_question_async,
     create_cache_key, AsyncTimer, format_catalog, format_excerpts,
-    map_citations_to_database
+    map_citations_to_database, get_smart_paragraphs_from_windows
 )
 import functools
 
@@ -85,6 +85,35 @@ class CrossEncoderReranker:
         result_windows.sort(key=lambda x: x["score_ce"], reverse=True)
         
         return result_windows
+    
+    def score_paragraphs(self, query: str, paragraphs: List[Dict]) -> List[Dict]:
+        """Score individual paragraphs using cross-encoder and return sorted by relevance."""
+        if not paragraphs:
+            return []
+        
+        self._load_model()
+        
+        # Prepare pairs for cross-encoder
+        pairs = [(query, para.get("text", "")) for para in paragraphs]
+        
+        # Get relevance scores
+        scores = self._model.predict(pairs)
+        
+        # Normalize scores to 0-1 range using sigmoid function
+        import numpy as np
+        normalized_scores = 1 / (1 + np.exp(-np.array(scores)))
+        
+        # Add normalized scores to paragraphs
+        result_paragraphs = []
+        for i, paragraph in enumerate(paragraphs):
+            para_copy = paragraph.copy()
+            para_copy["score_ce"] = float(normalized_scores[i])
+            result_paragraphs.append(para_copy)
+        
+        # Sort by cross-encoder score
+        result_paragraphs.sort(key=lambda x: x["score_ce"], reverse=True)
+        
+        return result_paragraphs
     
 
 
@@ -362,11 +391,14 @@ class AsyncOrchestrator:
                             )
                             reranked_hits = reranked_hits[:15]
                             
-                            # Window expansion
+                            # Smart paragraph selection using cross-encoder
                             child_paras = await run_blocking(
-                                self.retriever.expand_windows,
+                                get_smart_paragraphs_from_windows,
                                 reranked_hits,
-                                max_paras=10
+                                stage_specific_query,
+                                self.reranker,
+                                self.retriever,
+                                max_paragraphs=10
                             )
                             
                             if child_paras:
@@ -726,11 +758,13 @@ class AsyncOrchestrator:
         
         # Layer 2: Medical context patterns (medium confidence)
         medical_context_patterns = [
-            r'\b(i have|i feel|i am|i\'m|i\'ve got|i got|i\'m having|i\'m experiencing)\b',
-            r'\b(help|advice|what should|what can|what do|how do|how can)\b.*\b(medical|health|body|sick|ill|pain|hurt|ache)\b',
+            r'\b(i have|i feel|i am|i\'m|i\'ve got|i got|i\'m having|i\'m experiencing)\b.*\b(medical|health|body|sick|ill|pain|hurt|ache|injury|trauma|bleeding|breathing|chest|head|arm|leg|wound|burn|shock|emergency)\b',
+            r'\b(help|advice|what should|what can|what do|how do|how can)\b.*\b(medical|health|body|sick|ill|pain|hurt|ache|treat|treatment|heal|cure)\b',
             r'\b(doctor|nurse|hospital|clinic|medical|health|wellness|treatment|cure|heal)\b',
             r'\b(emergency|urgent|serious|critical|life-threatening|dangerous)\b',
-            r'\b(patient|victim|casualty|injured|wounded|hurt|damaged)\b'
+            r'\b(patient|victim|casualty|injured|wounded|hurt|damaged)\b',
+            r'\b(accident|crash|collision|fall|injury|injuries|trauma|wound|wounds|bleeding|hemorrhage|fracture|break)\b',
+            r'\b(gunshot|bullet|knife|stab|cut|burn|burns|shock|cardiac|respiratory|breathing|airway|chest|head|abdomen)\b'
         ]
         
         for pattern in medical_context_patterns:

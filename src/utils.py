@@ -53,15 +53,78 @@ def format_catalog(chunks: List[Dict]) -> str:
     return "\n".join(lines)
 
 
-def format_excerpts(chunks: List[Dict], max_chars_per_chunk: int = 600) -> str:
+def get_smart_paragraphs_from_windows(windows: List[Dict], query: str, reranker, retriever, max_paragraphs: int = 10) -> List[Dict]:
+    """Extract the most relevant paragraphs from windows using cross-encoder scoring.
+    
+    This function:
+    1. Gets all available paragraphs from windows using the retriever's para_map
+    2. Scores each paragraph using cross-encoder
+    3. Returns the top-scoring paragraphs sorted by relevance
+    
+    Parameters
+    ----------
+    windows : List[Dict]
+        List of windows from the retriever
+    query : str
+        The query to score paragraphs against
+    reranker : CrossEncoderReranker
+        The cross-encoder reranker instance
+    retriever : HybridRetriever
+        The retriever instance (needed to access para_map)
+    max_paragraphs : int
+        Maximum number of paragraphs to return
+        
+    Returns
+    -------
+    List[Dict]
+        List of top-scoring paragraphs with cross-encoder scores
+    """
+    if not windows:
+        return []
+    
+    # Get all paragraphs from windows using retriever's para_map
+    all_paragraphs = []
+    seen_para_ids = set()
+    
+    for window in windows:
+        para_ids = window.get("paragraph_ids", [])
+        for para_id in para_ids:
+            if para_id not in seen_para_ids and para_id in retriever.para_map:
+                seen_para_ids.add(para_id)
+                para_data = retriever.para_map[para_id].copy()
+                all_paragraphs.append(para_data)
+    
+    if not all_paragraphs:
+        return []
+    
+    # Score paragraphs using cross-encoder
+    scored_paragraphs = reranker.score_paragraphs(query, all_paragraphs)
+    
+    # Return top paragraphs
+    return scored_paragraphs[:max_paragraphs]
+
+
+def format_excerpts(chunks: List[Dict], max_chars_per_chunk: int = 600, show_multiple_citations: bool = True) -> str:
     """Format the retrieved chunks for inclusion in the prompt using exact para IDs.
     
     Injects canonical citation IDs to help LLM generate proper citations.
+    Can show multiple citation hints for the most relevant paragraphs.
 
     Header format example:
       [Ch1 §1-19 | Section II — Vital Body Systems | COMPONENTS OF THE RESPIRATORY SYSTEM | p.15–15]
     """
     out_lines = []
+    
+    # Collect all citation hints from chunks
+    citation_hints = []
+    for chunk in chunks:
+        chapter = chunk.get("chapter")
+        para = chunk.get("para")
+        version = chunk.get("version", "Base")  # Use actual version from data
+        if chapter and para:
+            canonical_id = f"Ch{chapter} §{para} ({version})"
+            citation_hints.append(canonical_id)
+    
     for chunk in chunks:
         chapter = chunk.get("chapter")
         para = chunk.get("para")
@@ -76,16 +139,21 @@ def format_excerpts(chunks: List[Dict], max_chars_per_chunk: int = 600) -> str:
         parts.append(f"p.{chunk.get('page_start')}–{chunk.get('page_end')}")
         header = f"[{' | '.join(parts)}]"
         
-        # Inject canonical citation ID for LLM to copy
-        canonical_id = f"Ch{chapter} §{para} (Base)"
-        
         text = chunk.get("text", "")
         truncated = text[:max_chars_per_chunk] + " …" if len(text) > max_chars_per_chunk else text
         
         out_lines.append(header)
         out_lines.append(truncated)
-        out_lines.append(f"[CITATION: {canonical_id}]")
         out_lines.append("")
+    
+    # Add citation hints section at the end
+    if citation_hints and show_multiple_citations:
+        # Show top 3 most relevant citations
+        top_citations = citation_hints[:3]
+        citation_section = "AVAILABLE CITATIONS: " + " | ".join(top_citations)
+        out_lines.append(citation_section)
+        out_lines.append("")
+    
     return "\n".join(out_lines)
 
 
@@ -117,15 +185,18 @@ class AsyncTimer:
 # Citation Mapping Functions
 # =============================================================================
 
-def map_citation_format(cite: str) -> Optional[str]:
+def map_citation_format(cite: str, citation_db: Dict[str, Any] = None) -> Optional[str]:
     """Map LLM citation format to database ID format.
     
-    Converts: "Ch6 §6-1, p.35–35" → "tc4-02.1:ch6:6-1@Base"
+    Converts: "Ch6 §6-1, p.35–35" → "tc4-02.1:ch6:6-1@Base" or "tc4-02.1:ch6:6-1@C2"
+    Tries both @Base and @C2 versions to find the correct one in the database.
     
     Parameters
     ----------
     cite : str
         Citation in LLM format (e.g., "Ch6 §6-1, p.35–35")
+    citation_db : Dict[str, Any], optional
+        Citation database to check for existence of mapped IDs
         
     Returns
     -------
@@ -146,7 +217,23 @@ def map_citation_format(cite: str) -> Optional[str]:
         return None
     
     chapter, para = match.groups()
-    return f"tc4-02.1:ch{chapter}:{para}@Base"
+    
+    # Try both @Base and @C2 versions
+    base_id = f"tc4-02.1:ch{chapter}:{para}@Base"
+    c2_id = f"tc4-02.1:ch{chapter}:{para}@C2"
+    
+    # If citation_db is provided, check which version exists
+    if citation_db is not None:
+        if base_id in citation_db:
+            return base_id
+        elif c2_id in citation_db:
+            return c2_id
+        else:
+            # Neither exists, return the @Base version as default
+            return base_id
+    
+    # If no database provided, return @Base as default
+    return base_id
 
 
 def map_citations_to_database(citations: List[str], citation_db: Dict[str, Any]) -> List[str]:
@@ -172,7 +259,7 @@ def map_citations_to_database(citations: List[str], citation_db: Dict[str, Any])
             continue
             
         # Try to map to database format
-        db_id = map_citation_format(citation)
+        db_id = map_citation_format(citation, citation_db)
         
         if db_id and db_id in citation_db:
             # Use the short_ref from database
