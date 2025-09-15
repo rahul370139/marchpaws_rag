@@ -24,10 +24,19 @@ The code is designed to run on a laptop‑class machine completely offline. Inte
 
 ### ✅ **Enhanced Retrieval System**
 - **Hybrid Retrieval**: BM25 + FAISS + Cross-encoder with Reciprocal Rank Fusion (RRF)
+- **Smart Paragraph Selection**: Cross-encoder scoring of individual paragraphs within windows for optimal relevance
 - **Dynamic Z-score Thresholds**: Adaptive relevance scoring based on query characteristics
 - **LRU Caching**: Cross-encoder scores cached for performance
 - **Stage-based Filtering**: Intelligent exclusion of previous state content
 - **Generic Fallback Content**: Robust excerpts for edge cases
+- **Dynamic Citation Versions**: Automatic handling of @Base and @C2 citation versions
+
+### ✅ **Smart Paragraph Selection (V2.0)**
+- **Cross-Encoder Paragraph Scoring**: Individual paragraphs within windows are scored using cross-encoder for optimal relevance
+- **Intelligent Selection**: Instead of taking the first paragraph from each window, the system selects the most relevant paragraphs across all windows
+- **Improved Citation Accuracy**: Citations now match the most contextually relevant content, not just window order
+- **Dynamic Version Handling**: Citation hints automatically use correct @Base/@C2 versions based on actual database content
+- **Enhanced LLM Input**: LLM receives the most relevant paragraphs with proper citation hints for better recommendations
 
 ### ✅ **Quality & Robustness Improvements**
 - **Comprehensive Quality Evaluation**: 94.2% target with semantic similarity metrics
@@ -46,7 +55,7 @@ The code is designed to run on a laptop‑class machine completely offline. Inte
 
 - **🎯 Intelligent Stage-Specific Question Generation**: Contextually appropriate questions for each MARCH-PAWS stage
 - **🔍 Advanced Hybrid Retrieval**: Combines BM25 lexical search with FAISS dense vector search using Reciprocal Rank Fusion (RRF)
-- **🎯 Cross-Encoder Re-ranking**: Uses `cross-encoder/ms-marco-MiniLM-L-6-v2` for precise relevance scoring
+- **🎯 Cross-Encoder Re-ranking**: Uses `cross-encoder/ms-marco-MiniLM-L-6-v2` for precise relevance scoring with smart paragraph selection
 - **📄 Window-Based Chunking**: Overlapping text windows with semantic boundary detection for better context preservation
 - **💾 Memory-Optimized FAISS**: Uses `IndexFlatIP` with memory mapping for efficient retrieval
 - **📝 Robust Prompt Engineering**: Stage-specific definitions prevent inappropriate question generation
@@ -108,10 +117,10 @@ marchpaws_rag/
 - **Key Components**: Async orchestrator integration, quality evaluation, responsive UI
 
 #### `src/orchestrator_async.py` - Async RAG Orchestrator
-- **Purpose**: Main RAG pipeline with asynchronous processing
-- **Features**: Two-prompt split (Q-Gen/A-Gen), parallel pre-fetching, robust fallbacks
+- **Purpose**: Main RAG pipeline with asynchronous processing and smart paragraph selection
+- **Features**: Two-prompt split (Q-Gen/A-Gen), parallel pre-fetching, robust fallbacks, cross-encoder paragraph scoring
 - **Performance**: 5-7s per interaction vs 15-20s synchronous
-- **Key Methods**: `run_step()`, `make_answer()`, `ask_question()`
+- **Key Methods**: `make_answer()`, `ask_question()`, `score_paragraphs()`
 
 ### 🧪 **Testing & Quality Scripts**
 
@@ -166,6 +175,11 @@ marchpaws_rag/
 - **Purpose**: BM25 + FAISS + Cross-encoder retrieval system
 - **Features**: Reciprocal Rank Fusion, LRU caching, dynamic thresholds
 - **Key Methods**: `search()`, `rerank()`, `_calculate_rrf_score()`
+
+#### `src/utils.py` - Smart Paragraph Selection & Citation Handling
+- **Purpose**: Utility functions for formatting, citations, and smart paragraph selection
+- **Features**: Cross-encoder paragraph scoring, dynamic citation version handling
+- **Key Methods**: `get_smart_paragraphs_from_windows()`, `format_excerpts()`, `map_citation_format()`
 
 #### `src/fsm.py` - State Machine
 - **Purpose**: MARCH-PAWS finite state machine implementation
@@ -279,9 +293,11 @@ The system enforces the following medical assessment sequence:
 - **Hybrid Retrieval**: Combines BM25 lexical search with FAISS dense vector search
 - **Reciprocal Rank Fusion (RRF)**: Intelligently combines results from both retrieval methods with adaptive α
 - **Cross-Encoder Re-ranking**: Uses `cross-encoder/ms-marco-MiniLM-L-6-v2` for precise relevance scoring
+- **Smart Paragraph Selection**: Cross-encoder scores individual paragraphs within windows, selecting the most relevant ones instead of just the first paragraph from each window
 - **Dynamic Z-score Thresholds**: Adaptive relevance scoring based on query characteristics
 - **LRU Caching**: Cross-encoder scores cached for performance
 - **Stage-based Filtering**: Intelligent exclusion of previous state content
+- **Citation Version Handling**: Automatically maps citations to correct @Base or @C2 versions based on database content
 
 ### Chunking Strategy
 
