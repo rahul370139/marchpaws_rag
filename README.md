@@ -4,6 +4,19 @@ This project contains a robust, production-ready implementation of an offline Re
 
 The code is designed to run on a laptop‑class machine completely offline. Internet connectivity is **not** required at inference time once the model weights and indexes have been prepared. The only external dependency at runtime is a local Large Language Model (LLM) such as Mistral‑7B served via [Ollama](https://github.com/ollama/ollama).
 
+## 🏗️ System Architecture
+
+![MARCH-PAWS RAG System Architecture](images/architecture_diagram.png)
+
+### Key Architecture Components:
+
+- **🖥️ Streamlit UI**: Interactive web interface for user scenarios and answers
+- **⚙️ AsyncOrchestrator**: Finite state machine with medical query detection and refusal logic
+- **❓ Question Generation**: Fast BM25 retrieval + LLM for stage-specific questions
+- **🩺 Answer Generation**: Hybrid retrieval (BM25+FAISS+RRF) + cross-encoder reranking + smart paragraph selection
+- **📂 Data Pipeline**: Offline processing from PDF to indexed embeddings and metadata
+- **🔄 Parallel Processing**: ThreadPool + asyncio for concurrent operations
+
 ## 🛠️ Quick Setup (If You Have Data)
 
 If you already have the processed data files (`data/` folder with embeddings, BM25 index, and metadata), you can quickly set up and run the system:

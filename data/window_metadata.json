@@ -1,0 +1,4855 @@
+[
+  {
+    "window_id": "w_p13-13",
+    "stride_idx": 0,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-1@Base",
+      "tc4-02.1:ch1:1-2@Base"
+    ],
+    "chapter": 1,
+    "page_start": 13,
+    "page_end": 13,
+    "token_len": 194,
+    "child_tok_lens": [
+      163,
+      31
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-1 (Base)",
+      "Ch1 \u00a71-2 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Fundamentals Of First Aid",
+      "Chapter 1 > Section I \u2014 Terminology > Fundamentals Of First Aid"
+    ],
+    "headings": [
+      "Fundamentals Of First Aid"
+    ]
+  },
+  {
+    "window_id": "w_p13-14",
+    "stride_idx": 1,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-2@Base",
+      "tc4-02.1:ch1:1-3@Base",
+      "tc4-02.1:ch1:1-4@Base",
+      "tc4-02.1:ch1:1-5@Base",
+      "tc4-02.1:ch1:1-6@Base",
+      "tc4-02.1:ch1:1-7@Base",
+      "tc4-02.1:ch1:1-8@Base",
+      "tc4-02.1:ch1:1-9@Base"
+    ],
+    "chapter": 1,
+    "page_start": 13,
+    "page_end": 14,
+    "token_len": 238,
+    "child_tok_lens": [
+      31,
+      66,
+      29,
+      21,
+      26,
+      20,
+      21,
+      24
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-2 (Base)",
+      "Ch1 \u00a71-3 (Base)",
+      "Ch1 \u00a71-4 (Base)",
+      "Ch1 \u00a71-5 (Base)",
+      "Ch1 \u00a71-6 (Base)",
+      "Ch1 \u00a71-7 (Base)",
+      "Ch1 \u00a71-8 (Base)",
+      "Ch1 \u00a71-9 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section I \u2014 Terminology > Fundamentals Of First Aid",
+      "Chapter 1 > Section I \u2014 Terminology > KEY TERMS",
+      "Chapter 1 > Section I \u2014 Terminology > KEY TERMS",
+      "Chapter 1 > Section I \u2014 Terminology > Definitions Of Key Terms",
+      "Chapter 1 > Section I \u2014 Terminology > COMBAT LIFESAVER",
+      "Chapter 1 > Section I \u2014 Terminology > COMBAT MEDIC",
+      "Chapter 1 > Section I \u2014 Terminology > EMERGENCY MEDICAL TREATMENT",
+      "Chapter 1 > Section I \u2014 Terminology > ENHANCED FIRST AID"
+    ],
+    "headings": [
+      "Fundamentals Of First Aid",
+      "Definitions Of Key Terms",
+      "EMERGENCY MEDICAL TREATMENT",
+      "ENHANCED FIRST AID",
+      "COMBAT MEDIC",
+      "KEY TERMS",
+      "COMBAT LIFESAVER"
+    ]
+  },
+  {
+    "window_id": "w_p14-14",
+    "stride_idx": 2,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-8@Base",
+      "tc4-02.1:ch1:1-9@Base",
+      "tc4-02.1:ch1:1-10@Base",
+      "tc4-02.1:ch1:1-11@Base",
+      "tc4-02.1:ch1:1-12@Base",
+      "tc4-02.1:ch1:1-13@Base",
+      "tc4-02.1:ch1:1-14@Base",
+      "tc4-02.1:ch1:1-15@Base"
+    ],
+    "chapter": 1,
+    "page_start": 14,
+    "page_end": 14,
+    "token_len": 236,
+    "child_tok_lens": [
+      21,
+      24,
+      29,
+      40,
+      17,
+      26,
+      44,
+      35
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-8 (Base)",
+      "Ch1 \u00a71-9 (Base)",
+      "Ch1 \u00a71-10 (Base)",
+      "Ch1 \u00a71-11 (Base)",
+      "Ch1 \u00a71-12 (Base)",
+      "Ch1 \u00a71-13 (Base)",
+      "Ch1 \u00a71-14 (Base)",
+      "Ch1 \u00a71-15 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section I \u2014 Terminology > EMERGENCY MEDICAL TREATMENT",
+      "Chapter 1 > Section I \u2014 Terminology > ENHANCED FIRST AID",
+      "Chapter 1 > Section I \u2014 Terminology > First Aid (Self-Aid And Buddy Aid)",
+      "Chapter 1 > Section I \u2014 Terminology > MEDICAL EVACUATION",
+      "Chapter 1 > Section I \u2014 Terminology > MEDICAL TREATMENT",
+      "Chapter 1 > Section I \u2014 Terminology > MEDICAL TREATMENT FACILITY",
+      "Chapter 1 > Section I \u2014 Terminology > TACTICAL COMBAT CASUALTY CARE",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > ENHANCED FIRST AID"
+    ],
+    "headings": [
+      "MEDICAL TREATMENT",
+      "First Aid (Self-Aid And Buddy Aid)",
+      "TACTICAL COMBAT CASUALTY CARE",
+      "EMERGENCY MEDICAL TREATMENT",
+      "ENHANCED FIRST AID",
+      "MEDICAL TREATMENT FACILITY",
+      "MEDICAL EVACUATION"
+    ]
+  },
+  {
+    "window_id": "w_p14-15",
+    "stride_idx": 3,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-14@Base",
+      "tc4-02.1:ch1:1-15@Base",
+      "tc4-02.1:ch1:1-16@Base",
+      "tc4-02.1:ch1:1-17@Base",
+      "tc4-02.1:ch1:1-18@Base",
+      "tc4-02.1:ch1:1-19@Base",
+      "tc4-02.1:ch1:1-20@Base"
+    ],
+    "chapter": 1,
+    "page_start": 14,
+    "page_end": 15,
+    "token_len": 244,
+    "child_tok_lens": [
+      44,
+      35,
+      33,
+      30,
+      64,
+      13,
+      25
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-14 (Base)",
+      "Ch1 \u00a71-15 (Base)",
+      "Ch1 \u00a71-16 (Base)",
+      "Ch1 \u00a71-17 (Base)",
+      "Ch1 \u00a71-18 (Base)",
+      "Ch1 \u00a71-19 (Base)",
+      "Ch1 \u00a71-20 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section I \u2014 Terminology > TACTICAL COMBAT CASUALTY CARE",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > ENHANCED FIRST AID",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > UNDERSTANDING VITAL BODY SYSTEMS",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > RESPIRATORY SYSTEM",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > Respiratory System",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > COMPONENTS OF THE RESPIRATORY SYSTEM",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > AIRWAY"
+    ],
+    "headings": [
+      "TACTICAL COMBAT CASUALTY CARE",
+      "AIRWAY",
+      "Respiratory System",
+      "ENHANCED FIRST AID",
+      "COMPONENTS OF THE RESPIRATORY SYSTEM",
+      "UNDERSTANDING VITAL BODY SYSTEMS",
+      "RESPIRATORY SYSTEM"
+    ]
+  },
+  {
+    "window_id": "w_p15-15",
+    "stride_idx": 4,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-19@Base",
+      "tc4-02.1:ch1:1-20@Base",
+      "tc4-02.1:ch1:1-21@Base",
+      "tc4-02.1:ch1:1-22@Base",
+      "tc4-02.1:ch1:1-23@Base",
+      "tc4-02.1:ch1:1-24@Base",
+      "tc4-02.1:ch1:1-25@Base"
+    ],
+    "chapter": 1,
+    "page_start": 15,
+    "page_end": 15,
+    "token_len": 203,
+    "child_tok_lens": [
+      13,
+      25,
+      20,
+      20,
+      19,
+      17,
+      89
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-19 (Base)",
+      "Ch1 \u00a71-20 (Base)",
+      "Ch1 \u00a71-21 (Base)",
+      "Ch1 \u00a71-22 (Base)",
+      "Ch1 \u00a71-23 (Base)",
+      "Ch1 \u00a71-24 (Base)",
+      "Ch1 \u00a71-25 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section II \u2014 Vital Body Systems > COMPONENTS OF THE RESPIRATORY SYSTEM",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > AIRWAY",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > LUNGS",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > RIB CAGE",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > CIRCULATORY SYSTEM",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > COMPONENTS OF THE CIRCULATORY SYSTEM",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > THE HEART"
+    ],
+    "headings": [
+      "AIRWAY",
+      "COMPONENTS OF THE RESPIRATORY SYSTEM",
+      "THE HEART",
+      "LUNGS",
+      "RIB CAGE",
+      "CIRCULATORY SYSTEM",
+      "COMPONENTS OF THE CIRCULATORY SYSTEM"
+    ]
+  },
+  {
+    "window_id": "w_p15-16",
+    "stride_idx": 5,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-24@Base",
+      "tc4-02.1:ch1:1-25@Base",
+      "tc4-02.1:ch1:1-26@Base",
+      "tc4-02.1:ch1:1-27@Base"
+    ],
+    "chapter": 1,
+    "page_start": 15,
+    "page_end": 16,
+    "token_len": 221,
+    "child_tok_lens": [
+      17,
+      89,
+      66,
+      49
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-24 (Base)",
+      "Ch1 \u00a71-25 (Base)",
+      "Ch1 \u00a71-26 (Base)",
+      "Ch1 \u00a71-27 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section II \u2014 Vital Body Systems > COMPONENTS OF THE CIRCULATORY SYSTEM",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > THE HEART",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > Heartbeat",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > HEARTBEAT"
+    ],
+    "headings": [
+      "THE HEART",
+      "Heartbeat",
+      "HEARTBEAT",
+      "COMPONENTS OF THE CIRCULATORY SYSTEM"
+    ]
+  },
+  {
+    "window_id": "w_p16-16",
+    "stride_idx": 6,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-26@Base",
+      "tc4-02.1:ch1:1-27@Base",
+      "tc4-02.1:ch1:1-28@Base",
+      "tc4-02.1:ch1:1-29@Base",
+      "tc4-02.1:ch1:1-30@Base"
+    ],
+    "chapter": 1,
+    "page_start": 16,
+    "page_end": 16,
+    "token_len": 234,
+    "child_tok_lens": [
+      66,
+      49,
+      50,
+      28,
+      41
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-26 (Base)",
+      "Ch1 \u00a71-27 (Base)",
+      "Ch1 \u00a71-28 (Base)",
+      "Ch1 \u00a71-29 (Base)",
+      "Ch1 \u00a71-30 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section II \u2014 Vital Body Systems > Heartbeat",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > HEARTBEAT",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > PULSE",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > PULSE",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > Carotid Pulse"
+    ],
+    "headings": [
+      "Heartbeat",
+      "HEARTBEAT",
+      "PULSE",
+      "Carotid Pulse"
+    ]
+  },
+  {
+    "window_id": "w_p16-17",
+    "stride_idx": 7,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-29@Base",
+      "tc4-02.1:ch1:1-30@Base",
+      "tc4-02.1:ch1:1-31@Base",
+      "tc4-02.1:ch1:1-32@Base",
+      "tc4-02.1:ch1:1-33@Base",
+      "tc4-02.1:ch1:1-34@Base"
+    ],
+    "chapter": 1,
+    "page_start": 16,
+    "page_end": 17,
+    "token_len": 219,
+    "child_tok_lens": [
+      28,
+      41,
+      30,
+      21,
+      25,
+      74
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-29 (Base)",
+      "Ch1 \u00a71-30 (Base)",
+      "Ch1 \u00a71-31 (Base)",
+      "Ch1 \u00a71-32 (Base)",
+      "Ch1 \u00a71-33 (Base)",
+      "Ch1 \u00a71-34 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section II \u2014 Vital Body Systems > PULSE",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > Carotid Pulse",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > Femoral Pulse",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > Radial Pulse",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > Posterior Tibial Pulse",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > BLOOD"
+    ],
+    "headings": [
+      "BLOOD",
+      "Posterior Tibial Pulse",
+      "Radial Pulse",
+      "Carotid Pulse",
+      "PULSE",
+      "Femoral Pulse"
+    ]
+  },
+  {
+    "window_id": "w_p16-17",
+    "stride_idx": 8,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-33@Base",
+      "tc4-02.1:ch1:1-34@Base",
+      "tc4-02.1:ch1:1-35@Base",
+      "tc4-02.1:ch1:1-36@Base",
+      "tc4-02.1:ch1:1-37@Base",
+      "tc4-02.1:ch1:1-38@Base",
+      "tc4-02.1:ch1:1-39@Base",
+      "tc4-02.1:ch1:1-40@Base"
+    ],
+    "chapter": 1,
+    "page_start": 16,
+    "page_end": 17,
+    "token_len": 247,
+    "child_tok_lens": [
+      25,
+      74,
+      56,
+      30,
+      25,
+      11,
+      16,
+      10
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-33 (Base)",
+      "Ch1 \u00a71-34 (Base)",
+      "Ch1 \u00a71-35 (Base)",
+      "Ch1 \u00a71-36 (Base)",
+      "Ch1 \u00a71-37 (Base)",
+      "Ch1 \u00a71-38 (Base)",
+      "Ch1 \u00a71-39 (Base)",
+      "Ch1 \u00a71-40 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section II \u2014 Vital Body Systems > Posterior Tibial Pulse",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > BLOOD",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > BLOOD",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > BLOOD VESSELS",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > ARTERIES",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > ARTERIOLES",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > CAPILLARIES",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > VENULES"
+    ],
+    "headings": [
+      "ARTERIOLES",
+      "CAPILLARIES",
+      "VENULES",
+      "BLOOD",
+      "Posterior Tibial Pulse",
+      "BLOOD VESSELS",
+      "ARTERIES"
+    ]
+  },
+  {
+    "window_id": "w_p17-18",
+    "stride_idx": 9,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-39@Base",
+      "tc4-02.1:ch1:1-40@Base",
+      "tc4-02.1:ch1:1-41@Base",
+      "tc4-02.1:ch1:1-42@Base",
+      "tc4-02.1:ch1:1-43@Base",
+      "tc4-02.1:ch1:1-44@Base",
+      "tc4-02.1:ch1:1-45@Base",
+      "tc4-02.1:ch1:1-46@Base"
+    ],
+    "chapter": 1,
+    "page_start": 17,
+    "page_end": 18,
+    "token_len": 243,
+    "child_tok_lens": [
+      16,
+      10,
+      19,
+      35,
+      18,
+      66,
+      18,
+      61
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-39 (Base)",
+      "Ch1 \u00a71-40 (Base)",
+      "Ch1 \u00a71-41 (Base)",
+      "Ch1 \u00a71-42 (Base)",
+      "Ch1 \u00a71-43 (Base)",
+      "Ch1 \u00a71-44 (Base)",
+      "Ch1 \u00a71-45 (Base)",
+      "Ch1 \u00a71-46 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section II \u2014 Vital Body Systems > CAPILLARIES",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > VENULES",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > Capillaries",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > Musculoskeletal System",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > MUSCULOSKELETAL SYSTEM",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > BONES",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > JOINTS",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > Muscles"
+    ],
+    "headings": [
+      "CAPILLARIES",
+      "JOINTS",
+      "VENULES",
+      "BONES",
+      "Muscles",
+      "Capillaries",
+      "Musculoskeletal System",
+      "MUSCULOSKELETAL SYSTEM"
+    ]
+  },
+  {
+    "window_id": "w_p18-19",
+    "stride_idx": 10,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-45@Base",
+      "tc4-02.1:ch1:1-46@Base",
+      "tc4-02.1:ch1:1-47@Base",
+      "tc4-02.1:ch1:1-48@Base",
+      "tc4-02.1:ch1:1-49@Base",
+      "tc4-02.1:ch1:1-50@Base",
+      "tc4-02.1:ch1:1-51@Base"
+    ],
+    "chapter": 1,
+    "page_start": 18,
+    "page_end": 19,
+    "token_len": 224,
+    "child_tok_lens": [
+      18,
+      61,
+      34,
+      16,
+      17,
+      41,
+      37
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-45 (Base)",
+      "Ch1 \u00a71-46 (Base)",
+      "Ch1 \u00a71-47 (Base)",
+      "Ch1 \u00a71-48 (Base)",
+      "Ch1 \u00a71-49 (Base)",
+      "Ch1 \u00a71-50 (Base)",
+      "Ch1 \u00a71-51 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section II \u2014 Vital Body Systems > JOINTS",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > Muscles",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > CARTILAGE",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > LIGAMENTS",
+      "Chapter 1 > Section II \u2014 Vital Body Systems > TENDONS",
+      "Chapter 1 > Section III \u2014 General Principles Of First Aid > Fundamentals Of First Aid",
+      "Chapter 1 > Section III \u2014 General Principles Of First Aid > Fundamentals Of First Aid"
+    ],
+    "headings": [
+      "LIGAMENTS",
+      "Fundamentals Of First Aid",
+      "JOINTS",
+      "TENDONS",
+      "Muscles",
+      "CARTILAGE"
+    ]
+  },
+  {
+    "window_id": "w_p19-19",
+    "stride_idx": 11,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-50@Base",
+      "tc4-02.1:ch1:1-51@Base",
+      "tc4-02.1:ch1:1-52@Base",
+      "tc4-02.1:ch1:1-53@Base"
+    ],
+    "chapter": 1,
+    "page_start": 19,
+    "page_end": 19,
+    "token_len": 223,
+    "child_tok_lens": [
+      41,
+      37,
+      44,
+      101
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-50 (Base)",
+      "Ch1 \u00a71-51 (Base)",
+      "Ch1 \u00a71-52 (Base)",
+      "Ch1 \u00a71-53 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section III \u2014 General Principles Of First Aid > Fundamentals Of First Aid",
+      "Chapter 1 > Section III \u2014 General Principles Of First Aid > Fundamentals Of First Aid",
+      "Chapter 1 > Section III \u2014 General Principles Of First Aid > Initial Encounter",
+      "Chapter 1 > Section III \u2014 General Principles Of First Aid > TRANSPORTING OR MOVING THE CASUALTY"
+    ],
+    "headings": [
+      "Initial Encounter",
+      "Fundamentals Of First Aid",
+      "TRANSPORTING OR MOVING THE CASUALTY"
+    ]
+  },
+  {
+    "window_id": "w_p19-19",
+    "stride_idx": 12,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-52@Base",
+      "tc4-02.1:ch1:1-53@Base",
+      "tc4-02.1:ch1:1-54@Base"
+    ],
+    "chapter": 1,
+    "page_start": 19,
+    "page_end": 19,
+    "token_len": 219,
+    "child_tok_lens": [
+      44,
+      101,
+      74
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-52 (Base)",
+      "Ch1 \u00a71-53 (Base)",
+      "Ch1 \u00a71-54 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section III \u2014 General Principles Of First Aid > Initial Encounter",
+      "Chapter 1 > Section III \u2014 General Principles Of First Aid > TRANSPORTING OR MOVING THE CASUALTY",
+      "Chapter 1 > Section III \u2014 General Principles Of First Aid > TRANSPORTING OR MOVING THE CASUALTY"
+    ],
+    "headings": [
+      "Initial Encounter",
+      "TRANSPORTING OR MOVING THE CASUALTY"
+    ]
+  },
+  {
+    "window_id": "w_p19-19",
+    "stride_idx": 13,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-53@Base",
+      "tc4-02.1:ch1:1-54@Base",
+      "tc4-02.1:ch1:1-55@Base"
+    ],
+    "chapter": 1,
+    "page_start": 19,
+    "page_end": 19,
+    "token_len": 229,
+    "child_tok_lens": [
+      101,
+      74,
+      54
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-53 (Base)",
+      "Ch1 \u00a71-54 (Base)",
+      "Ch1 \u00a71-55 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section III \u2014 General Principles Of First Aid > TRANSPORTING OR MOVING THE CASUALTY",
+      "Chapter 1 > Section III \u2014 General Principles Of First Aid > TRANSPORTING OR MOVING THE CASUALTY",
+      "Chapter 1 > Section IV \u2014 Combat And Operational Stress Reaction"
+    ],
+    "headings": [
+      "TRANSPORTING OR MOVING THE CASUALTY"
+    ]
+  },
+  {
+    "window_id": "w_p19-20",
+    "stride_idx": 14,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-54@Base",
+      "tc4-02.1:ch1:1-55@Base",
+      "tc4-02.1:ch1:1-56@Base",
+      "tc4-02.1:ch1:1-57@C1"
+    ],
+    "chapter": 1,
+    "page_start": 19,
+    "page_end": 20,
+    "token_len": 212,
+    "child_tok_lens": [
+      74,
+      54,
+      53,
+      31
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-54 (Base)",
+      "Ch1 \u00a71-55 (Base)",
+      "Ch1 \u00a71-56 (Base)",
+      "Ch1 \u00a71-57 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section III \u2014 General Principles Of First Aid > TRANSPORTING OR MOVING THE CASUALTY",
+      "Chapter 1 > Section IV \u2014 Combat And Operational Stress Reaction",
+      "Chapter 1 > Section IV \u2014 Combat And Operational Stress Reaction > SUPPORT",
+      "Chapter 1 > Section IV \u2014 Combat And Operational Stress Reaction > Guidance For Supporting At-Risk Soldiers"
+    ],
+    "headings": [
+      "SUPPORT",
+      "Guidance For Supporting At-Risk Soldiers",
+      "TRANSPORTING OR MOVING THE CASUALTY"
+    ]
+  },
+  {
+    "window_id": "w_p19-20",
+    "stride_idx": 15,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-56@Base",
+      "tc4-02.1:ch1:1-57@C1",
+      "tc4-02.1:ch1:1-58@C1",
+      "tc4-02.1:ch1:1-59@C1"
+    ],
+    "chapter": 1,
+    "page_start": 19,
+    "page_end": 20,
+    "token_len": 208,
+    "child_tok_lens": [
+      53,
+      31,
+      39,
+      85
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-56 (Base)",
+      "Ch1 \u00a71-57 (C1)",
+      "Ch1 \u00a71-58 (C1)",
+      "Ch1 \u00a71-59 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section IV \u2014 Combat And Operational Stress Reaction > SUPPORT",
+      "Chapter 1 > Section IV \u2014 Combat And Operational Stress Reaction > Guidance For Supporting At-Risk Soldiers",
+      "Chapter 1 > Section IV \u2014 Combat And Operational Stress Reaction > Approach A Distressed Soldier. You Should-",
+      "Chapter 1 > Section IV \u2014 Combat And Operational Stress Reaction > CARE"
+    ],
+    "headings": [
+      "SUPPORT",
+      "Approach A Distressed Soldier. You Should-",
+      "CARE",
+      "Guidance For Supporting At-Risk Soldiers"
+    ]
+  },
+  {
+    "window_id": "w_p20-20",
+    "stride_idx": 16,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-58@C1",
+      "tc4-02.1:ch1:1-59@C1",
+      "tc4-02.1:ch1:1-60@C1"
+    ],
+    "chapter": 1,
+    "page_start": 20,
+    "page_end": 20,
+    "token_len": 177,
+    "child_tok_lens": [
+      39,
+      85,
+      53
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-58 (C1)",
+      "Ch1 \u00a71-59 (C1)",
+      "Ch1 \u00a71-60 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section IV \u2014 Combat And Operational Stress Reaction > Approach A Distressed Soldier. You Should-",
+      "Chapter 1 > Section IV \u2014 Combat And Operational Stress Reaction > CARE",
+      "Chapter 1 > Section IV \u2014 Combat And Operational Stress Reaction > ESCORT"
+    ],
+    "headings": [
+      "Approach A Distressed Soldier. You Should-",
+      "CARE",
+      "ESCORT"
+    ]
+  },
+  {
+    "window_id": "w_p20-20",
+    "stride_idx": 17,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-59@C1",
+      "tc4-02.1:ch1:1-60@C1"
+    ],
+    "chapter": 1,
+    "page_start": 20,
+    "page_end": 20,
+    "token_len": 138,
+    "child_tok_lens": [
+      85,
+      53
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-59 (C1)",
+      "Ch1 \u00a71-60 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section IV \u2014 Combat And Operational Stress Reaction > CARE",
+      "Chapter 1 > Section IV \u2014 Combat And Operational Stress Reaction > ESCORT"
+    ],
+    "headings": [
+      "CARE",
+      "ESCORT"
+    ]
+  },
+  {
+    "window_id": "w_p20-20",
+    "stride_idx": 18,
+    "paragraph_ids": [
+      "tc4-02.1:ch1:1-60@C1"
+    ],
+    "chapter": 1,
+    "page_start": 20,
+    "page_end": 20,
+    "token_len": 53,
+    "child_tok_lens": [
+      53
+    ],
+    "paragraph_short_refs": [
+      "Ch1 \u00a71-60 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 1 > Section IV \u2014 Combat And Operational Stress Reaction > ESCORT"
+    ],
+    "headings": [
+      "ESCORT"
+    ]
+  },
+  {
+    "window_id": "w_p21-23",
+    "stride_idx": 19,
+    "paragraph_ids": [
+      "tc4-02.1:ch2:2-1@Base",
+      "tc4-02.1:ch2:2-2@Base",
+      "tc4-02.1:ch2:2-3@Base",
+      "tc4-02.1:ch2:2-4@Base",
+      "tc4-02.1:ch2:2-5@Base",
+      "tc4-02.1:ch2:2-6@Base",
+      "tc4-02.1:ch2:2-7@Base"
+    ],
+    "chapter": 2,
+    "page_start": 21,
+    "page_end": 23,
+    "token_len": 241,
+    "child_tok_lens": [
+      32,
+      24,
+      14,
+      67,
+      38,
+      53,
+      13
+    ],
+    "paragraph_short_refs": [
+      "Ch2 \u00a72-1 (Base)",
+      "Ch2 \u00a72-2 (Base)",
+      "Ch2 \u00a72-3 (Base)",
+      "Ch2 \u00a72-4 (Base)",
+      "Ch2 \u00a72-5 (Base)",
+      "Ch2 \u00a72-6 (Base)",
+      "Ch2 \u00a72-7 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 2 > Evaluate A Casualty (081-COM-1001)",
+      "Chapter 2 > CARE UNDER FIRE",
+      "Chapter 2 > TACTICAL FIELD CARE",
+      "Chapter 2 > Tactical Field Care",
+      "Chapter 2 > Tactical Field Care",
+      "Chapter 2 > Tactical Field Care",
+      "Chapter 2 > TACTICAL EVACUATION"
+    ],
+    "headings": [
+      "Tactical Field Care",
+      "TACTICAL EVACUATION",
+      "TACTICAL FIELD CARE",
+      "Evaluate A Casualty (081-COM-1001)",
+      "CARE UNDER FIRE"
+    ]
+  },
+  {
+    "window_id": "w_p23-23",
+    "stride_idx": 20,
+    "paragraph_ids": [
+      "tc4-02.1:ch2:2-6@Base",
+      "tc4-02.1:ch2:2-7@Base",
+      "tc4-02.1:ch2:2-8@Base",
+      "tc4-02.1:ch2:2-9@Base"
+    ],
+    "chapter": 2,
+    "page_start": 23,
+    "page_end": 23,
+    "token_len": 115,
+    "child_tok_lens": [
+      53,
+      13,
+      15,
+      34
+    ],
+    "paragraph_short_refs": [
+      "Ch2 \u00a72-6 (Base)",
+      "Ch2 \u00a72-7 (Base)",
+      "Ch2 \u00a72-8 (Base)",
+      "Ch2 \u00a72-9 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 2 > Tactical Field Care",
+      "Chapter 2 > TACTICAL EVACUATION",
+      "Chapter 2 > TACTICAL EVACUATION",
+      "Chapter 2 > Evaluate A Casualty (081-COM-1001)"
+    ],
+    "headings": [
+      "Evaluate A Casualty (081-COM-1001)",
+      "Tactical Field Care",
+      "TACTICAL EVACUATION"
+    ]
+  },
+  {
+    "window_id": "w_p23-23",
+    "stride_idx": 21,
+    "paragraph_ids": [
+      "tc4-02.1:ch2:2-8@Base",
+      "tc4-02.1:ch2:2-9@Base"
+    ],
+    "chapter": 2,
+    "page_start": 23,
+    "page_end": 23,
+    "token_len": 49,
+    "child_tok_lens": [
+      15,
+      34
+    ],
+    "paragraph_short_refs": [
+      "Ch2 \u00a72-8 (Base)",
+      "Ch2 \u00a72-9 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 2 > TACTICAL EVACUATION",
+      "Chapter 2 > Evaluate A Casualty (081-COM-1001)"
+    ],
+    "headings": [
+      "Evaluate A Casualty (081-COM-1001)",
+      "TACTICAL EVACUATION"
+    ]
+  },
+  {
+    "window_id": "w_p23-23",
+    "stride_idx": 22,
+    "paragraph_ids": [
+      "tc4-02.1:ch2:2-9@Base"
+    ],
+    "chapter": 2,
+    "page_start": 23,
+    "page_end": 23,
+    "token_len": 34,
+    "child_tok_lens": [
+      34
+    ],
+    "paragraph_short_refs": [
+      "Ch2 \u00a72-9 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 2 > Evaluate A Casualty (081-COM-1001)"
+    ],
+    "headings": [
+      "Evaluate A Casualty (081-COM-1001)"
+    ]
+  },
+  {
+    "window_id": "w_p25-26",
+    "stride_idx": 23,
+    "paragraph_ids": [
+      "tc4-02.1:ch3:3-1@Base",
+      "tc4-02.1:ch3:3-2@Base",
+      "tc4-02.1:ch3:3-3@Base",
+      "tc4-02.1:ch3:3-4@Base"
+    ],
+    "chapter": 3,
+    "page_start": 25,
+    "page_end": 26,
+    "token_len": 246,
+    "child_tok_lens": [
+      124,
+      15,
+      98,
+      9
+    ],
+    "paragraph_short_refs": [
+      "Ch3 \u00a73-1 (Base)",
+      "Ch3 \u00a73-2 (Base)",
+      "Ch3 \u00a73-3 (Base)",
+      "Ch3 \u00a73-4 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 3 > Safely Position The Casualty To Open The Airway",
+      "Chapter 3 > Opening The Airway",
+      "Chapter 3 > HEAD-TILT CHIN-LIFT METHOD",
+      "Chapter 3 > JAW-THRUST METHOD"
+    ],
+    "headings": [
+      "JAW-THRUST METHOD",
+      "Opening The Airway",
+      "HEAD-TILT CHIN-LIFT METHOD",
+      "Safely Position The Casualty To Open The Airway"
+    ]
+  },
+  {
+    "window_id": "w_p25-26",
+    "stride_idx": 24,
+    "paragraph_ids": [
+      "tc4-02.1:ch3:3-3@Base",
+      "tc4-02.1:ch3:3-4@Base",
+      "tc4-02.1:ch3:3-5@Base"
+    ],
+    "chapter": 3,
+    "page_start": 25,
+    "page_end": 26,
+    "token_len": 170,
+    "child_tok_lens": [
+      98,
+      9,
+      63
+    ],
+    "paragraph_short_refs": [
+      "Ch3 \u00a73-3 (Base)",
+      "Ch3 \u00a73-4 (Base)",
+      "Ch3 \u00a73-5 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 3 > HEAD-TILT CHIN-LIFT METHOD",
+      "Chapter 3 > JAW-THRUST METHOD",
+      "Chapter 3 > Check For Breathing"
+    ],
+    "headings": [
+      "JAW-THRUST METHOD",
+      "HEAD-TILT CHIN-LIFT METHOD",
+      "Check For Breathing"
+    ]
+  },
+  {
+    "window_id": "w_p26-27",
+    "stride_idx": 25,
+    "paragraph_ids": [
+      "tc4-02.1:ch3:3-4@Base",
+      "tc4-02.1:ch3:3-5@Base",
+      "tc4-02.1:ch3:3-6@Base",
+      "tc4-02.1:ch3:3-7@Base",
+      "tc4-02.1:ch3:3-8@Base"
+    ],
+    "chapter": 3,
+    "page_start": 26,
+    "page_end": 27,
+    "token_len": 240,
+    "child_tok_lens": [
+      9,
+      63,
+      112,
+      10,
+      46
+    ],
+    "paragraph_short_refs": [
+      "Ch3 \u00a73-4 (Base)",
+      "Ch3 \u00a73-5 (Base)",
+      "Ch3 \u00a73-6 (Base)",
+      "Ch3 \u00a73-7 (Base)",
+      "Ch3 \u00a73-8 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 3 > JAW-THRUST METHOD",
+      "Chapter 3 > Check For Breathing",
+      "Chapter 3 > Check For Breathing",
+      "Chapter 3 > Check For Breathing",
+      "Chapter 3 > Open The Airway (081-COM-1023)"
+    ],
+    "headings": [
+      "JAW-THRUST METHOD",
+      "Open The Airway (081-COM-1023)",
+      "Check For Breathing"
+    ]
+  },
+  {
+    "window_id": "w_p27-27",
+    "stride_idx": 26,
+    "paragraph_ids": [
+      "tc4-02.1:ch3:3-7@Base",
+      "tc4-02.1:ch3:3-8@Base"
+    ],
+    "chapter": 3,
+    "page_start": 27,
+    "page_end": 27,
+    "token_len": 56,
+    "child_tok_lens": [
+      10,
+      46
+    ],
+    "paragraph_short_refs": [
+      "Ch3 \u00a73-7 (Base)",
+      "Ch3 \u00a73-8 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 3 > Check For Breathing",
+      "Chapter 3 > Open The Airway (081-COM-1023)"
+    ],
+    "headings": [
+      "Open The Airway (081-COM-1023)",
+      "Check For Breathing"
+    ]
+  },
+  {
+    "window_id": "w_p27-27",
+    "stride_idx": 27,
+    "paragraph_ids": [
+      "tc4-02.1:ch3:3-8@Base"
+    ],
+    "chapter": 3,
+    "page_start": 27,
+    "page_end": 27,
+    "token_len": 46,
+    "child_tok_lens": [
+      46
+    ],
+    "paragraph_short_refs": [
+      "Ch3 \u00a73-8 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 3 > Open The Airway (081-COM-1023)"
+    ],
+    "headings": [
+      "Open The Airway (081-COM-1023)"
+    ]
+  },
+  {
+    "window_id": "w_p7-7",
+    "stride_idx": 28,
+    "paragraph_ids": [
+      "tc4-02.1:ch4:4-25@Base"
+    ],
+    "chapter": 4,
+    "page_start": 7,
+    "page_end": 7,
+    "token_len": 9,
+    "child_tok_lens": [
+      9
+    ],
+    "paragraph_short_refs": [
+      "Ch4 \u00a74-25 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 4 \u00b7 AIRWAY OBSTRUCTIONS > 3-02G, Dated"
+    ],
+    "headings": [
+      "3-02G, Dated"
+    ]
+  },
+  {
+    "window_id": "w_p29-30",
+    "stride_idx": 29,
+    "paragraph_ids": [
+      "tc4-02.1:ch4:4-1@Base",
+      "tc4-02.1:ch4:4-2@Base",
+      "tc4-02.1:ch4:4-3@Base",
+      "tc4-02.1:ch4:4-4@Base",
+      "tc4-02.1:ch4:4-5@Base",
+      "tc4-02.1:ch4:4-6@Base"
+    ],
+    "chapter": 4,
+    "page_start": 29,
+    "page_end": 30,
+    "token_len": 249,
+    "child_tok_lens": [
+      40,
+      107,
+      62,
+      21,
+      16,
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch4 \u00a74-1 (Base)",
+      "Ch4 \u00a74-2 (Base)",
+      "Ch4 \u00a74-3 (Base)",
+      "Ch4 \u00a74-4 (Base)",
+      "Ch4 \u00a74-5 (Base)",
+      "Ch4 \u00a74-6 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 4 > Airway Obstruction Identification",
+      "Chapter 4 > AIRWAY OBSTRUCTION IDENTIFICATION",
+      "Chapter 4 > ABDOMINAL THRUSTS",
+      "Chapter 4 > CHEST THRUSTS",
+      "Chapter 4 > Chest Thrusts",
+      "Chapter 4 > Chest Thrusts"
+    ],
+    "headings": [
+      "AIRWAY OBSTRUCTION IDENTIFICATION",
+      "Airway Obstruction Identification",
+      "CHEST THRUSTS",
+      "Chest Thrusts",
+      "ABDOMINAL THRUSTS"
+    ]
+  },
+  {
+    "window_id": "w_p30-30",
+    "stride_idx": 30,
+    "paragraph_ids": [
+      "tc4-02.1:ch4:4-5@Base",
+      "tc4-02.1:ch4:4-6@Base"
+    ],
+    "chapter": 4,
+    "page_start": 30,
+    "page_end": 30,
+    "token_len": 19,
+    "child_tok_lens": [
+      16,
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch4 \u00a74-5 (Base)",
+      "Ch4 \u00a74-6 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 4 > Chest Thrusts",
+      "Chapter 4 > Chest Thrusts"
+    ],
+    "headings": [
+      "Chest Thrusts"
+    ]
+  },
+  {
+    "window_id": "w_p30-30",
+    "stride_idx": 31,
+    "paragraph_ids": [
+      "tc4-02.1:ch4:4-6@Base"
+    ],
+    "chapter": 4,
+    "page_start": 30,
+    "page_end": 30,
+    "token_len": 3,
+    "child_tok_lens": [
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch4 \u00a74-6 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 4 > Chest Thrusts"
+    ],
+    "headings": [
+      "Chest Thrusts"
+    ]
+  },
+  {
+    "window_id": "w_p57-57",
+    "stride_idx": 32,
+    "paragraph_ids": [
+      "tc4-02.1:ch4:4-02@Base"
+    ],
+    "chapter": 4,
+    "page_start": 57,
+    "page_end": 57,
+    "token_len": 1,
+    "child_tok_lens": [
+      1
+    ],
+    "paragraph_short_refs": [
+      "Ch4 \u00a74-02 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 12 > Cold Weather Injuries"
+    ],
+    "headings": [
+      "Cold Weather Injuries"
+    ]
+  },
+  {
+    "window_id": "w_p31-32",
+    "stride_idx": 33,
+    "paragraph_ids": [
+      "tc4-02.1:ch5:5-1@C2",
+      "tc4-02.1:ch5:5-2@C2",
+      "tc4-02.1:ch5:5-3@C2",
+      "tc4-02.1:ch5:5-4@C2"
+    ],
+    "chapter": 5,
+    "page_start": 31,
+    "page_end": 32,
+    "token_len": 144,
+    "child_tok_lens": [
+      43,
+      19,
+      43,
+      39
+    ],
+    "paragraph_short_refs": [
+      "Ch5 \u00a75-1 (C2)",
+      "Ch5 \u00a75-2 (C2)",
+      "Ch5 \u00a75-3 (C2)",
+      "Ch5 \u00a75-4 (C2)"
+    ],
+    "section_paths": [
+      "Chapter 5 > Apply An Occlusive Dressing",
+      "Chapter 5 > USE OF COMMERCIAL CHEST SEAL",
+      "Chapter 5 > USE OF IMPROVISED CHEST SEAL",
+      "Chapter 5 > USE OF IMPROVISED CHEST SEAL"
+    ],
+    "headings": [
+      "USE OF IMPROVISED CHEST SEAL",
+      "USE OF COMMERCIAL CHEST SEAL",
+      "Apply An Occlusive Dressing"
+    ]
+  },
+  {
+    "window_id": "w_p32-32",
+    "stride_idx": 34,
+    "paragraph_ids": [
+      "tc4-02.1:ch5:5-3@C2",
+      "tc4-02.1:ch5:5-4@C2"
+    ],
+    "chapter": 5,
+    "page_start": 32,
+    "page_end": 32,
+    "token_len": 82,
+    "child_tok_lens": [
+      43,
+      39
+    ],
+    "paragraph_short_refs": [
+      "Ch5 \u00a75-3 (C2)",
+      "Ch5 \u00a75-4 (C2)"
+    ],
+    "section_paths": [
+      "Chapter 5 > USE OF IMPROVISED CHEST SEAL",
+      "Chapter 5 > USE OF IMPROVISED CHEST SEAL"
+    ],
+    "headings": [
+      "USE OF IMPROVISED CHEST SEAL"
+    ]
+  },
+  {
+    "window_id": "w_p32-32",
+    "stride_idx": 35,
+    "paragraph_ids": [
+      "tc4-02.1:ch5:5-4@C2"
+    ],
+    "chapter": 5,
+    "page_start": 32,
+    "page_end": 32,
+    "token_len": 39,
+    "child_tok_lens": [
+      39
+    ],
+    "paragraph_short_refs": [
+      "Ch5 \u00a75-4 (C2)"
+    ],
+    "section_paths": [
+      "Chapter 5 > USE OF IMPROVISED CHEST SEAL"
+    ],
+    "headings": [
+      "USE OF IMPROVISED CHEST SEAL"
+    ]
+  },
+  {
+    "window_id": "w_p35-35",
+    "stride_idx": 36,
+    "paragraph_ids": [
+      "tc4-02.1:ch6:6-1@Base",
+      "tc4-02.1:ch6:6-2@Base",
+      "tc4-02.1:ch6:6-3@Base",
+      "tc4-02.1:ch6:6-4@Base",
+      "tc4-02.1:ch6:6-5@Base"
+    ],
+    "chapter": 6,
+    "page_start": 35,
+    "page_end": 35,
+    "token_len": 162,
+    "child_tok_lens": [
+      39,
+      18,
+      17,
+      50,
+      38
+    ],
+    "paragraph_short_refs": [
+      "Ch6 \u00a76-1 (Base)",
+      "Ch6 \u00a76-2 (Base)",
+      "Ch6 \u00a76-3 (Base)",
+      "Ch6 \u00a76-4 (Base)",
+      "Ch6 \u00a76-5 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 6 > CONTROL BLEEDING",
+      "Chapter 6 > METHODS FOR CONTROLLING EXTERNAL BLEEDING",
+      "Chapter 6 > CONTROL BLEEDING",
+      "Chapter 6 > APPLY DIRECT PRESSURE",
+      "Chapter 6 > CONTROL BLEEDING"
+    ],
+    "headings": [
+      "CONTROL BLEEDING",
+      "METHODS FOR CONTROLLING EXTERNAL BLEEDING",
+      "APPLY DIRECT PRESSURE"
+    ]
+  },
+  {
+    "window_id": "w_p35-36",
+    "stride_idx": 37,
+    "paragraph_ids": [
+      "tc4-02.1:ch6:6-4@Base",
+      "tc4-02.1:ch6:6-5@Base",
+      "tc4-02.1:ch6:6-6@Base"
+    ],
+    "chapter": 6,
+    "page_start": 35,
+    "page_end": 36,
+    "token_len": 200,
+    "child_tok_lens": [
+      50,
+      38,
+      112
+    ],
+    "paragraph_short_refs": [
+      "Ch6 \u00a76-4 (Base)",
+      "Ch6 \u00a76-5 (Base)",
+      "Ch6 \u00a76-6 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 6 > APPLY DIRECT PRESSURE",
+      "Chapter 6 > CONTROL BLEEDING",
+      "Chapter 6 > APPLY A PRESSURE DRESSING"
+    ],
+    "headings": [
+      "CONTROL BLEEDING",
+      "APPLY A PRESSURE DRESSING",
+      "APPLY DIRECT PRESSURE"
+    ]
+  },
+  {
+    "window_id": "w_p35-36",
+    "stride_idx": 38,
+    "paragraph_ids": [
+      "tc4-02.1:ch6:6-5@Base",
+      "tc4-02.1:ch6:6-6@Base"
+    ],
+    "chapter": 6,
+    "page_start": 35,
+    "page_end": 36,
+    "token_len": 150,
+    "child_tok_lens": [
+      38,
+      112
+    ],
+    "paragraph_short_refs": [
+      "Ch6 \u00a76-5 (Base)",
+      "Ch6 \u00a76-6 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 6 > CONTROL BLEEDING",
+      "Chapter 6 > APPLY A PRESSURE DRESSING"
+    ],
+    "headings": [
+      "CONTROL BLEEDING",
+      "APPLY A PRESSURE DRESSING"
+    ]
+  },
+  {
+    "window_id": "w_p36-36",
+    "stride_idx": 39,
+    "paragraph_ids": [
+      "tc4-02.1:ch6:6-6@Base",
+      "tc4-02.1:ch6:6-7@Base"
+    ],
+    "chapter": 6,
+    "page_start": 36,
+    "page_end": 36,
+    "token_len": 247,
+    "child_tok_lens": [
+      112,
+      135
+    ],
+    "paragraph_short_refs": [
+      "Ch6 \u00a76-6 (Base)",
+      "Ch6 \u00a76-7 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 6 > APPLY A PRESSURE DRESSING",
+      "Chapter 6 > APPLY A TOURNIQUET"
+    ],
+    "headings": [
+      "APPLY A TOURNIQUET",
+      "APPLY A PRESSURE DRESSING"
+    ]
+  },
+  {
+    "window_id": "w_p36-36",
+    "stride_idx": 40,
+    "paragraph_ids": [
+      "tc4-02.1:ch6:6-7@Base",
+      "tc4-02.1:ch6:6-8@Base",
+      "tc4-02.1:ch6:6-9@Base"
+    ],
+    "chapter": 6,
+    "page_start": 36,
+    "page_end": 36,
+    "token_len": 162,
+    "child_tok_lens": [
+      135,
+      24,
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch6 \u00a76-7 (Base)",
+      "Ch6 \u00a76-8 (Base)",
+      "Ch6 \u00a76-9 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 6 > APPLY A TOURNIQUET",
+      "Chapter 6 > Apply A Tourniquet",
+      "Chapter 6 > Apply A Tourniquet"
+    ],
+    "headings": [
+      "APPLY A TOURNIQUET",
+      "Apply A Tourniquet"
+    ]
+  },
+  {
+    "window_id": "w_p36-36",
+    "stride_idx": 41,
+    "paragraph_ids": [
+      "tc4-02.1:ch6:6-8@Base",
+      "tc4-02.1:ch6:6-9@Base"
+    ],
+    "chapter": 6,
+    "page_start": 36,
+    "page_end": 36,
+    "token_len": 27,
+    "child_tok_lens": [
+      24,
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch6 \u00a76-8 (Base)",
+      "Ch6 \u00a76-9 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 6 > Apply A Tourniquet",
+      "Chapter 6 > Apply A Tourniquet"
+    ],
+    "headings": [
+      "Apply A Tourniquet"
+    ]
+  },
+  {
+    "window_id": "w_p36-36",
+    "stride_idx": 42,
+    "paragraph_ids": [
+      "tc4-02.1:ch6:6-9@Base"
+    ],
+    "chapter": 6,
+    "page_start": 36,
+    "page_end": 36,
+    "token_len": 3,
+    "child_tok_lens": [
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch6 \u00a76-9 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 6 > Apply A Tourniquet"
+    ],
+    "headings": [
+      "Apply A Tourniquet"
+    ]
+  },
+  {
+    "window_id": "w_p22-22",
+    "stride_idx": 43,
+    "paragraph_ids": [
+      "tc4-02.1:ch7:7-1@Base"
+    ],
+    "chapter": 7,
+    "page_start": 22,
+    "page_end": 22,
+    "token_len": 47,
+    "child_tok_lens": [
+      47
+    ],
+    "paragraph_short_refs": [
+      "Ch7 \u00a77-1 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 2 > Tactical Field Care"
+    ],
+    "headings": [
+      "Tactical Field Care"
+    ]
+  },
+  {
+    "window_id": "w_p37-39",
+    "stride_idx": 44,
+    "paragraph_ids": [
+      "tc4-02.1:ch7:7-2@Base",
+      "tc4-02.1:ch7:7-3@Base",
+      "tc4-02.1:ch7:7-4@Base",
+      "tc4-02.1:ch7:7-5@Base",
+      "tc4-02.1:ch7:7-6@Base"
+    ],
+    "chapter": 7,
+    "page_start": 37,
+    "page_end": 39,
+    "token_len": 183,
+    "child_tok_lens": [
+      108,
+      41,
+      12,
+      19,
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch7 \u00a77-2 (Base)",
+      "Ch7 \u00a77-3 (Base)",
+      "Ch7 \u00a77-4 (Base)",
+      "Ch7 \u00a77-5 (Base)",
+      "Ch7 \u00a77-6 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 7 > KINDS OF BURNS",
+      "Chapter 7 > Radiological, And Nuclear Environment. Exposure Could Cause",
+      "Chapter 7 > Radiological, And Nuclear Environment. Exposure Could Cause",
+      "Chapter 7 > Radiological, And Nuclear Environment. Exposure Could Cause",
+      "Chapter 7 > Radiological, And Nuclear Environment. Exposure Could Cause"
+    ],
+    "headings": [
+      "Radiological, And Nuclear Environment. Exposure Could Cause",
+      "KINDS OF BURNS"
+    ]
+  },
+  {
+    "window_id": "w_p39-39",
+    "stride_idx": 45,
+    "paragraph_ids": [
+      "tc4-02.1:ch7:7-5@Base",
+      "tc4-02.1:ch7:7-6@Base"
+    ],
+    "chapter": 7,
+    "page_start": 39,
+    "page_end": 39,
+    "token_len": 22,
+    "child_tok_lens": [
+      19,
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch7 \u00a77-5 (Base)",
+      "Ch7 \u00a77-6 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 7 > Radiological, And Nuclear Environment. Exposure Could Cause",
+      "Chapter 7 > Radiological, And Nuclear Environment. Exposure Could Cause"
+    ],
+    "headings": [
+      "Radiological, And Nuclear Environment. Exposure Could Cause"
+    ]
+  },
+  {
+    "window_id": "w_p39-39",
+    "stride_idx": 46,
+    "paragraph_ids": [
+      "tc4-02.1:ch7:7-6@Base"
+    ],
+    "chapter": 7,
+    "page_start": 39,
+    "page_end": 39,
+    "token_len": 3,
+    "child_tok_lens": [
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch7 \u00a77-6 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 7 > Radiological, And Nuclear Environment. Exposure Could Cause"
+    ],
+    "headings": [
+      "Radiological, And Nuclear Environment. Exposure Could Cause"
+    ]
+  },
+  {
+    "window_id": "w_p41-41",
+    "stride_idx": 47,
+    "paragraph_ids": [
+      "tc4-02.1:ch8:8-1@Base",
+      "tc4-02.1:ch8:8-2@Base",
+      "tc4-02.1:ch8:8-3@Base",
+      "tc4-02.1:ch8:8-4@Base",
+      "tc4-02.1:ch8:8-5@Base"
+    ],
+    "chapter": 8,
+    "page_start": 41,
+    "page_end": 41,
+    "token_len": 179,
+    "child_tok_lens": [
+      39,
+      100,
+      23,
+      14,
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch8 \u00a78-1 (Base)",
+      "Ch8 \u00a78-2 (Base)",
+      "Ch8 \u00a78-3 (Base)",
+      "Ch8 \u00a78-4 (Base)",
+      "Ch8 \u00a78-5 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 8 > SIGNS AND SYMPTOMS OF SHOCK",
+      "Chapter 8 > POSITION THE CASUALTY",
+      "Chapter 8 > CALM AND REASSURE THE CASUALTY",
+      "Chapter 8 > CALM AND REASSURE THE CASUALTY",
+      "Chapter 8 > Calm And Reassure The Casualty"
+    ],
+    "headings": [
+      "POSITION THE CASUALTY",
+      "Calm And Reassure The Casualty",
+      "SIGNS AND SYMPTOMS OF SHOCK",
+      "CALM AND REASSURE THE CASUALTY"
+    ]
+  },
+  {
+    "window_id": "w_p41-41",
+    "stride_idx": 48,
+    "paragraph_ids": [
+      "tc4-02.1:ch8:8-4@Base",
+      "tc4-02.1:ch8:8-5@Base"
+    ],
+    "chapter": 8,
+    "page_start": 41,
+    "page_end": 41,
+    "token_len": 17,
+    "child_tok_lens": [
+      14,
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch8 \u00a78-4 (Base)",
+      "Ch8 \u00a78-5 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 8 > CALM AND REASSURE THE CASUALTY",
+      "Chapter 8 > Calm And Reassure The Casualty"
+    ],
+    "headings": [
+      "Calm And Reassure The Casualty",
+      "CALM AND REASSURE THE CASUALTY"
+    ]
+  },
+  {
+    "window_id": "w_p41-41",
+    "stride_idx": 49,
+    "paragraph_ids": [
+      "tc4-02.1:ch8:8-5@Base"
+    ],
+    "chapter": 8,
+    "page_start": 41,
+    "page_end": 41,
+    "token_len": 3,
+    "child_tok_lens": [
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch8 \u00a78-5 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 8 > Calm And Reassure The Casualty"
+    ],
+    "headings": [
+      "Calm And Reassure The Casualty"
+    ]
+  },
+  {
+    "window_id": "w_p43-43",
+    "stride_idx": 50,
+    "paragraph_ids": [
+      "tc4-02.1:ch9:9-1@Base",
+      "tc4-02.1:ch9:9-2@Base",
+      "tc4-02.1:ch9:9-3@Base",
+      "tc4-02.1:ch9:9-4@Base",
+      "tc4-02.1:ch9:9-5@Base",
+      "tc4-02.1:ch9:9-6@Base",
+      "tc4-02.1:ch9:9-7@Base"
+    ],
+    "chapter": 9,
+    "page_start": 43,
+    "page_end": 43,
+    "token_len": 214,
+    "child_tok_lens": [
+      41,
+      26,
+      20,
+      33,
+      53,
+      12,
+      29
+    ],
+    "paragraph_short_refs": [
+      "Ch9 \u00a79-1 (Base)",
+      "Ch9 \u00a79-2 (Base)",
+      "Ch9 \u00a79-3 (Base)",
+      "Ch9 \u00a79-4 (Base)",
+      "Ch9 \u00a79-5 (Base)",
+      "Ch9 \u00a79-6 (Base)",
+      "Ch9 \u00a79-7 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 9 > FIRST AID FOR NERVE AGENT INJURY",
+      "Chapter 9 > Perform First Aid For Nerve Agent Injury (081-COM-1044)",
+      "Chapter 9 > Perform First Aid For Nerve Agent Injury (081-COM-1044)",
+      "Chapter 9 > Perform First Aid For Nerve Agent Injury (081-COM-1044)",
+      "Chapter 9 > Signs And Symptoms Of Mild Nerve Agent Poisoning",
+      "Chapter 9 > FIRST AID FOR NERVE AGENT INJURY",
+      "Chapter 9 > FIRST AID FOR NERVE AGENT INJURY"
+    ],
+    "headings": [
+      "FIRST AID FOR NERVE AGENT INJURY",
+      "Perform First Aid For Nerve Agent Injury (081-COM-1044)",
+      "Signs And Symptoms Of Mild Nerve Agent Poisoning"
+    ]
+  },
+  {
+    "window_id": "w_p43-46",
+    "stride_idx": 51,
+    "paragraph_ids": [
+      "tc4-02.1:ch9:9-6@Base",
+      "tc4-02.1:ch9:9-7@Base",
+      "tc4-02.1:ch9:9-8@Base",
+      "tc4-02.1:ch9:9-9@Base",
+      "tc4-02.1:ch9:9-10@Base",
+      "tc4-02.1:ch9:9-11@Base",
+      "tc4-02.1:ch9:9-12@Base",
+      "tc4-02.1:ch9:9-13@Base",
+      "tc4-02.1:ch9:9-14@Base",
+      "tc4-02.1:ch9:9-15@Base"
+    ],
+    "chapter": 9,
+    "page_start": 43,
+    "page_end": 46,
+    "token_len": 224,
+    "child_tok_lens": [
+      12,
+      29,
+      40,
+      30,
+      76,
+      20,
+      4,
+      5,
+      5,
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch9 \u00a79-6 (Base)",
+      "Ch9 \u00a79-7 (Base)",
+      "Ch9 \u00a79-8 (Base)",
+      "Ch9 \u00a79-9 (Base)",
+      "Ch9 \u00a79-10 (Base)",
+      "Ch9 \u00a79-11 (Base)",
+      "Ch9 \u00a79-12 (Base)",
+      "Ch9 \u00a79-13 (Base)",
+      "Ch9 \u00a79-14 (Base)",
+      "Ch9 \u00a79-15 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 9 > FIRST AID FOR NERVE AGENT INJURY",
+      "Chapter 9 > FIRST AID FOR NERVE AGENT INJURY",
+      "Chapter 9 > Signs And Symptoms Of Severe Nerve Agent Poisoning",
+      "Chapter 9 > Buddy Aid For Severe Nerve Agent Poisoning",
+      "Chapter 9 > Buddy Aid For Severe Nerve Agent Poisoning",
+      "Chapter 9 > Buddy Aid For Severe Nerve Agent Poisoning",
+      "Chapter 9 > Buddy Aid For Severe Nerve Agent Poisoning",
+      "Chapter 9 > Buddy Aid For Severe Nerve Agent Poisoning",
+      "Chapter 9 > Buddy Aid For Severe Nerve Agent Poisoning",
+      "Chapter 9 > Buddy Aid For Severe Nerve Agent Poisoning"
+    ],
+    "headings": [
+      "FIRST AID FOR NERVE AGENT INJURY",
+      "Signs And Symptoms Of Severe Nerve Agent Poisoning",
+      "Buddy Aid For Severe Nerve Agent Poisoning"
+    ]
+  },
+  {
+    "window_id": "w_p46-46",
+    "stride_idx": 52,
+    "paragraph_ids": [
+      "tc4-02.1:ch9:9-14@Base",
+      "tc4-02.1:ch9:9-15@Base"
+    ],
+    "chapter": 9,
+    "page_start": 46,
+    "page_end": 46,
+    "token_len": 8,
+    "child_tok_lens": [
+      5,
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch9 \u00a79-14 (Base)",
+      "Ch9 \u00a79-15 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 9 > Buddy Aid For Severe Nerve Agent Poisoning",
+      "Chapter 9 > Buddy Aid For Severe Nerve Agent Poisoning"
+    ],
+    "headings": [
+      "Buddy Aid For Severe Nerve Agent Poisoning"
+    ]
+  },
+  {
+    "window_id": "w_p46-46",
+    "stride_idx": 53,
+    "paragraph_ids": [
+      "tc4-02.1:ch9:9-15@Base"
+    ],
+    "chapter": 9,
+    "page_start": 46,
+    "page_end": 46,
+    "token_len": 3,
+    "child_tok_lens": [
+      3
+    ],
+    "paragraph_short_refs": [
+      "Ch9 \u00a79-15 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 9 > Buddy Aid For Severe Nerve Agent Poisoning"
+    ],
+    "headings": [
+      "Buddy Aid For Severe Nerve Agent Poisoning"
+    ]
+  },
+  {
+    "window_id": "w_p47-49",
+    "stride_idx": 54,
+    "paragraph_ids": [
+      "tc4-02.1:ch10:10-1@Base",
+      "tc4-02.1:ch10:10-2@Base",
+      "tc4-02.1:ch10:10-3@Base",
+      "tc4-02.1:ch10:10-4@Base",
+      "tc4-02.1:ch10:10-5@Base",
+      "tc4-02.1:ch10:10-6@Base",
+      "tc4-02.1:ch10:10-7@Base",
+      "tc4-02.1:ch10:10-8@Base",
+      "tc4-02.1:ch10:10-9@Base"
+    ],
+    "chapter": 10,
+    "page_start": 47,
+    "page_end": 49,
+    "token_len": 248,
+    "child_tok_lens": [
+      21,
+      12,
+      73,
+      9,
+      9,
+      41,
+      16,
+      57,
+      10
+    ],
+    "paragraph_short_refs": [
+      "Ch10 \u00a710-1 (Base)",
+      "Ch10 \u00a710-2 (Base)",
+      "Ch10 \u00a710-3 (Base)",
+      "Ch10 \u00a710-4 (Base)",
+      "Ch10 \u00a710-5 (Base)",
+      "Ch10 \u00a710-6 (Base)",
+      "Ch10 \u00a710-7 (Base)",
+      "Ch10 \u00a710-8 (Base)",
+      "Ch10 \u00a710-9 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 10 > First Aid For Bites And Stings (081-833-0072)",
+      "Chapter 10 > First Aid For Bites And Stings (081-833-0072)",
+      "Chapter 10 > BLACK WIDOW SPIDER",
+      "Chapter 10 > Black Widow Spider",
+      "Chapter 10 > SCORPION (HARMLESS SPECIES)",
+      "Chapter 10 > SCORPION (DEADLY SPECIES)",
+      "Chapter 10 > Bee, Wasp, Hornet, And Yellow Jacket (Severe Reaction)",
+      "Chapter 10 > REACTION)",
+      "Chapter 10 > FIRE ANT STINGS AND BITES"
+    ],
+    "headings": [
+      "SCORPION (DEADLY SPECIES)",
+      "REACTION)",
+      "FIRE ANT STINGS AND BITES",
+      "First Aid For Bites And Stings (081-833-0072)",
+      "SCORPION (HARMLESS SPECIES)",
+      "Black Widow Spider",
+      "BLACK WIDOW SPIDER",
+      "Bee, Wasp, Hornet, And Yellow Jacket (Severe Reaction)"
+    ]
+  },
+  {
+    "window_id": "w_p48-50",
+    "stride_idx": 55,
+    "paragraph_ids": [
+      "tc4-02.1:ch10:10-8@Base",
+      "tc4-02.1:ch10:10-9@Base",
+      "tc4-02.1:ch10:10-10@Base",
+      "tc4-02.1:ch10:10-11@Base",
+      "tc4-02.1:ch10:10-12@Base",
+      "tc4-02.1:ch10:10-13@Base"
+    ],
+    "chapter": 10,
+    "page_start": 48,
+    "page_end": 50,
+    "token_len": 245,
+    "child_tok_lens": [
+      57,
+      10,
+      56,
+      20,
+      36,
+      66
+    ],
+    "paragraph_short_refs": [
+      "Ch10 \u00a710-8 (Base)",
+      "Ch10 \u00a710-9 (Base)",
+      "Ch10 \u00a710-10 (Base)",
+      "Ch10 \u00a710-11 (Base)",
+      "Ch10 \u00a710-12 (Base)",
+      "Ch10 \u00a710-13 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 10 > REACTION)",
+      "Chapter 10 > FIRE ANT STINGS AND BITES",
+      "Chapter 10 > Ticks",
+      "Chapter 10 > UNKNOWN, NONSPECIFIC INSECTS",
+      "Chapter 10 > Treat The Bite Or Sting",
+      "Chapter 10 > Treat The Bite Or Sting"
+    ],
+    "headings": [
+      "REACTION)",
+      "FIRE ANT STINGS AND BITES",
+      "Ticks",
+      "Treat The Bite Or Sting",
+      "UNKNOWN, NONSPECIFIC INSECTS"
+    ]
+  },
+  {
+    "window_id": "w_p50-51",
+    "stride_idx": 56,
+    "paragraph_ids": [
+      "tc4-02.1:ch10:10-12@Base",
+      "tc4-02.1:ch10:10-13@Base",
+      "tc4-02.1:ch10:10-14@Base"
+    ],
+    "chapter": 10,
+    "page_start": 50,
+    "page_end": 51,
+    "token_len": 134,
+    "child_tok_lens": [
+      36,
+      66,
+      32
+    ],
+    "paragraph_short_refs": [
+      "Ch10 \u00a710-12 (Base)",
+      "Ch10 \u00a710-13 (Base)",
+      "Ch10 \u00a710-14 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 10 > Treat The Bite Or Sting",
+      "Chapter 10 > Treat The Bite Or Sting",
+      "Chapter 10 > Treat The Bite Or Sting"
+    ],
+    "headings": [
+      "Treat The Bite Or Sting"
+    ]
+  },
+  {
+    "window_id": "w_p50-51",
+    "stride_idx": 57,
+    "paragraph_ids": [
+      "tc4-02.1:ch10:10-13@Base",
+      "tc4-02.1:ch10:10-14@Base"
+    ],
+    "chapter": 10,
+    "page_start": 50,
+    "page_end": 51,
+    "token_len": 98,
+    "child_tok_lens": [
+      66,
+      32
+    ],
+    "paragraph_short_refs": [
+      "Ch10 \u00a710-13 (Base)",
+      "Ch10 \u00a710-14 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 10 > Treat The Bite Or Sting",
+      "Chapter 10 > Treat The Bite Or Sting"
+    ],
+    "headings": [
+      "Treat The Bite Or Sting"
+    ]
+  },
+  {
+    "window_id": "w_p51-51",
+    "stride_idx": 58,
+    "paragraph_ids": [
+      "tc4-02.1:ch10:10-14@Base"
+    ],
+    "chapter": 10,
+    "page_start": 51,
+    "page_end": 51,
+    "token_len": 32,
+    "child_tok_lens": [
+      32
+    ],
+    "paragraph_short_refs": [
+      "Ch10 \u00a710-14 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 10 > Treat The Bite Or Sting"
+    ],
+    "headings": [
+      "Treat The Bite Or Sting"
+    ]
+  },
+  {
+    "window_id": "w_p53-53",
+    "stride_idx": 59,
+    "paragraph_ids": [
+      "tc4-02.1:ch11:11-1@Base",
+      "tc4-02.1:ch11:11-2@Base",
+      "tc4-02.1:ch11:11-3@Base",
+      "tc4-02.1:ch11:11-4@Base",
+      "tc4-02.1:ch11:11-5@Base"
+    ],
+    "chapter": 11,
+    "page_start": 53,
+    "page_end": 53,
+    "token_len": 242,
+    "child_tok_lens": [
+      36,
+      51,
+      63,
+      45,
+      47
+    ],
+    "paragraph_short_refs": [
+      "Ch11 \u00a711-1 (Base)",
+      "Ch11 \u00a711-2 (Base)",
+      "Ch11 \u00a711-3 (Base)",
+      "Ch11 \u00a711-4 (Base)",
+      "Ch11 \u00a711-5 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 11 > HEAT ILLNESS",
+      "Chapter 11 > HEAT ILLNESS",
+      "Chapter 11 > HEAT EXHAUSTION",
+      "Chapter 11 > SIGNS AND SYMPTOMS OF HEAT EXHAUSTION",
+      "Chapter 11 > FIRST AID FOR HEAT EXHAUSTION"
+    ],
+    "headings": [
+      "SIGNS AND SYMPTOMS OF HEAT EXHAUSTION",
+      "FIRST AID FOR HEAT EXHAUSTION",
+      "HEAT EXHAUSTION",
+      "HEAT ILLNESS"
+    ]
+  },
+  {
+    "window_id": "w_p53-54",
+    "stride_idx": 60,
+    "paragraph_ids": [
+      "tc4-02.1:ch11:11-4@Base",
+      "tc4-02.1:ch11:11-5@Base",
+      "tc4-02.1:ch11:11-6@Base",
+      "tc4-02.1:ch11:11-7@Base",
+      "tc4-02.1:ch11:11-8@Base"
+    ],
+    "chapter": 11,
+    "page_start": 53,
+    "page_end": 54,
+    "token_len": 161,
+    "child_tok_lens": [
+      45,
+      47,
+      27,
+      29,
+      13
+    ],
+    "paragraph_short_refs": [
+      "Ch11 \u00a711-4 (Base)",
+      "Ch11 \u00a711-5 (Base)",
+      "Ch11 \u00a711-6 (Base)",
+      "Ch11 \u00a711-7 (Base)",
+      "Ch11 \u00a711-8 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 11 > SIGNS AND SYMPTOMS OF HEAT EXHAUSTION",
+      "Chapter 11 > FIRST AID FOR HEAT EXHAUSTION",
+      "Chapter 11 > FIRST AID FOR HEAT EXHAUSTION",
+      "Chapter 11 > HEAT STROKE",
+      "Chapter 11 > SIGNS AND SYMPTOMS HEAT STROKE"
+    ],
+    "headings": [
+      "SIGNS AND SYMPTOMS OF HEAT EXHAUSTION",
+      "FIRST AID FOR HEAT EXHAUSTION",
+      "SIGNS AND SYMPTOMS HEAT STROKE",
+      "HEAT STROKE"
+    ]
+  },
+  {
+    "window_id": "w_p54-55",
+    "stride_idx": 61,
+    "paragraph_ids": [
+      "tc4-02.1:ch11:11-7@Base",
+      "tc4-02.1:ch11:11-8@Base",
+      "tc4-02.1:ch11:11-9@Base",
+      "tc4-02.1:ch11:11-10@Base",
+      "tc4-02.1:ch11:11-11@Base"
+    ],
+    "chapter": 11,
+    "page_start": 54,
+    "page_end": 55,
+    "token_len": 220,
+    "child_tok_lens": [
+      29,
+      13,
+      127,
+      17,
+      34
+    ],
+    "paragraph_short_refs": [
+      "Ch11 \u00a711-7 (Base)",
+      "Ch11 \u00a711-8 (Base)",
+      "Ch11 \u00a711-9 (Base)",
+      "Ch11 \u00a711-10 (Base)",
+      "Ch11 \u00a711-11 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 11 > HEAT STROKE",
+      "Chapter 11 > SIGNS AND SYMPTOMS HEAT STROKE",
+      "Chapter 11 > First Aid For Heat Stroke",
+      "Chapter 11 > HEAT STROKE",
+      "Chapter 11 > SIGNS AND SYMPTOMS OF HYPONATREMIA"
+    ],
+    "headings": [
+      "SIGNS AND SYMPTOMS HEAT STROKE",
+      "First Aid For Heat Stroke",
+      "SIGNS AND SYMPTOMS OF HYPONATREMIA",
+      "HEAT STROKE"
+    ]
+  },
+  {
+    "window_id": "w_p54-55",
+    "stride_idx": 62,
+    "paragraph_ids": [
+      "tc4-02.1:ch11:11-10@Base",
+      "tc4-02.1:ch11:11-11@Base",
+      "tc4-02.1:ch11:11-12@Base"
+    ],
+    "chapter": 11,
+    "page_start": 54,
+    "page_end": 55,
+    "token_len": 84,
+    "child_tok_lens": [
+      17,
+      34,
+      33
+    ],
+    "paragraph_short_refs": [
+      "Ch11 \u00a711-10 (Base)",
+      "Ch11 \u00a711-11 (Base)",
+      "Ch11 \u00a711-12 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 11 > HEAT STROKE",
+      "Chapter 11 > SIGNS AND SYMPTOMS OF HYPONATREMIA",
+      "Chapter 11 > FIRST AID FOR HYPONATREMIA"
+    ],
+    "headings": [
+      "SIGNS AND SYMPTOMS OF HYPONATREMIA",
+      "FIRST AID FOR HYPONATREMIA",
+      "HEAT STROKE"
+    ]
+  },
+  {
+    "window_id": "w_p55-55",
+    "stride_idx": 63,
+    "paragraph_ids": [
+      "tc4-02.1:ch11:11-11@Base",
+      "tc4-02.1:ch11:11-12@Base"
+    ],
+    "chapter": 11,
+    "page_start": 55,
+    "page_end": 55,
+    "token_len": 67,
+    "child_tok_lens": [
+      34,
+      33
+    ],
+    "paragraph_short_refs": [
+      "Ch11 \u00a711-11 (Base)",
+      "Ch11 \u00a711-12 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 11 > SIGNS AND SYMPTOMS OF HYPONATREMIA",
+      "Chapter 11 > FIRST AID FOR HYPONATREMIA"
+    ],
+    "headings": [
+      "SIGNS AND SYMPTOMS OF HYPONATREMIA",
+      "FIRST AID FOR HYPONATREMIA"
+    ]
+  },
+  {
+    "window_id": "w_p55-55",
+    "stride_idx": 64,
+    "paragraph_ids": [
+      "tc4-02.1:ch11:11-12@Base"
+    ],
+    "chapter": 11,
+    "page_start": 55,
+    "page_end": 55,
+    "token_len": 33,
+    "child_tok_lens": [
+      33
+    ],
+    "paragraph_short_refs": [
+      "Ch11 \u00a711-12 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 11 > FIRST AID FOR HYPONATREMIA"
+    ],
+    "headings": [
+      "FIRST AID FOR HYPONATREMIA"
+    ]
+  },
+  {
+    "window_id": "w_p57-57",
+    "stride_idx": 65,
+    "paragraph_ids": [
+      "tc4-02.1:ch12:12-1@Base",
+      "tc4-02.1:ch12:12-2@Base",
+      "tc4-02.1:ch12:12-3@Base",
+      "tc4-02.1:ch12:12-4@Base"
+    ],
+    "chapter": 12,
+    "page_start": 57,
+    "page_end": 57,
+    "token_len": 212,
+    "child_tok_lens": [
+      89,
+      70,
+      37,
+      16
+    ],
+    "paragraph_short_refs": [
+      "Ch12 \u00a712-1 (Base)",
+      "Ch12 \u00a712-2 (Base)",
+      "Ch12 \u00a712-3 (Base)",
+      "Ch12 \u00a712-4 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 12 > COLD WEATHER INJURIES",
+      "Chapter 12 > HYPOTHERMIA",
+      "Chapter 12 > HYPOTHERMIA",
+      "Chapter 12 > HYPOTHERMIA"
+    ],
+    "headings": [
+      "HYPOTHERMIA",
+      "COLD WEATHER INJURIES"
+    ]
+  },
+  {
+    "window_id": "w_p57-58",
+    "stride_idx": 66,
+    "paragraph_ids": [
+      "tc4-02.1:ch12:12-3@Base",
+      "tc4-02.1:ch12:12-4@Base",
+      "tc4-02.1:ch12:12-5@Base",
+      "tc4-02.1:ch12:12-6@Base",
+      "tc4-02.1:ch12:12-7@Base",
+      "tc4-02.1:ch12:12-8@Base"
+    ],
+    "chapter": 12,
+    "page_start": 57,
+    "page_end": 58,
+    "token_len": 244,
+    "child_tok_lens": [
+      37,
+      16,
+      60,
+      26,
+      69,
+      36
+    ],
+    "paragraph_short_refs": [
+      "Ch12 \u00a712-3 (Base)",
+      "Ch12 \u00a712-4 (Base)",
+      "Ch12 \u00a712-5 (Base)",
+      "Ch12 \u00a712-6 (Base)",
+      "Ch12 \u00a712-7 (Base)",
+      "Ch12 \u00a712-8 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 12 > HYPOTHERMIA",
+      "Chapter 12 > HYPOTHERMIA",
+      "Chapter 12 > SIGNS AND SYMPTOMS OF HYPOTHERMIA",
+      "Chapter 12 > FIRST AID FOR HYPOTHERMIA",
+      "Chapter 12 > First Aid For Hypothermia",
+      "Chapter 12 > FROSTBITE"
+    ],
+    "headings": [
+      "HYPOTHERMIA",
+      "FROSTBITE",
+      "SIGNS AND SYMPTOMS OF HYPOTHERMIA",
+      "First Aid For Hypothermia",
+      "FIRST AID FOR HYPOTHERMIA"
+    ]
+  },
+  {
+    "window_id": "w_p58-58",
+    "stride_idx": 67,
+    "paragraph_ids": [
+      "tc4-02.1:ch12:12-7@Base",
+      "tc4-02.1:ch12:12-8@Base",
+      "tc4-02.1:ch12:12-9@Base",
+      "tc4-02.1:ch12:12-10@Base",
+      "tc4-02.1:ch12:12-11@Base"
+    ],
+    "chapter": 12,
+    "page_start": 58,
+    "page_end": 58,
+    "token_len": 244,
+    "child_tok_lens": [
+      69,
+      36,
+      57,
+      41,
+      41
+    ],
+    "paragraph_short_refs": [
+      "Ch12 \u00a712-7 (Base)",
+      "Ch12 \u00a712-8 (Base)",
+      "Ch12 \u00a712-9 (Base)",
+      "Ch12 \u00a712-10 (Base)",
+      "Ch12 \u00a712-11 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 12 > First Aid For Hypothermia",
+      "Chapter 12 > FROSTBITE",
+      "Chapter 12 > FROSTBITE",
+      "Chapter 12 > SIGNS AND SYMPTOMS OF FROSTBITE",
+      "Chapter 12 > FROSTBITE"
+    ],
+    "headings": [
+      "SIGNS AND SYMPTOMS OF FROSTBITE",
+      "FROSTBITE",
+      "First Aid For Hypothermia"
+    ]
+  },
+  {
+    "window_id": "w_p58-59",
+    "stride_idx": 68,
+    "paragraph_ids": [
+      "tc4-02.1:ch12:12-10@Base",
+      "tc4-02.1:ch12:12-11@Base",
+      "tc4-02.1:ch12:12-12@Base",
+      "tc4-02.1:ch12:12-13@Base"
+    ],
+    "chapter": 12,
+    "page_start": 58,
+    "page_end": 59,
+    "token_len": 237,
+    "child_tok_lens": [
+      41,
+      41,
+      135,
+      20
+    ],
+    "paragraph_short_refs": [
+      "Ch12 \u00a712-10 (Base)",
+      "Ch12 \u00a712-11 (Base)",
+      "Ch12 \u00a712-12 (Base)",
+      "Ch12 \u00a712-13 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 12 > SIGNS AND SYMPTOMS OF FROSTBITE",
+      "Chapter 12 > FROSTBITE",
+      "Chapter 12 > FIRST AID FOR FROSTBITE",
+      "Chapter 12 > CAUSE OF NONFREEZING COLD INJURIES"
+    ],
+    "headings": [
+      "SIGNS AND SYMPTOMS OF FROSTBITE",
+      "FROSTBITE",
+      "FIRST AID FOR FROSTBITE",
+      "CAUSE OF NONFREEZING COLD INJURIES"
+    ]
+  },
+  {
+    "window_id": "w_p59-59",
+    "stride_idx": 69,
+    "paragraph_ids": [
+      "tc4-02.1:ch12:12-12@Base",
+      "tc4-02.1:ch12:12-13@Base",
+      "tc4-02.1:ch12:12-14@Base",
+      "tc4-02.1:ch12:12-15@Base"
+    ],
+    "chapter": 12,
+    "page_start": 59,
+    "page_end": 59,
+    "token_len": 204,
+    "child_tok_lens": [
+      135,
+      20,
+      23,
+      26
+    ],
+    "paragraph_short_refs": [
+      "Ch12 \u00a712-12 (Base)",
+      "Ch12 \u00a712-13 (Base)",
+      "Ch12 \u00a712-14 (Base)",
+      "Ch12 \u00a712-15 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 12 > FIRST AID FOR FROSTBITE",
+      "Chapter 12 > CAUSE OF NONFREEZING COLD INJURIES",
+      "Chapter 12 > Cause Of Nonfreezing Cold Injuries",
+      "Chapter 12 > Cause Of Nonfreezing Cold Injuries"
+    ],
+    "headings": [
+      "Cause Of Nonfreezing Cold Injuries",
+      "FIRST AID FOR FROSTBITE",
+      "CAUSE OF NONFREEZING COLD INJURIES"
+    ]
+  },
+  {
+    "window_id": "w_p59-60",
+    "stride_idx": 70,
+    "paragraph_ids": [
+      "tc4-02.1:ch12:12-14@Base",
+      "tc4-02.1:ch12:12-15@Base",
+      "tc4-02.1:ch12:12-16@Base",
+      "tc4-02.1:ch12:12-17@Base",
+      "tc4-02.1:ch12:12-18@Base",
+      "tc4-02.1:ch12:12-19@Base"
+    ],
+    "chapter": 12,
+    "page_start": 59,
+    "page_end": 60,
+    "token_len": 236,
+    "child_tok_lens": [
+      23,
+      26,
+      97,
+      34,
+      48,
+      8
+    ],
+    "paragraph_short_refs": [
+      "Ch12 \u00a712-14 (Base)",
+      "Ch12 \u00a712-15 (Base)",
+      "Ch12 \u00a712-16 (Base)",
+      "Ch12 \u00a712-17 (Base)",
+      "Ch12 \u00a712-18 (Base)",
+      "Ch12 \u00a712-19 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 12 > Cause Of Nonfreezing Cold Injuries",
+      "Chapter 12 > Cause Of Nonfreezing Cold Injuries",
+      "Chapter 12 > CAUSE OF NONFREEZING COLD INJURIES",
+      "Chapter 12 > CHILBLAIN",
+      "Chapter 12 > Signs And Symptoms Of Chilblain",
+      "Chapter 12 > First Aid For Chilblain"
+    ],
+    "headings": [
+      "First Aid For Chilblain",
+      "Signs And Symptoms Of Chilblain",
+      "CHILBLAIN",
+      "Cause Of Nonfreezing Cold Injuries",
+      "CAUSE OF NONFREEZING COLD INJURIES"
+    ]
+  },
+  {
+    "window_id": "w_p60-60",
+    "stride_idx": 71,
+    "paragraph_ids": [
+      "tc4-02.1:ch12:12-18@Base",
+      "tc4-02.1:ch12:12-19@Base",
+      "tc4-02.1:ch12:12-20@Base",
+      "tc4-02.1:ch12:12-21@Base"
+    ],
+    "chapter": 12,
+    "page_start": 60,
+    "page_end": 60,
+    "token_len": 183,
+    "child_tok_lens": [
+      48,
+      8,
+      67,
+      60
+    ],
+    "paragraph_short_refs": [
+      "Ch12 \u00a712-18 (Base)",
+      "Ch12 \u00a712-19 (Base)",
+      "Ch12 \u00a712-20 (Base)",
+      "Ch12 \u00a712-21 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 12 > Signs And Symptoms Of Chilblain",
+      "Chapter 12 > First Aid For Chilblain",
+      "Chapter 12 > Signs And Symptoms Of Chilblain",
+      "Chapter 12 > Signs And Symptoms Of Immersion Foot"
+    ],
+    "headings": [
+      "Signs And Symptoms Of Immersion Foot",
+      "First Aid For Chilblain",
+      "Signs And Symptoms Of Chilblain"
+    ]
+  },
+  {
+    "window_id": "w_p60-60",
+    "stride_idx": 72,
+    "paragraph_ids": [
+      "tc4-02.1:ch12:12-20@Base",
+      "tc4-02.1:ch12:12-21@Base",
+      "tc4-02.1:ch12:12-22@Base"
+    ],
+    "chapter": 12,
+    "page_start": 60,
+    "page_end": 60,
+    "token_len": 196,
+    "child_tok_lens": [
+      67,
+      60,
+      69
+    ],
+    "paragraph_short_refs": [
+      "Ch12 \u00a712-20 (Base)",
+      "Ch12 \u00a712-21 (Base)",
+      "Ch12 \u00a712-22 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 12 > Signs And Symptoms Of Chilblain",
+      "Chapter 12 > Signs And Symptoms Of Immersion Foot",
+      "Chapter 12 > First Aid For Immersion Foot"
+    ],
+    "headings": [
+      "Signs And Symptoms Of Immersion Foot",
+      "First Aid For Immersion Foot",
+      "Signs And Symptoms Of Chilblain"
+    ]
+  },
+  {
+    "window_id": "w_p60-61",
+    "stride_idx": 73,
+    "paragraph_ids": [
+      "tc4-02.1:ch12:12-21@Base",
+      "tc4-02.1:ch12:12-22@Base",
+      "tc4-02.1:ch12:12-23@Base",
+      "tc4-02.1:ch12:12-24@Base"
+    ],
+    "chapter": 12,
+    "page_start": 60,
+    "page_end": 61,
+    "token_len": 239,
+    "child_tok_lens": [
+      60,
+      69,
+      70,
+      40
+    ],
+    "paragraph_short_refs": [
+      "Ch12 \u00a712-21 (Base)",
+      "Ch12 \u00a712-22 (Base)",
+      "Ch12 \u00a712-23 (Base)",
+      "Ch12 \u00a712-24 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 12 > Signs And Symptoms Of Immersion Foot",
+      "Chapter 12 > First Aid For Immersion Foot",
+      "Chapter 12 > SNOW BLINDNESS",
+      "Chapter 12 > Signs And Symptoms Of Snow Blindness"
+    ],
+    "headings": [
+      "SNOW BLINDNESS",
+      "Signs And Symptoms Of Immersion Foot",
+      "First Aid For Immersion Foot",
+      "Signs And Symptoms Of Snow Blindness"
+    ]
+  },
+  {
+    "window_id": "w_p60-61",
+    "stride_idx": 74,
+    "paragraph_ids": [
+      "tc4-02.1:ch12:12-23@Base",
+      "tc4-02.1:ch12:12-24@Base",
+      "tc4-02.1:ch12:12-25@Base"
+    ],
+    "chapter": 12,
+    "page_start": 60,
+    "page_end": 61,
+    "token_len": 134,
+    "child_tok_lens": [
+      70,
+      40,
+      24
+    ],
+    "paragraph_short_refs": [
+      "Ch12 \u00a712-23 (Base)",
+      "Ch12 \u00a712-24 (Base)",
+      "Ch12 \u00a712-25 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 12 > SNOW BLINDNESS",
+      "Chapter 12 > Signs And Symptoms Of Snow Blindness",
+      "Chapter 12 > First Aid For Snow Blindness"
+    ],
+    "headings": [
+      "SNOW BLINDNESS",
+      "First Aid For Snow Blindness",
+      "Signs And Symptoms Of Snow Blindness"
+    ]
+  },
+  {
+    "window_id": "w_p61-61",
+    "stride_idx": 75,
+    "paragraph_ids": [
+      "tc4-02.1:ch12:12-24@Base",
+      "tc4-02.1:ch12:12-25@Base"
+    ],
+    "chapter": 12,
+    "page_start": 61,
+    "page_end": 61,
+    "token_len": 64,
+    "child_tok_lens": [
+      40,
+      24
+    ],
+    "paragraph_short_refs": [
+      "Ch12 \u00a712-24 (Base)",
+      "Ch12 \u00a712-25 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 12 > Signs And Symptoms Of Snow Blindness",
+      "Chapter 12 > First Aid For Snow Blindness"
+    ],
+    "headings": [
+      "First Aid For Snow Blindness",
+      "Signs And Symptoms Of Snow Blindness"
+    ]
+  },
+  {
+    "window_id": "w_p61-61",
+    "stride_idx": 76,
+    "paragraph_ids": [
+      "tc4-02.1:ch12:12-25@Base"
+    ],
+    "chapter": 12,
+    "page_start": 61,
+    "page_end": 61,
+    "token_len": 24,
+    "child_tok_lens": [
+      24
+    ],
+    "paragraph_short_refs": [
+      "Ch12 \u00a712-25 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 12 > First Aid For Snow Blindness"
+    ],
+    "headings": [
+      "First Aid For Snow Blindness"
+    ]
+  },
+  {
+    "window_id": "w_p63-63",
+    "stride_idx": 77,
+    "paragraph_ids": [
+      "tc4-02.1:ch13:13-1@Base",
+      "tc4-02.1:ch13:13-2@Base",
+      "tc4-02.1:ch13:13-3@Base",
+      "tc4-02.1:ch13:13-4@Base",
+      "tc4-02.1:ch13:13-5@Base",
+      "tc4-02.1:ch13:13-6@Base",
+      "tc4-02.1:ch13:13-7@Base"
+    ],
+    "chapter": 13,
+    "page_start": 63,
+    "page_end": 63,
+    "token_len": 250,
+    "child_tok_lens": [
+      47,
+      46,
+      21,
+      35,
+      9,
+      55,
+      37
+    ],
+    "paragraph_short_refs": [
+      "Ch13 \u00a713-1 (Base)",
+      "Ch13 \u00a713-2 (Base)",
+      "Ch13 \u00a713-3 (Base)",
+      "Ch13 \u00a713-4 (Base)",
+      "Ch13 \u00a713-5 (Base)",
+      "Ch13 \u00a713-6 (Base)",
+      "Ch13 \u00a713-7 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 13 > FRACTURES",
+      "Chapter 13 > Fractures",
+      "Chapter 13 > FRACTURES",
+      "Chapter 13 > FRACTURES",
+      "Chapter 13 > FRACTURES",
+      "Chapter 13 > APPLY A RIGID SPLINT",
+      "Chapter 13 > Apply A Rigid Splint"
+    ],
+    "headings": [
+      "FRACTURES",
+      "Fractures",
+      "Apply A Rigid Splint",
+      "APPLY A RIGID SPLINT"
+    ]
+  },
+  {
+    "window_id": "w_p63-64",
+    "stride_idx": 78,
+    "paragraph_ids": [
+      "tc4-02.1:ch13:13-6@Base",
+      "tc4-02.1:ch13:13-7@Base",
+      "tc4-02.1:ch13:13-8@Base",
+      "tc4-02.1:ch13:13-9@Base"
+    ],
+    "chapter": 13,
+    "page_start": 63,
+    "page_end": 64,
+    "token_len": 176,
+    "child_tok_lens": [
+      55,
+      37,
+      32,
+      52
+    ],
+    "paragraph_short_refs": [
+      "Ch13 \u00a713-6 (Base)",
+      "Ch13 \u00a713-7 (Base)",
+      "Ch13 \u00a713-8 (Base)",
+      "Ch13 \u00a713-9 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 13 > APPLY A RIGID SPLINT",
+      "Chapter 13 > Apply A Rigid Splint",
+      "Chapter 13 > UPPER EXTREMITY FRACTURES",
+      "Chapter 13 > LOWER EXTREMITY FRACTURES"
+    ],
+    "headings": [
+      "LOWER EXTREMITY FRACTURES",
+      "Apply A Rigid Splint",
+      "APPLY A RIGID SPLINT",
+      "UPPER EXTREMITY FRACTURES"
+    ]
+  },
+  {
+    "window_id": "w_p64-64",
+    "stride_idx": 79,
+    "paragraph_ids": [
+      "tc4-02.1:ch13:13-8@Base",
+      "tc4-02.1:ch13:13-9@Base"
+    ],
+    "chapter": 13,
+    "page_start": 64,
+    "page_end": 64,
+    "token_len": 84,
+    "child_tok_lens": [
+      32,
+      52
+    ],
+    "paragraph_short_refs": [
+      "Ch13 \u00a713-8 (Base)",
+      "Ch13 \u00a713-9 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 13 > UPPER EXTREMITY FRACTURES",
+      "Chapter 13 > LOWER EXTREMITY FRACTURES"
+    ],
+    "headings": [
+      "LOWER EXTREMITY FRACTURES",
+      "UPPER EXTREMITY FRACTURES"
+    ]
+  },
+  {
+    "window_id": "w_p64-64",
+    "stride_idx": 80,
+    "paragraph_ids": [
+      "tc4-02.1:ch13:13-9@Base"
+    ],
+    "chapter": 13,
+    "page_start": 64,
+    "page_end": 64,
+    "token_len": 52,
+    "child_tok_lens": [
+      52
+    ],
+    "paragraph_short_refs": [
+      "Ch13 \u00a713-9 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 13 > LOWER EXTREMITY FRACTURES"
+    ],
+    "headings": [
+      "LOWER EXTREMITY FRACTURES"
+    ]
+  },
+  {
+    "window_id": "w_p64-64",
+    "stride_idx": 81,
+    "paragraph_ids": [
+      "tc4-02.1:ch13:13-10@Base"
+    ],
+    "chapter": 13,
+    "page_start": 64,
+    "page_end": 64,
+    "token_len": 208,
+    "child_tok_lens": [
+      208
+    ],
+    "paragraph_short_refs": [
+      "Ch13 \u00a713-10 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 13 > FOREARM AND WRIST FRACTURES"
+    ],
+    "headings": [
+      "FOREARM AND WRIST FRACTURES"
+    ]
+  },
+  {
+    "window_id": "w_p65-65",
+    "stride_idx": 82,
+    "paragraph_ids": [
+      "tc4-02.1:ch13:13-11@Base",
+      "tc4-02.1:ch13:13-12@Base",
+      "tc4-02.1:ch13:13-13@Base"
+    ],
+    "chapter": 13,
+    "page_start": 65,
+    "page_end": 65,
+    "token_len": 243,
+    "child_tok_lens": [
+      64,
+      146,
+      33
+    ],
+    "paragraph_short_refs": [
+      "Ch13 \u00a713-11 (Base)",
+      "Ch13 \u00a713-12 (Base)",
+      "Ch13 \u00a713-13 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 13 > ELBOW INJURY",
+      "Chapter 13 > Apply A Rigid Splint (081-833-0263)",
+      "Chapter 13 > LOWER EXTREMITY INJURY"
+    ],
+    "headings": [
+      "Apply A Rigid Splint (081-833-0263)",
+      "ELBOW INJURY",
+      "LOWER EXTREMITY INJURY"
+    ]
+  },
+  {
+    "window_id": "w_p65-65",
+    "stride_idx": 83,
+    "paragraph_ids": [
+      "tc4-02.1:ch13:13-12@Base",
+      "tc4-02.1:ch13:13-13@Base",
+      "tc4-02.1:ch13:13-14@Base"
+    ],
+    "chapter": 13,
+    "page_start": 65,
+    "page_end": 65,
+    "token_len": 217,
+    "child_tok_lens": [
+      146,
+      33,
+      38
+    ],
+    "paragraph_short_refs": [
+      "Ch13 \u00a713-12 (Base)",
+      "Ch13 \u00a713-13 (Base)",
+      "Ch13 \u00a713-14 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 13 > Apply A Rigid Splint (081-833-0263)",
+      "Chapter 13 > LOWER EXTREMITY INJURY",
+      "Chapter 13 > ANKLE INJURY"
+    ],
+    "headings": [
+      "Apply A Rigid Splint (081-833-0263)",
+      "ANKLE INJURY",
+      "LOWER EXTREMITY INJURY"
+    ]
+  },
+  {
+    "window_id": "w_p65-65",
+    "stride_idx": 84,
+    "paragraph_ids": [
+      "tc4-02.1:ch13:13-13@Base",
+      "tc4-02.1:ch13:13-14@Base"
+    ],
+    "chapter": 13,
+    "page_start": 65,
+    "page_end": 65,
+    "token_len": 71,
+    "child_tok_lens": [
+      33,
+      38
+    ],
+    "paragraph_short_refs": [
+      "Ch13 \u00a713-13 (Base)",
+      "Ch13 \u00a713-14 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 13 > LOWER EXTREMITY INJURY",
+      "Chapter 13 > ANKLE INJURY"
+    ],
+    "headings": [
+      "ANKLE INJURY",
+      "LOWER EXTREMITY INJURY"
+    ]
+  },
+  {
+    "window_id": "w_p65-66",
+    "stride_idx": 85,
+    "paragraph_ids": [
+      "tc4-02.1:ch13:13-14@Base",
+      "tc4-02.1:ch13:13-15@Base"
+    ],
+    "chapter": 13,
+    "page_start": 65,
+    "page_end": 66,
+    "token_len": 243,
+    "child_tok_lens": [
+      38,
+      205
+    ],
+    "paragraph_short_refs": [
+      "Ch13 \u00a713-14 (Base)",
+      "Ch13 \u00a713-15 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 13 > ANKLE INJURY",
+      "Chapter 13 > Ankle Injury"
+    ],
+    "headings": [
+      "Ankle Injury",
+      "ANKLE INJURY"
+    ]
+  },
+  {
+    "window_id": "w_p66-66",
+    "stride_idx": 86,
+    "paragraph_ids": [
+      "tc4-02.1:ch13:13-15@Base",
+      "tc4-02.1:ch13:13-16@Base"
+    ],
+    "chapter": 13,
+    "page_start": 66,
+    "page_end": 66,
+    "token_len": 222,
+    "child_tok_lens": [
+      205,
+      17
+    ],
+    "paragraph_short_refs": [
+      "Ch13 \u00a713-15 (Base)",
+      "Ch13 \u00a713-16 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 13 > Ankle Injury",
+      "Chapter 13 > Prepare Cravats"
+    ],
+    "headings": [
+      "Prepare Cravats",
+      "Ankle Injury"
+    ]
+  },
+  {
+    "window_id": "w_p66-67",
+    "stride_idx": 87,
+    "paragraph_ids": [
+      "tc4-02.1:ch13:13-16@Base",
+      "tc4-02.1:ch13:13-17@Base",
+      "tc4-02.1:ch13:13-18@Base",
+      "tc4-02.1:ch13:13-19@Base",
+      "tc4-02.1:ch13:13-20@Base",
+      "tc4-02.1:ch13:13-21@Base",
+      "tc4-02.1:ch13:13-22@Base",
+      "tc4-02.1:ch13:13-23@Base",
+      "tc4-02.1:ch13:13-24@Base"
+    ],
+    "chapter": 13,
+    "page_start": 66,
+    "page_end": 67,
+    "token_len": 222,
+    "child_tok_lens": [
+      17,
+      41,
+      20,
+      8,
+      36,
+      61,
+      18,
+      10,
+      11
+    ],
+    "paragraph_short_refs": [
+      "Ch13 \u00a713-16 (Base)",
+      "Ch13 \u00a713-17 (Base)",
+      "Ch13 \u00a713-18 (Base)",
+      "Ch13 \u00a713-19 (Base)",
+      "Ch13 \u00a713-20 (Base)",
+      "Ch13 \u00a713-21 (Base)",
+      "Ch13 \u00a713-22 (Base)",
+      "Ch13 \u00a713-23 (Base)",
+      "Ch13 \u00a713-24 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 13 > Prepare Cravats",
+      "Chapter 13 > FRACTURES OF THE FEMUR",
+      "Chapter 13 > FRACTURES OF THE FEMUR",
+      "Chapter 13 > PREPARE CRAVATS",
+      "Chapter 13 > PREPARE CRAVATS",
+      "Chapter 13 > FRACTURES OF THE FEMUR",
+      "Chapter 13 > Fractures Of The Femur",
+      "Chapter 13 > Fractures Of The Femur",
+      "Chapter 13 > Fractures Of The Femur"
+    ],
+    "headings": [
+      "Prepare Cravats",
+      "Fractures Of The Femur",
+      "PREPARE CRAVATS",
+      "FRACTURES OF THE FEMUR"
+    ]
+  },
+  {
+    "window_id": "w_p67-67",
+    "stride_idx": 88,
+    "paragraph_ids": [
+      "tc4-02.1:ch13:13-23@Base",
+      "tc4-02.1:ch13:13-24@Base"
+    ],
+    "chapter": 13,
+    "page_start": 67,
+    "page_end": 67,
+    "token_len": 21,
+    "child_tok_lens": [
+      10,
+      11
+    ],
+    "paragraph_short_refs": [
+      "Ch13 \u00a713-23 (Base)",
+      "Ch13 \u00a713-24 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 13 > Fractures Of The Femur",
+      "Chapter 13 > Fractures Of The Femur"
+    ],
+    "headings": [
+      "Fractures Of The Femur"
+    ]
+  },
+  {
+    "window_id": "w_p67-67",
+    "stride_idx": 89,
+    "paragraph_ids": [
+      "tc4-02.1:ch13:13-24@Base"
+    ],
+    "chapter": 13,
+    "page_start": 67,
+    "page_end": 67,
+    "token_len": 11,
+    "child_tok_lens": [
+      11
+    ],
+    "paragraph_short_refs": [
+      "Ch13 \u00a713-24 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 13 > Fractures Of The Femur"
+    ],
+    "headings": [
+      "Fractures Of The Femur"
+    ]
+  },
+  {
+    "window_id": "w_p69-69",
+    "stride_idx": 90,
+    "paragraph_ids": [
+      "tc4-02.1:ch14:14-1@Base",
+      "tc4-02.1:ch14:14-2@Base"
+    ],
+    "chapter": 14,
+    "page_start": 69,
+    "page_end": 69,
+    "token_len": 158,
+    "child_tok_lens": [
+      78,
+      80
+    ],
+    "paragraph_short_refs": [
+      "Ch14 \u00a714-1 (Base)",
+      "Ch14 \u00a714-2 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 14 > Rescue Breathing (081-831-0048)",
+      "Chapter 14 > MOUTH-TO-MOUTH METHOD"
+    ],
+    "headings": [
+      "MOUTH-TO-MOUTH METHOD",
+      "Rescue Breathing (081-831-0048)"
+    ]
+  },
+  {
+    "window_id": "w_p69-70",
+    "stride_idx": 91,
+    "paragraph_ids": [
+      "tc4-02.1:ch14:14-2@Base",
+      "tc4-02.1:ch14:14-3@Base",
+      "tc4-02.1:ch14:14-4@Base"
+    ],
+    "chapter": 14,
+    "page_start": 69,
+    "page_end": 70,
+    "token_len": 218,
+    "child_tok_lens": [
+      80,
+      109,
+      29
+    ],
+    "paragraph_short_refs": [
+      "Ch14 \u00a714-2 (Base)",
+      "Ch14 \u00a714-3 (Base)",
+      "Ch14 \u00a714-4 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 14 > MOUTH-TO-MOUTH METHOD",
+      "Chapter 14 > Rescue Breathing (081-831-0048)",
+      "Chapter 14 > MOUTH-TO-NOSE METHOD"
+    ],
+    "headings": [
+      "MOUTH-TO-NOSE METHOD",
+      "MOUTH-TO-MOUTH METHOD",
+      "Rescue Breathing (081-831-0048)"
+    ]
+  },
+  {
+    "window_id": "w_p69-70",
+    "stride_idx": 92,
+    "paragraph_ids": [
+      "tc4-02.1:ch14:14-3@Base",
+      "tc4-02.1:ch14:14-4@Base",
+      "tc4-02.1:ch14:14-5@Base",
+      "tc4-02.1:ch14:14-6@Base"
+    ],
+    "chapter": 14,
+    "page_start": 69,
+    "page_end": 70,
+    "token_len": 219,
+    "child_tok_lens": [
+      109,
+      29,
+      61,
+      20
+    ],
+    "paragraph_short_refs": [
+      "Ch14 \u00a714-3 (Base)",
+      "Ch14 \u00a714-4 (Base)",
+      "Ch14 \u00a714-5 (Base)",
+      "Ch14 \u00a714-6 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 14 > Rescue Breathing (081-831-0048)",
+      "Chapter 14 > MOUTH-TO-NOSE METHOD",
+      "Chapter 14 > MOUTH-TO-NOSE METHOD",
+      "Chapter 14 > Mouth-To-Nose Method"
+    ],
+    "headings": [
+      "MOUTH-TO-NOSE METHOD",
+      "Rescue Breathing (081-831-0048)",
+      "Mouth-To-Nose Method"
+    ]
+  },
+  {
+    "window_id": "w_p70-70",
+    "stride_idx": 93,
+    "paragraph_ids": [
+      "tc4-02.1:ch14:14-5@Base",
+      "tc4-02.1:ch14:14-6@Base"
+    ],
+    "chapter": 14,
+    "page_start": 70,
+    "page_end": 70,
+    "token_len": 81,
+    "child_tok_lens": [
+      61,
+      20
+    ],
+    "paragraph_short_refs": [
+      "Ch14 \u00a714-5 (Base)",
+      "Ch14 \u00a714-6 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 14 > MOUTH-TO-NOSE METHOD",
+      "Chapter 14 > Mouth-To-Nose Method"
+    ],
+    "headings": [
+      "MOUTH-TO-NOSE METHOD",
+      "Mouth-To-Nose Method"
+    ]
+  },
+  {
+    "window_id": "w_p70-70",
+    "stride_idx": 94,
+    "paragraph_ids": [
+      "tc4-02.1:ch14:14-6@Base"
+    ],
+    "chapter": 14,
+    "page_start": 70,
+    "page_end": 70,
+    "token_len": 20,
+    "child_tok_lens": [
+      20
+    ],
+    "paragraph_short_refs": [
+      "Ch14 \u00a714-6 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 14 > Mouth-To-Nose Method"
+    ],
+    "headings": [
+      "Mouth-To-Nose Method"
+    ]
+  },
+  {
+    "window_id": "w_p71-72",
+    "stride_idx": 95,
+    "paragraph_ids": [
+      "tc4-02.1:ch15:15-1@Base",
+      "tc4-02.1:ch15:15-2@Base",
+      "tc4-02.1:ch15:15-3@Base",
+      "tc4-02.1:ch15:15-4@Base",
+      "tc4-02.1:ch15:15-5@Base",
+      "tc4-02.1:ch15:15-6@Base"
+    ],
+    "chapter": 15,
+    "page_start": 71,
+    "page_end": 72,
+    "token_len": 225,
+    "child_tok_lens": [
+      66,
+      24,
+      71,
+      26,
+      11,
+      27
+    ],
+    "paragraph_short_refs": [
+      "Ch15 \u00a715-1 (Base)",
+      "Ch15 \u00a715-2 (Base)",
+      "Ch15 \u00a715-3 (Base)",
+      "Ch15 \u00a715-4 (Base)",
+      "Ch15 \u00a715-5 (Base)",
+      "Ch15 \u00a715-6 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 15 > External Chest Compressions (081-831-0046)",
+      "Chapter 15 > External Chest Compressions (081-831-0046)",
+      "Chapter 15 > External Chest Compressions (081-831-0046)",
+      "Chapter 15 > External Chest Compressions (081-831-0046)",
+      "Chapter 15 > External Chest Compressions (081-831-0046)",
+      "Chapter 15 > External Chest Compressions (081-831-0046)"
+    ],
+    "headings": [
+      "External Chest Compressions (081-831-0046)"
+    ]
+  },
+  {
+    "window_id": "w_p72-73",
+    "stride_idx": 96,
+    "paragraph_ids": [
+      "tc4-02.1:ch15:15-5@Base",
+      "tc4-02.1:ch15:15-6@Base",
+      "tc4-02.1:ch15:15-7@Base",
+      "tc4-02.1:ch15:15-8@Base",
+      "tc4-02.1:ch15:15-9@Base",
+      "tc4-02.1:ch15:15-10@Base",
+      "tc4-02.1:ch15:15-11@Base",
+      "tc4-02.1:ch15:15-12@Base"
+    ],
+    "chapter": 15,
+    "page_start": 72,
+    "page_end": 73,
+    "token_len": 148,
+    "child_tok_lens": [
+      11,
+      27,
+      56,
+      3,
+      7,
+      31,
+      3,
+      10
+    ],
+    "paragraph_short_refs": [
+      "Ch15 \u00a715-5 (Base)",
+      "Ch15 \u00a715-6 (Base)",
+      "Ch15 \u00a715-7 (Base)",
+      "Ch15 \u00a715-8 (Base)",
+      "Ch15 \u00a715-9 (Base)",
+      "Ch15 \u00a715-10 (Base)",
+      "Ch15 \u00a715-11 (Base)",
+      "Ch15 \u00a715-12 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 15 > External Chest Compressions (081-831-0046)",
+      "Chapter 15 > External Chest Compressions (081-831-0046)",
+      "Chapter 15 > External Chest Compressions (081-831-0046)",
+      "Chapter 15 > External Chest Compressions (081-831-0046)",
+      "Chapter 15 > External Chest Compressions (081-831-0046)",
+      "Chapter 15 > Ventilator-",
+      "Chapter 15 > Ventilator-",
+      "Chapter 15 > Ventilator-"
+    ],
+    "headings": [
+      "Ventilator-",
+      "External Chest Compressions (081-831-0046)"
+    ]
+  },
+  {
+    "window_id": "w_p73-73",
+    "stride_idx": 97,
+    "paragraph_ids": [
+      "tc4-02.1:ch15:15-11@Base",
+      "tc4-02.1:ch15:15-12@Base"
+    ],
+    "chapter": 15,
+    "page_start": 73,
+    "page_end": 73,
+    "token_len": 13,
+    "child_tok_lens": [
+      3,
+      10
+    ],
+    "paragraph_short_refs": [
+      "Ch15 \u00a715-11 (Base)",
+      "Ch15 \u00a715-12 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 15 > Ventilator-",
+      "Chapter 15 > Ventilator-"
+    ],
+    "headings": [
+      "Ventilator-"
+    ]
+  },
+  {
+    "window_id": "w_p73-73",
+    "stride_idx": 98,
+    "paragraph_ids": [
+      "tc4-02.1:ch15:15-12@Base"
+    ],
+    "chapter": 15,
+    "page_start": 73,
+    "page_end": 73,
+    "token_len": 10,
+    "child_tok_lens": [
+      10
+    ],
+    "paragraph_short_refs": [
+      "Ch15 \u00a715-12 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 15 > Ventilator-"
+    ],
+    "headings": [
+      "Ventilator-"
+    ]
+  },
+  {
+    "window_id": "w_p79-80",
+    "stride_idx": 99,
+    "paragraph_ids": [
+      "tc4-02.1:ch17:17-1@Base",
+      "tc4-02.1:ch17:17-2@Base",
+      "tc4-02.1:ch17:17-3@Base",
+      "tc4-02.1:ch17:17-4@Base",
+      "tc4-02.1:ch17:17-5@Base",
+      "tc4-02.1:ch17:17-6@Base"
+    ],
+    "chapter": 17,
+    "page_start": 79,
+    "page_end": 80,
+    "token_len": 231,
+    "child_tok_lens": [
+      34,
+      90,
+      12,
+      7,
+      38,
+      50
+    ],
+    "paragraph_short_refs": [
+      "Ch17 \u00a717-1 (Base)",
+      "Ch17 \u00a717-2 (Base)",
+      "Ch17 \u00a717-3 (Base)",
+      "Ch17 \u00a717-4 (Base)",
+      "Ch17 \u00a717-5 (Base)",
+      "Ch17 \u00a717-6 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 17 > Abdominal Injuries (081-831-0028)",
+      "Chapter 17 > Abdominal Injuries (081-831-0028)",
+      "Chapter 17 > Abdominal Injuries (081-831-0028)",
+      "Chapter 17 > Abdominal Injuries (081-831-0028)",
+      "Chapter 17 > Abdominal Injuries (081-831-0028)",
+      "Chapter 17 > Abdominal Injuries (081-831-0028)"
+    ],
+    "headings": [
+      "Abdominal Injuries (081-831-0028)"
+    ]
+  },
+  {
+    "window_id": "w_p80-80",
+    "stride_idx": 100,
+    "paragraph_ids": [
+      "tc4-02.1:ch17:17-5@Base",
+      "tc4-02.1:ch17:17-6@Base",
+      "tc4-02.1:ch17:17-7@Base"
+    ],
+    "chapter": 17,
+    "page_start": 80,
+    "page_end": 80,
+    "token_len": 125,
+    "child_tok_lens": [
+      38,
+      50,
+      37
+    ],
+    "paragraph_short_refs": [
+      "Ch17 \u00a717-5 (Base)",
+      "Ch17 \u00a717-6 (Base)",
+      "Ch17 \u00a717-7 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 17 > Abdominal Injuries (081-831-0028)",
+      "Chapter 17 > Abdominal Injuries (081-831-0028)",
+      "Chapter 17 > Abdominal Injuries (081-831-0028)"
+    ],
+    "headings": [
+      "Abdominal Injuries (081-831-0028)"
+    ]
+  },
+  {
+    "window_id": "w_p80-80",
+    "stride_idx": 101,
+    "paragraph_ids": [
+      "tc4-02.1:ch17:17-6@Base",
+      "tc4-02.1:ch17:17-7@Base"
+    ],
+    "chapter": 17,
+    "page_start": 80,
+    "page_end": 80,
+    "token_len": 87,
+    "child_tok_lens": [
+      50,
+      37
+    ],
+    "paragraph_short_refs": [
+      "Ch17 \u00a717-6 (Base)",
+      "Ch17 \u00a717-7 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 17 > Abdominal Injuries (081-831-0028)",
+      "Chapter 17 > Abdominal Injuries (081-831-0028)"
+    ],
+    "headings": [
+      "Abdominal Injuries (081-831-0028)"
+    ]
+  },
+  {
+    "window_id": "w_p80-80",
+    "stride_idx": 102,
+    "paragraph_ids": [
+      "tc4-02.1:ch17:17-7@Base"
+    ],
+    "chapter": 17,
+    "page_start": 80,
+    "page_end": 80,
+    "token_len": 37,
+    "child_tok_lens": [
+      37
+    ],
+    "paragraph_short_refs": [
+      "Ch17 \u00a717-7 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 17 > Abdominal Injuries (081-831-0028)"
+    ],
+    "headings": [
+      "Abdominal Injuries (081-831-0028)"
+    ]
+  },
+  {
+    "window_id": "w_p81-81",
+    "stride_idx": 103,
+    "paragraph_ids": [
+      "tc4-02.1:ch18:18-1@Base",
+      "tc4-02.1:ch18:18-2@Base"
+    ],
+    "chapter": 18,
+    "page_start": 81,
+    "page_end": 81,
+    "token_len": 153,
+    "child_tok_lens": [
+      31,
+      122
+    ],
+    "paragraph_short_refs": [
+      "Ch18 \u00a718-1 (Base)",
+      "Ch18 \u00a718-2 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 18 > Impalement Injuries (081-833-0029)",
+      "Chapter 18 > Impalement Injuries (081-833-0029)"
+    ],
+    "headings": [
+      "Impalement Injuries (081-833-0029)"
+    ]
+  },
+  {
+    "window_id": "w_p81-81",
+    "stride_idx": 104,
+    "paragraph_ids": [
+      "tc4-02.1:ch18:18-2@Base"
+    ],
+    "chapter": 18,
+    "page_start": 81,
+    "page_end": 81,
+    "token_len": 122,
+    "child_tok_lens": [
+      122
+    ],
+    "paragraph_short_refs": [
+      "Ch18 \u00a718-2 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 18 > Impalement Injuries (081-833-0029)"
+    ],
+    "headings": [
+      "Impalement Injuries (081-833-0029)"
+    ]
+  },
+  {
+    "window_id": "w_p85-85",
+    "stride_idx": 105,
+    "paragraph_ids": [
+      "tc4-02.1:ch20:20-1@Base",
+      "tc4-02.1:ch20:20-2@Base"
+    ],
+    "chapter": 20,
+    "page_start": 85,
+    "page_end": 85,
+    "token_len": 117,
+    "child_tok_lens": [
+      80,
+      37
+    ],
+    "paragraph_short_refs": [
+      "Ch20 \u00a720-1 (Base)",
+      "Ch20 \u00a720-2 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 20 > Apply A Sling And Swath (081-833-0265)",
+      "Chapter 20 > Apply A Sling And Swath (081-833-0265)"
+    ],
+    "headings": [
+      "Apply A Sling And Swath (081-833-0265)"
+    ]
+  },
+  {
+    "window_id": "w_p85-85",
+    "stride_idx": 106,
+    "paragraph_ids": [
+      "tc4-02.1:ch20:20-2@Base"
+    ],
+    "chapter": 20,
+    "page_start": 85,
+    "page_end": 85,
+    "token_len": 37,
+    "child_tok_lens": [
+      37
+    ],
+    "paragraph_short_refs": [
+      "Ch20 \u00a720-2 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 20 > Apply A Sling And Swath (081-833-0265)"
+    ],
+    "headings": [
+      "Apply A Sling And Swath (081-833-0265)"
+    ]
+  },
+  {
+    "window_id": "w_p93-94",
+    "stride_idx": 107,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-1@Base",
+      "tc4-02.1:ch23:23-2@Base",
+      "tc4-02.1:ch23:23-3@Base",
+      "tc4-02.1:ch23:23-4@Base",
+      "tc4-02.1:ch23:23-5@Base",
+      "tc4-02.1:ch23:23-6@Base",
+      "tc4-02.1:ch23:23-7@Base"
+    ],
+    "chapter": 23,
+    "page_start": 93,
+    "page_end": 94,
+    "token_len": 247,
+    "child_tok_lens": [
+      63,
+      52,
+      10,
+      31,
+      10,
+      11,
+      70
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-1 (Base)",
+      "Ch23 \u00a723-2 (Base)",
+      "Ch23 \u00a723-3 (Base)",
+      "Ch23 \u00a723-4 (Base)",
+      "Ch23 \u00a723-5 (Base)",
+      "Ch23 \u00a723-6 (Base)",
+      "Ch23 \u00a723-7 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Transport A Casualty (081-COM-1046)",
+      "Chapter 23 > REMOVING A CASUALTY FROM A VEHICLE",
+      "Chapter 23 > REMOVING A CASUALTY FROM A VEHICLE",
+      "Chapter 23 > TYPES OF MANUAL CARRIES",
+      "Chapter 23 > Types Of Manual Carries",
+      "Chapter 23 > CARRY",
+      "Chapter 23 > CARRY"
+    ],
+    "headings": [
+      "Transport A Casualty (081-COM-1046)",
+      "TYPES OF MANUAL CARRIES",
+      "REMOVING A CASUALTY FROM A VEHICLE",
+      "CARRY",
+      "Types Of Manual Carries"
+    ]
+  },
+  {
+    "window_id": "w_p94-95",
+    "stride_idx": 108,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-6@Base",
+      "tc4-02.1:ch23:23-7@Base",
+      "tc4-02.1:ch23:23-8@Base"
+    ],
+    "chapter": 23,
+    "page_start": 94,
+    "page_end": 95,
+    "token_len": 220,
+    "child_tok_lens": [
+      11,
+      70,
+      139
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-6 (Base)",
+      "Ch23 \u00a723-7 (Base)",
+      "Ch23 \u00a723-8 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > CARRY",
+      "Chapter 23 > CARRY",
+      "Chapter 23 > Transport A Casualty (081-COM-1046)"
+    ],
+    "headings": [
+      "CARRY",
+      "Transport A Casualty (081-COM-1046)"
+    ]
+  },
+  {
+    "window_id": "w_p94-95",
+    "stride_idx": 109,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-7@Base",
+      "tc4-02.1:ch23:23-8@Base"
+    ],
+    "chapter": 23,
+    "page_start": 94,
+    "page_end": 95,
+    "token_len": 209,
+    "child_tok_lens": [
+      70,
+      139
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-7 (Base)",
+      "Ch23 \u00a723-8 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > CARRY",
+      "Chapter 23 > Transport A Casualty (081-COM-1046)"
+    ],
+    "headings": [
+      "CARRY",
+      "Transport A Casualty (081-COM-1046)"
+    ]
+  },
+  {
+    "window_id": "w_p95-96",
+    "stride_idx": 110,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-8@Base",
+      "tc4-02.1:ch23:23-9@Base",
+      "tc4-02.1:ch23:23-10@Base"
+    ],
+    "chapter": 23,
+    "page_start": 95,
+    "page_end": 96,
+    "token_len": 217,
+    "child_tok_lens": [
+      139,
+      52,
+      26
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-8 (Base)",
+      "Ch23 \u00a723-9 (Base)",
+      "Ch23 \u00a723-10 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Transport A Casualty (081-COM-1046)",
+      "Chapter 23 > Evacuate The Casualty Using The Appropriate Type Of",
+      "Chapter 23 > Litters"
+    ],
+    "headings": [
+      "Transport A Casualty (081-COM-1046)",
+      "Evacuate The Casualty Using The Appropriate Type Of",
+      "Litters"
+    ]
+  },
+  {
+    "window_id": "w_p96-96",
+    "stride_idx": 111,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-9@Base",
+      "tc4-02.1:ch23:23-10@Base",
+      "tc4-02.1:ch23:23-11@Base"
+    ],
+    "chapter": 23,
+    "page_start": 96,
+    "page_end": 96,
+    "token_len": 184,
+    "child_tok_lens": [
+      52,
+      26,
+      106
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-9 (Base)",
+      "Ch23 \u00a723-10 (Base)",
+      "Ch23 \u00a723-11 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Evacuate The Casualty Using The Appropriate Type Of",
+      "Chapter 23 > Litters",
+      "Chapter 23 > POLYMER FLEXIBLE LITTER"
+    ],
+    "headings": [
+      "POLYMER FLEXIBLE LITTER",
+      "Litters",
+      "Evacuate The Casualty Using The Appropriate Type Of"
+    ]
+  },
+  {
+    "window_id": "w_p96-96",
+    "stride_idx": 112,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-10@Base",
+      "tc4-02.1:ch23:23-11@Base"
+    ],
+    "chapter": 23,
+    "page_start": 96,
+    "page_end": 96,
+    "token_len": 132,
+    "child_tok_lens": [
+      26,
+      106
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-10 (Base)",
+      "Ch23 \u00a723-11 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Litters",
+      "Chapter 23 > POLYMER FLEXIBLE LITTER"
+    ],
+    "headings": [
+      "POLYMER FLEXIBLE LITTER",
+      "Litters"
+    ]
+  },
+  {
+    "window_id": "w_p96-96",
+    "stride_idx": 113,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-11@Base"
+    ],
+    "chapter": 23,
+    "page_start": 96,
+    "page_end": 96,
+    "token_len": 106,
+    "child_tok_lens": [
+      106
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-11 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > POLYMER FLEXIBLE LITTER"
+    ],
+    "headings": [
+      "POLYMER FLEXIBLE LITTER"
+    ]
+  },
+  {
+    "window_id": "w_p96-97",
+    "stride_idx": 114,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-12@Base",
+      "tc4-02.1:ch23:23-13@Base",
+      "tc4-02.1:ch23:23-14@Base"
+    ],
+    "chapter": 23,
+    "page_start": 96,
+    "page_end": 97,
+    "token_len": 220,
+    "child_tok_lens": [
+      179,
+      4,
+      37
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-12 (Base)",
+      "Ch23 \u00a723-13 (Base)",
+      "Ch23 \u00a723-14 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > POLYMER FLEXIBLE LITTER",
+      "Chapter 23 > Polymer Flexible Litter",
+      "Chapter 23 > MULTIHINGED FOLDING LITTER"
+    ],
+    "headings": [
+      "POLYMER FLEXIBLE LITTER",
+      "Polymer Flexible Litter",
+      "MULTIHINGED FOLDING LITTER"
+    ]
+  },
+  {
+    "window_id": "w_p96-97",
+    "stride_idx": 115,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-13@Base",
+      "tc4-02.1:ch23:23-14@Base",
+      "tc4-02.1:ch23:23-15@Base",
+      "tc4-02.1:ch23:23-16@Base",
+      "tc4-02.1:ch23:23-17@Base"
+    ],
+    "chapter": 23,
+    "page_start": 96,
+    "page_end": 97,
+    "token_len": 233,
+    "child_tok_lens": [
+      4,
+      37,
+      69,
+      89,
+      34
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-13 (Base)",
+      "Ch23 \u00a723-14 (Base)",
+      "Ch23 \u00a723-15 (Base)",
+      "Ch23 \u00a723-16 (Base)",
+      "Ch23 \u00a723-17 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Polymer Flexible Litter",
+      "Chapter 23 > MULTIHINGED FOLDING LITTER",
+      "Chapter 23 > MULTIHINGED FOLDING LITTER",
+      "Chapter 23 > Multihinged Folding Litter",
+      "Chapter 23 > IMPROVISED LITTERS"
+    ],
+    "headings": [
+      "IMPROVISED LITTERS",
+      "Polymer Flexible Litter",
+      "Multihinged Folding Litter",
+      "MULTIHINGED FOLDING LITTER"
+    ]
+  },
+  {
+    "window_id": "w_p97-97",
+    "stride_idx": 116,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-16@Base",
+      "tc4-02.1:ch23:23-17@Base",
+      "tc4-02.1:ch23:23-18@Base"
+    ],
+    "chapter": 23,
+    "page_start": 97,
+    "page_end": 97,
+    "token_len": 193,
+    "child_tok_lens": [
+      89,
+      34,
+      70
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-16 (Base)",
+      "Ch23 \u00a723-17 (Base)",
+      "Ch23 \u00a723-18 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Multihinged Folding Litter",
+      "Chapter 23 > IMPROVISED LITTERS",
+      "Chapter 23 > Poncho Improvised Litter"
+    ],
+    "headings": [
+      "Poncho Improvised Litter",
+      "IMPROVISED LITTERS",
+      "Multihinged Folding Litter"
+    ]
+  },
+  {
+    "window_id": "w_p97-98",
+    "stride_idx": 117,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-17@Base",
+      "tc4-02.1:ch23:23-18@Base",
+      "tc4-02.1:ch23:23-19@Base",
+      "tc4-02.1:ch23:23-20@Base",
+      "tc4-02.1:ch23:23-21@Base"
+    ],
+    "chapter": 23,
+    "page_start": 97,
+    "page_end": 98,
+    "token_len": 250,
+    "child_tok_lens": [
+      34,
+      70,
+      60,
+      74,
+      12
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-17 (Base)",
+      "Ch23 \u00a723-18 (Base)",
+      "Ch23 \u00a723-19 (Base)",
+      "Ch23 \u00a723-20 (Base)",
+      "Ch23 \u00a723-21 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > IMPROVISED LITTERS",
+      "Chapter 23 > Poncho Improvised Litter",
+      "Chapter 23 > Jacket Improvised Litter",
+      "Chapter 23 > Jacket Improvised Litter",
+      "Chapter 23 > Ground Ambulance"
+    ],
+    "headings": [
+      "IMPROVISED LITTERS",
+      "Ground Ambulance",
+      "Poncho Improvised Litter",
+      "Jacket Improvised Litter"
+    ]
+  },
+  {
+    "window_id": "w_p98-98",
+    "stride_idx": 118,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-20@Base",
+      "tc4-02.1:ch23:23-21@Base",
+      "tc4-02.1:ch23:23-22@Base"
+    ],
+    "chapter": 23,
+    "page_start": 98,
+    "page_end": 98,
+    "token_len": 145,
+    "child_tok_lens": [
+      74,
+      12,
+      59
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-20 (Base)",
+      "Ch23 \u00a723-21 (Base)",
+      "Ch23 \u00a723-22 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Jacket Improvised Litter",
+      "Chapter 23 > Ground Ambulance",
+      "Chapter 23 > Ground Ambulance"
+    ],
+    "headings": [
+      "Ground Ambulance",
+      "Jacket Improvised Litter"
+    ]
+  },
+  {
+    "window_id": "w_p98-98",
+    "stride_idx": 119,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-21@Base",
+      "tc4-02.1:ch23:23-22@Base",
+      "tc4-02.1:ch23:23-23@Base"
+    ],
+    "chapter": 23,
+    "page_start": 98,
+    "page_end": 98,
+    "token_len": 244,
+    "child_tok_lens": [
+      12,
+      59,
+      173
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-21 (Base)",
+      "Ch23 \u00a723-22 (Base)",
+      "Ch23 \u00a723-23 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Ground Ambulance",
+      "Chapter 23 > Ground Ambulance",
+      "Chapter 23 > Air Ambulance"
+    ],
+    "headings": [
+      "Air Ambulance",
+      "Ground Ambulance"
+    ]
+  },
+  {
+    "window_id": "w_p98-98",
+    "stride_idx": 120,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-22@Base",
+      "tc4-02.1:ch23:23-23@Base"
+    ],
+    "chapter": 23,
+    "page_start": 98,
+    "page_end": 98,
+    "token_len": 232,
+    "child_tok_lens": [
+      59,
+      173
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-22 (Base)",
+      "Ch23 \u00a723-23 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Ground Ambulance",
+      "Chapter 23 > Air Ambulance"
+    ],
+    "headings": [
+      "Air Ambulance",
+      "Ground Ambulance"
+    ]
+  },
+  {
+    "window_id": "w_p98-99",
+    "stride_idx": 121,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-23@Base",
+      "tc4-02.1:ch23:23-24@Base"
+    ],
+    "chapter": 23,
+    "page_start": 98,
+    "page_end": 99,
+    "token_len": 219,
+    "child_tok_lens": [
+      173,
+      46
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-23 (Base)",
+      "Ch23 \u00a723-24 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Air Ambulance",
+      "Chapter 23 > Ground Military Vehicles"
+    ],
+    "headings": [
+      "Air Ambulance",
+      "Ground Military Vehicles"
+    ]
+  },
+  {
+    "window_id": "w_p99-101",
+    "stride_idx": 122,
+    "paragraph_ids": [
+      "tc4-02.1:ch23:23-24@Base",
+      "tc4-02.1:ch23:23-25@Base",
+      "tc4-02.1:ch24:24-1@C1",
+      "tc4-02.1:ch24:24-2@C1"
+    ],
+    "chapter": 23,
+    "page_start": 99,
+    "page_end": 101,
+    "token_len": 211,
+    "child_tok_lens": [
+      46,
+      78,
+      35,
+      52
+    ],
+    "paragraph_short_refs": [
+      "Ch23 \u00a723-24 (Base)",
+      "Ch23 \u00a723-25 (Base)",
+      "Ch24 \u00a724-1 (C1)",
+      "Ch24 \u00a724-2 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Ground Military Vehicles",
+      "Chapter 23 > Transport A Casualty (081-COM-1046)",
+      "Chapter 23 > SURVEY",
+      "Chapter 23 > Eyelid (081-833-0040) With IFAK Eye-Shield"
+    ],
+    "headings": [
+      "Transport A Casualty (081-COM-1046)",
+      "SURVEY",
+      "Eyelid (081-833-0040) With IFAK Eye-Shield",
+      "Ground Military Vehicles"
+    ]
+  },
+  {
+    "window_id": "w_p101-101",
+    "stride_idx": 123,
+    "paragraph_ids": [
+      "tc4-02.1:ch24:24-1@C1",
+      "tc4-02.1:ch24:24-2@C1",
+      "tc4-02.1:ch24:24-3@C1",
+      "tc4-02.1:ch24:24-4@C1",
+      "tc4-02.1:ch24:24-5@C1",
+      "tc4-02.1:ch24:24-6@C1"
+    ],
+    "chapter": 24,
+    "page_start": 101,
+    "page_end": 101,
+    "token_len": 240,
+    "child_tok_lens": [
+      35,
+      52,
+      58,
+      36,
+      51,
+      8
+    ],
+    "paragraph_short_refs": [
+      "Ch24 \u00a724-1 (C1)",
+      "Ch24 \u00a724-2 (C1)",
+      "Ch24 \u00a724-3 (C1)",
+      "Ch24 \u00a724-4 (C1)",
+      "Ch24 \u00a724-5 (C1)",
+      "Ch24 \u00a724-6 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > SURVEY",
+      "Chapter 23 > Eyelid (081-833-0040) With IFAK Eye-Shield",
+      "Chapter 23 > Eyelid (081-833-0040) With IFAK Eye-Shield",
+      "Chapter 23 > Eyelid (081-833-0040) With IFAK Eye-Shield",
+      "Chapter 23 > Eyelid (081-833-0040) With IFAK Eye-Shield",
+      "Chapter 23 > Protruding (Impaled) Objects. (See Task 081-833-0039.)"
+    ],
+    "headings": [
+      "Protruding (Impaled) Objects. (See Task 081-833-0039.)",
+      "SURVEY",
+      "Eyelid (081-833-0040) With IFAK Eye-Shield"
+    ]
+  },
+  {
+    "window_id": "w_p101-103",
+    "stride_idx": 124,
+    "paragraph_ids": [
+      "tc4-02.1:ch24:24-5@C1",
+      "tc4-02.1:ch24:24-6@C1",
+      "tc4-02.1:ch24:24-7@C1",
+      "tc4-02.1:ch24:24-8@C1",
+      "tc4-02.1:ch24:24-9@C1",
+      "tc4-02.1:ch24:24-10@C1",
+      "tc4-02.1:ch24:24-11@C1",
+      "tc4-02.1:ch24:24-12@C1",
+      "tc4-02.1:ch24:24-13@C1"
+    ],
+    "chapter": 24,
+    "page_start": 101,
+    "page_end": 103,
+    "token_len": 245,
+    "child_tok_lens": [
+      51,
+      8,
+      25,
+      10,
+      33,
+      37,
+      13,
+      29,
+      39
+    ],
+    "paragraph_short_refs": [
+      "Ch24 \u00a724-5 (C1)",
+      "Ch24 \u00a724-6 (C1)",
+      "Ch24 \u00a724-7 (C1)",
+      "Ch24 \u00a724-8 (C1)",
+      "Ch24 \u00a724-9 (C1)",
+      "Ch24 \u00a724-10 (C1)",
+      "Ch24 \u00a724-11 (C1)",
+      "Ch24 \u00a724-12 (C1)",
+      "Ch24 \u00a724-13 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Eyelid (081-833-0040) With IFAK Eye-Shield",
+      "Chapter 23 > Protruding (Impaled) Objects. (See Task 081-833-0039.)",
+      "Chapter 23 > Figure 24-1. Rigid Eye-Shield Or Cup Properly Secured Over The Injury.",
+      "Chapter 23 > Figure 24-1. Rigid Eye-Shield Or Cup Properly Secured Over The Injury.",
+      "Chapter 23 > Figure 24-1. Rigid Eye-Shield Or Cup Properly Secured Over The Injury.",
+      "Chapter 23 > Figure 24-1. Rigid Eye-Shield Or Cup Properly Secured Over The Injury.",
+      "Chapter 23 > Figure 24-1. Rigid Eye-Shield Or Cup Properly Secured Over The Injury.",
+      "Chapter 23 > Figure 24-1. Rigid Eye-Shield Or Cup Properly Secured Over The Injury.",
+      "Chapter 23 > SEEK EVACUATION AND MEDICAL AID"
+    ],
+    "headings": [
+      "Protruding (Impaled) Objects. (See Task 081-833-0039.)",
+      "Figure 24-1. Rigid Eye-Shield Or Cup Properly Secured Over The Injury.",
+      "SEEK EVACUATION AND MEDICAL AID",
+      "Eyelid (081-833-0040) With IFAK Eye-Shield"
+    ]
+  },
+  {
+    "window_id": "w_p103-105",
+    "stride_idx": 125,
+    "paragraph_ids": [
+      "tc4-02.1:ch24:24-12@C1",
+      "tc4-02.1:ch24:24-13@C1",
+      "tc4-02.1:ch25:25-1@C1",
+      "tc4-02.1:ch25:25-2@C1"
+    ],
+    "chapter": 24,
+    "page_start": 103,
+    "page_end": 105,
+    "token_len": 214,
+    "child_tok_lens": [
+      29,
+      39,
+      96,
+      50
+    ],
+    "paragraph_short_refs": [
+      "Ch24 \u00a724-12 (C1)",
+      "Ch24 \u00a724-13 (C1)",
+      "Ch25 \u00a725-1 (C1)",
+      "Ch25 \u00a725-2 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Figure 24-1. Rigid Eye-Shield Or Cup Properly Secured Over The Injury.",
+      "Chapter 23 > SEEK EVACUATION AND MEDICAL AID",
+      "Chapter 23 > SURVEY",
+      "Chapter 23 > SHIELD"
+    ],
+    "headings": [
+      "SHIELD",
+      "Figure 24-1. Rigid Eye-Shield Or Cup Properly Secured Over The Injury.",
+      "SURVEY",
+      "SEEK EVACUATION AND MEDICAL AID"
+    ]
+  },
+  {
+    "window_id": "w_p105-106",
+    "stride_idx": 126,
+    "paragraph_ids": [
+      "tc4-02.1:ch25:25-1@C1",
+      "tc4-02.1:ch25:25-2@C1",
+      "tc4-02.1:ch25:25-3@C1",
+      "tc4-02.1:ch25:25-4@C1"
+    ],
+    "chapter": 25,
+    "page_start": 105,
+    "page_end": 106,
+    "token_len": 213,
+    "child_tok_lens": [
+      96,
+      50,
+      62,
+      5
+    ],
+    "paragraph_short_refs": [
+      "Ch25 \u00a725-1 (C1)",
+      "Ch25 \u00a725-2 (C1)",
+      "Ch25 \u00a725-3 (C1)",
+      "Ch25 \u00a725-4 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > SURVEY",
+      "Chapter 23 > SHIELD",
+      "Chapter 23 > Foreign Body Stuck Or Impaled In The Eye",
+      "Chapter 23 > SEEK EVACUATION AND MEDICAL AID"
+    ],
+    "headings": [
+      "SHIELD",
+      "SEEK EVACUATION AND MEDICAL AID",
+      "Foreign Body Stuck Or Impaled In The Eye",
+      "SURVEY"
+    ]
+  },
+  {
+    "window_id": "w_p106-106",
+    "stride_idx": 127,
+    "paragraph_ids": [
+      "tc4-02.1:ch25:25-3@C1",
+      "tc4-02.1:ch25:25-4@C1",
+      "tc4-02.1:ch25:25-5@C1",
+      "tc4-02.1:ch25:25-6@C1",
+      "tc4-02.1:ch25:25-7@C1",
+      "tc4-02.1:ch25:25-8@C1",
+      "tc4-02.1:ch25:25-9@C1"
+    ],
+    "chapter": 25,
+    "page_start": 106,
+    "page_end": 106,
+    "token_len": 248,
+    "child_tok_lens": [
+      62,
+      5,
+      43,
+      50,
+      37,
+      19,
+      32
+    ],
+    "paragraph_short_refs": [
+      "Ch25 \u00a725-3 (C1)",
+      "Ch25 \u00a725-4 (C1)",
+      "Ch25 \u00a725-5 (C1)",
+      "Ch25 \u00a725-6 (C1)",
+      "Ch25 \u00a725-7 (C1)",
+      "Ch25 \u00a725-8 (C1)",
+      "Ch25 \u00a725-9 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Foreign Body Stuck Or Impaled In The Eye",
+      "Chapter 23 > SEEK EVACUATION AND MEDICAL AID",
+      "Chapter 23 > Foreign Body Stuck Or Impaled In The Eye",
+      "Chapter 23 > Foreign Body Stuck Or Impaled In The Eye",
+      "Chapter 23 > Foreign Body Stuck Or Impaled In The Eye",
+      "Chapter 23 > Foreign Body Stuck Or Impaled In The Eye",
+      "Chapter 23 > SEEK EVACUATION AND MEDICAL AID"
+    ],
+    "headings": [
+      "SEEK EVACUATION AND MEDICAL AID",
+      "Foreign Body Stuck Or Impaled In The Eye"
+    ]
+  },
+  {
+    "window_id": "w_p106-107",
+    "stride_idx": 128,
+    "paragraph_ids": [
+      "tc4-02.1:ch25:25-8@C1",
+      "tc4-02.1:ch25:25-9@C1",
+      "tc4-02.1:ch26:26-1@C1",
+      "tc4-02.1:ch26:26-2@C1",
+      "tc4-02.1:ch26:26-3@C1",
+      "tc4-02.1:ch26:26-4@C1"
+    ],
+    "chapter": 25,
+    "page_start": 106,
+    "page_end": 107,
+    "token_len": 169,
+    "child_tok_lens": [
+      19,
+      32,
+      8,
+      6,
+      33,
+      71
+    ],
+    "paragraph_short_refs": [
+      "Ch25 \u00a725-8 (C1)",
+      "Ch25 \u00a725-9 (C1)",
+      "Ch26 \u00a726-1 (C1)",
+      "Ch26 \u00a726-2 (C1)",
+      "Ch26 \u00a726-3 (C1)",
+      "Ch26 \u00a726-4 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Foreign Body Stuck Or Impaled In The Eye",
+      "Chapter 23 > SEEK EVACUATION AND MEDICAL AID",
+      "Chapter 23 > SURVEY",
+      "Chapter 23 > (081-833-0042) With IFAK Eye-Shield",
+      "Chapter 23 > (081-833-0042) With IFAK Eye-Shield",
+      "Chapter 23 > (081-833-0042) With IFAK Eye-Shield"
+    ],
+    "headings": [
+      "(081-833-0042) With IFAK Eye-Shield",
+      "SEEK EVACUATION AND MEDICAL AID",
+      "Foreign Body Stuck Or Impaled In The Eye",
+      "SURVEY"
+    ]
+  },
+  {
+    "window_id": "w_p107-108",
+    "stride_idx": 129,
+    "paragraph_ids": [
+      "tc4-02.1:ch26:26-3@C1",
+      "tc4-02.1:ch26:26-4@C1",
+      "tc4-02.1:ch26:26-5@C1",
+      "tc4-02.1:ch26:26-6@C1"
+    ],
+    "chapter": 26,
+    "page_start": 107,
+    "page_end": 108,
+    "token_len": 203,
+    "child_tok_lens": [
+      33,
+      71,
+      85,
+      14
+    ],
+    "paragraph_short_refs": [
+      "Ch26 \u00a726-3 (C1)",
+      "Ch26 \u00a726-4 (C1)",
+      "Ch26 \u00a726-5 (C1)",
+      "Ch26 \u00a726-6 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > (081-833-0042) With IFAK Eye-Shield",
+      "Chapter 23 > (081-833-0042) With IFAK Eye-Shield",
+      "Chapter 23 > Bleeding-",
+      "Chapter 23 > SEEK EVACUATION AND MEDICAL AID"
+    ],
+    "headings": [
+      "SEEK EVACUATION AND MEDICAL AID",
+      "Bleeding-",
+      "(081-833-0042) With IFAK Eye-Shield"
+    ]
+  },
+  {
+    "window_id": "w_p107-108",
+    "stride_idx": 130,
+    "paragraph_ids": [
+      "tc4-02.1:ch26:26-5@C1",
+      "tc4-02.1:ch26:26-6@C1",
+      "tc4-02.1:ch26:26-7@C1",
+      "tc4-02.1:ch26:26-8@C1",
+      "tc4-02.1:ch26:26-9@C1"
+    ],
+    "chapter": 26,
+    "page_start": 107,
+    "page_end": 108,
+    "token_len": 210,
+    "child_tok_lens": [
+      85,
+      14,
+      65,
+      14,
+      32
+    ],
+    "paragraph_short_refs": [
+      "Ch26 \u00a726-5 (C1)",
+      "Ch26 \u00a726-6 (C1)",
+      "Ch26 \u00a726-7 (C1)",
+      "Ch26 \u00a726-8 (C1)",
+      "Ch26 \u00a726-9 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Bleeding-",
+      "Chapter 23 > SEEK EVACUATION AND MEDICAL AID",
+      "Chapter 23 > SEEK EVACUATION AND MEDICAL AID",
+      "Chapter 23 > Bleeding-",
+      "Chapter 23 > SEEK EVACUATION AND MEDICAL AID"
+    ],
+    "headings": [
+      "SEEK EVACUATION AND MEDICAL AID",
+      "Bleeding-"
+    ]
+  },
+  {
+    "window_id": "w_p108-108",
+    "stride_idx": 131,
+    "paragraph_ids": [
+      "tc4-02.1:ch26:26-8@C1",
+      "tc4-02.1:ch26:26-9@C1"
+    ],
+    "chapter": 26,
+    "page_start": 108,
+    "page_end": 108,
+    "token_len": 46,
+    "child_tok_lens": [
+      14,
+      32
+    ],
+    "paragraph_short_refs": [
+      "Ch26 \u00a726-8 (C1)",
+      "Ch26 \u00a726-9 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Bleeding-",
+      "Chapter 23 > SEEK EVACUATION AND MEDICAL AID"
+    ],
+    "headings": [
+      "SEEK EVACUATION AND MEDICAL AID",
+      "Bleeding-"
+    ]
+  },
+  {
+    "window_id": "w_p108-108",
+    "stride_idx": 132,
+    "paragraph_ids": [
+      "tc4-02.1:ch26:26-9@C1"
+    ],
+    "chapter": 26,
+    "page_start": 108,
+    "page_end": 108,
+    "token_len": 32,
+    "child_tok_lens": [
+      32
+    ],
+    "paragraph_short_refs": [
+      "Ch26 \u00a726-9 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > SEEK EVACUATION AND MEDICAL AID"
+    ],
+    "headings": [
+      "SEEK EVACUATION AND MEDICAL AID"
+    ]
+  },
+  {
+    "window_id": "w_p11-11",
+    "stride_idx": 133,
+    "paragraph_ids": [
+      "tc4-02.1:ch27:27-10@Base_split0",
+      "tc4-02.1:ch27:27-10@Base_split1"
+    ],
+    "chapter": 27,
+    "page_start": 11,
+    "page_end": 11,
+    "token_len": 190,
+    "child_tok_lens": [
+      119,
+      71
+    ],
+    "paragraph_short_refs": [
+      "Ch27 \u00a727-10 (Base)",
+      "Ch27 \u00a727-10 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 \u00b7 TRANSPORT A CASUALTY > Preface",
+      "Chapter 23 \u00b7 TRANSPORT A CASUALTY > Preface"
+    ],
+    "headings": [
+      "Preface"
+    ]
+  },
+  {
+    "window_id": "w_p11-11",
+    "stride_idx": 134,
+    "paragraph_ids": [
+      "tc4-02.1:ch27:27-10@Base_split1",
+      "tc4-02.1:ch27:27-10@Base_split2"
+    ],
+    "chapter": 27,
+    "page_start": 11,
+    "page_end": 11,
+    "token_len": 165,
+    "child_tok_lens": [
+      71,
+      94
+    ],
+    "paragraph_short_refs": [
+      "Ch27 \u00a727-10 (Base)",
+      "Ch27 \u00a727-10 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 \u00b7 TRANSPORT A CASUALTY > Preface",
+      "Chapter 23 \u00b7 TRANSPORT A CASUALTY > Preface"
+    ],
+    "headings": [
+      "Preface"
+    ]
+  },
+  {
+    "window_id": "w_p11-11",
+    "stride_idx": 135,
+    "paragraph_ids": [
+      "tc4-02.1:ch27:27-10@Base_split2"
+    ],
+    "chapter": 27,
+    "page_start": 11,
+    "page_end": 11,
+    "token_len": 94,
+    "child_tok_lens": [
+      94
+    ],
+    "paragraph_short_refs": [
+      "Ch27 \u00a727-10 (Base)"
+    ],
+    "section_paths": [
+      "Chapter 23 \u00b7 TRANSPORT A CASUALTY > Preface"
+    ],
+    "headings": [
+      "Preface"
+    ]
+  },
+  {
+    "window_id": "w_p109-109",
+    "stride_idx": 136,
+    "paragraph_ids": [
+      "tc4-02.1:ch27:27-1@C1",
+      "tc4-02.1:ch27:27-2@C1",
+      "tc4-02.1:ch27:27-3@C1"
+    ],
+    "chapter": 27,
+    "page_start": 109,
+    "page_end": 109,
+    "token_len": 66,
+    "child_tok_lens": [
+      8,
+      12,
+      46
+    ],
+    "paragraph_short_refs": [
+      "Ch27 \u00a727-1 (C1)",
+      "Ch27 \u00a727-2 (C1)",
+      "Ch27 \u00a727-3 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > SURVEY",
+      "Chapter 23 > Survey",
+      "Chapter 23 > Damage-"
+    ],
+    "headings": [
+      "Damage-",
+      "SURVEY",
+      "Survey"
+    ]
+  },
+  {
+    "window_id": "w_p109-110",
+    "stride_idx": 137,
+    "paragraph_ids": [
+      "tc4-02.1:ch27:27-2@C1",
+      "tc4-02.1:ch27:27-3@C1",
+      "tc4-02.1:ch27:27-4@C1"
+    ],
+    "chapter": 27,
+    "page_start": 109,
+    "page_end": 110,
+    "token_len": 247,
+    "child_tok_lens": [
+      12,
+      46,
+      189
+    ],
+    "paragraph_short_refs": [
+      "Ch27 \u00a727-2 (C1)",
+      "Ch27 \u00a727-3 (C1)",
+      "Ch27 \u00a727-4 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Survey",
+      "Chapter 23 > Damage-",
+      "Chapter 23 > Damage-"
+    ],
+    "headings": [
+      "Damage-",
+      "Survey"
+    ]
+  },
+  {
+    "window_id": "w_p109-110",
+    "stride_idx": 138,
+    "paragraph_ids": [
+      "tc4-02.1:ch27:27-3@C1",
+      "tc4-02.1:ch27:27-4@C1"
+    ],
+    "chapter": 27,
+    "page_start": 109,
+    "page_end": 110,
+    "token_len": 235,
+    "child_tok_lens": [
+      46,
+      189
+    ],
+    "paragraph_short_refs": [
+      "Ch27 \u00a727-3 (C1)",
+      "Ch27 \u00a727-4 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Damage-",
+      "Chapter 23 > Damage-"
+    ],
+    "headings": [
+      "Damage-"
+    ]
+  },
+  {
+    "window_id": "w_p110-110",
+    "stride_idx": 139,
+    "paragraph_ids": [
+      "tc4-02.1:ch27:27-4@C1",
+      "tc4-02.1:ch27:27-6@C1"
+    ],
+    "chapter": 27,
+    "page_start": 110,
+    "page_end": 110,
+    "token_len": 223,
+    "child_tok_lens": [
+      189,
+      34
+    ],
+    "paragraph_short_refs": [
+      "Ch27 \u00a727-4 (C1)",
+      "Ch27 \u00a727-6 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > Damage-",
+      "Chapter 23 > SEEK EVACUATION AND MEDICAL AID"
+    ],
+    "headings": [
+      "SEEK EVACUATION AND MEDICAL AID",
+      "Damage-"
+    ]
+  },
+  {
+    "window_id": "w_p110-110",
+    "stride_idx": 140,
+    "paragraph_ids": [
+      "tc4-02.1:ch27:27-6@C1",
+      "tc4-02.1:ch27:27-8@C1",
+      "tc4-02.1:ch27:27-9@C1"
+    ],
+    "chapter": 27,
+    "page_start": 110,
+    "page_end": 110,
+    "token_len": 84,
+    "child_tok_lens": [
+      34,
+      36,
+      14
+    ],
+    "paragraph_short_refs": [
+      "Ch27 \u00a727-6 (C1)",
+      "Ch27 \u00a727-8 (C1)",
+      "Ch27 \u00a727-9 (C1)"
+    ],
+    "section_paths": [
+      "Chapter 23 > SEEK EVACUATION AND MEDICAL AID",
+      "Chapter 23 > Seek Evacuation And Medical Aid",
+      "Chapter 23 > Seek Evacuation And Medical Aid"
+    ],
+    "headings": [
+      "SEEK EVACUATION AND MEDICAL AID",
+      "Seek Evacuation And Medical Aid"
+    ]
+  }
+]

@@ -1,0 +1,245 @@
+{
+  "M": [
+      {
+        "scenario": "chest wound on a man - severe bleeding",
+        "question": "Is there any life-threatening bleeding from the chest wound that requires immediate pressure or tourniquet application?",
+        "reasoning": "Direct focus on chest wound bleeding with immediate intervention"
+      },
+      {
+        "scenario": "gunshot to leg - arterial bleeding",
+        "question": "Is there any life-threatening bleeding from the leg that requires tourniquet application or direct pressure?",
+        "reasoning": "Leg gunshot with arterial bleeding requires tourniquet consideration"
+      },
+      {
+        "scenario": "head injury with blood loss",
+        "question": "Is there any life-threatening bleeding from the head that requires packing and direct pressure?",
+        "reasoning": "Head injuries need packing technique, not tourniquets"
+      },
+      {
+        "scenario": "arm laceration - uncontrolled bleeding",
+        "question": "Is there any life-threatening bleeding from the arm that requires tourniquet application?",
+        "reasoning": "Arm bleeding allows for tourniquet application if direct pressure fails"
+      },
+      {
+        "scenario": "neck wound - junctional bleeding",
+        "question": "Is there any life-threatening bleeding from the neck that requires packing and direct pressure?",
+        "reasoning": "Junctional bleeding requires packing, not tourniquets"
+      }
+  ],
+  "A": [
+      {
+        "scenario": "chest wound on a man - severe bleeding",
+        "question": "Is the patient's airway patent or is there any obstruction from blood or secretions?",
+        "reasoning": "Chest wounds can cause airway obstruction from blood or swelling"
+      },
+      {
+        "scenario": "unconscious patient after fall",
+        "question": "Is the patient's airway clear or is there any obstruction from tongue, vomit, or foreign objects?",
+        "reasoning": "Unconscious patients are at high risk of airway obstruction"
+      },
+      {
+        "scenario": "facial trauma - jaw injury",
+        "question": "Is the patient's airway patent despite the facial trauma, or is there obstruction from swelling?",
+        "reasoning": "Facial trauma can cause airway obstruction from swelling or displaced bones"
+      },
+      {
+        "scenario": "neck wound - junctional bleeding",
+        "question": "Is the patient's airway patent or is there obstruction from the neck injury or blood?",
+        "reasoning": "Neck wounds can directly threaten airway patency"
+      },
+      {
+        "scenario": "chest injury - difficulty breathing",
+        "question": "Is the patient's airway clear or is there obstruction from the chest injury?",
+        "reasoning": "Chest injuries can cause airway compromise through various mechanisms"
+      }
+  ],
+  "R": [
+      {
+        "scenario": "chest wound on a man - severe bleeding",
+        "question": "Is the patient's breathing normal or is it affected by the chest wound and blood loss?",
+        "reasoning": "Chest wounds and blood loss can significantly affect breathing"
+      },
+      {
+        "scenario": "gunshot to chest - difficulty breathing",
+        "question": "Is the patient's respiratory rate normal or abnormal due to the chest injury?",
+        "reasoning": "Chest gunshot wounds directly affect respiratory function"
+      },
+      {
+        "scenario": "head injury with blood loss",
+        "question": "Is the patient's breathing pattern normal or is it affected by the head injury?",
+        "reasoning": "Head injuries can affect respiratory drive and pattern"
+      },
+      {
+        "scenario": "unconscious patient after fall",
+        "question": "Is the patient breathing normally or is the breathing irregular due to unconsciousness?",
+        "reasoning": "Unconscious patients may have irregular or inadequate breathing"
+      },
+      {
+        "scenario": "neck wound - junctional bleeding",
+        "question": "Is the patient's breathing normal or is it compromised by the neck injury?",
+        "reasoning": "Neck injuries can compromise breathing through airway obstruction or nerve damage"
+      }
+  ],
+  "C": [
+      {
+        "scenario": "chest wound on a man - severe bleeding",
+        "question": "What is the quality of the patient's pulse - is it strong, weak, or absent due to blood loss?",
+        "reasoning": "Severe bleeding directly affects circulation and pulse quality"
+      },
+      {
+        "scenario": "gunshot to leg - arterial bleeding",
+        "question": "Is the patient's pulse strong and regular or weak due to the arterial bleeding?",
+        "reasoning": "Arterial bleeding can cause rapid pulse deterioration"
+      },
+      {
+        "scenario": "unconscious patient after fall",
+        "question": "Is the patient's pulse present and strong, or is it weak due to potential internal bleeding?",
+        "reasoning": "Unconscious trauma patients may have circulation issues from internal bleeding"
+      },
+      {
+        "scenario": "head injury with blood loss",
+        "question": "What is the patient's pulse quality - is it affected by the head injury and blood loss?",
+        "reasoning": "Head injuries can affect circulation through various mechanisms"
+      },
+      {
+        "scenario": "multiple injuries - car accident",
+        "question": "Is the patient's pulse strong and regular, or is it weak due to multiple injuries and blood loss?",
+        "reasoning": "Multiple injuries increase the risk of circulatory compromise"
+      }
+  ],
+  "H": [
+      {
+        "scenario": "chest wound on a man - severe bleeding",
+        "question": "Is the patient showing signs of hypothermia due to blood loss and exposure?",
+        "reasoning": "Blood loss and shock can lead to hypothermia"
+      },
+      {
+        "scenario": "unconscious patient after fall",
+        "question": "Is the patient exhibiting signs of hypothermia from being unconscious and exposed?",
+        "reasoning": "Unconscious patients are at high risk of hypothermia"
+      },
+      {
+        "scenario": "water rescue - drowning victim",
+        "question": "Is the patient showing signs of hypothermia from water exposure?",
+        "reasoning": "Water exposure is a major cause of hypothermia"
+      },
+      {
+        "scenario": "outdoor accident - night time",
+        "question": "Is the patient exhibiting signs of hypothermia from prolonged outdoor exposure?",
+        "reasoning": "Outdoor accidents, especially at night, increase hypothermia risk"
+      },
+      {
+        "scenario": "shock from multiple injuries",
+        "question": "Is the patient showing signs of hypothermia due to shock and poor circulation?",
+        "reasoning": "Shock and poor circulation increase hypothermia risk"
+      }
+  ],
+  "P": [
+      {
+        "scenario": "chest wound on a man - severe bleeding",
+        "question": "Is the patient experiencing severe pain from the chest wound, and can they rate it on a scale?",
+        "reasoning": "Chest wounds are typically very painful"
+      },
+      {
+        "scenario": "gunshot to leg - arterial bleeding",
+        "question": "Is the patient able to rate their pain level from the leg injury on a scale of 1-10?",
+        "reasoning": "Gunshot wounds to limbs are extremely painful"
+      },
+      {
+        "scenario": "fractured arm - visible deformity",
+        "question": "Can the patient describe their pain level from the arm fracture?",
+        "reasoning": "Fractures are typically very painful and patients can usually rate the pain"
+      },
+      {
+        "scenario": "back injury - cannot move",
+        "question": "Is the patient experiencing pain from the back injury, and can they rate its severity?",
+        "reasoning": "Back injuries can be extremely painful and debilitating"
+      },
+      {
+        "scenario": "head injury with blood loss",
+        "question": "Is the patient conscious enough to rate their pain level from the head injury?",
+        "reasoning": "Head injuries may affect consciousness and ability to rate pain"
+      }
+  ],
+  "A2": [
+      {
+        "scenario": "chest wound on a man - severe bleeding",
+        "question": "Does the patient have any known allergies to antibiotics, especially since this is a penetrating wound?",
+        "reasoning": "Penetrating wounds typically require antibiotic prophylaxis"
+      },
+      {
+        "scenario": "gunshot to leg - arterial bleeding",
+        "question": "Is the patient allergic to any antibiotics, as gunshot wounds require antibiotic treatment?",
+        "reasoning": "Gunshot wounds are high-risk for infection and need antibiotics"
+      },
+      {
+        "scenario": "compound fracture - bone exposed",
+        "question": "Does the patient have any antibiotic allergies, given the compound fracture?",
+        "reasoning": "Compound fractures with exposed bone require urgent antibiotic treatment"
+      },
+      {
+        "scenario": "deep laceration - contaminated wound",
+        "question": "Are there any known antibiotic allergies, as this contaminated wound needs antibiotic coverage?",
+        "reasoning": "Contaminated wounds have high infection risk"
+      },
+      {
+        "scenario": "penetrating abdominal injury",
+        "question": "Does the patient have any antibiotic allergies, especially for penetrating abdominal wounds?",
+        "reasoning": "Penetrating abdominal injuries require broad-spectrum antibiotic coverage"
+      }
+  ],
+  "W": [
+      {
+        "scenario": "chest wound on a man - severe bleeding",
+        "question": "Are there any other wounds or injuries that might have been missed during the chest wound treatment?",
+        "reasoning": "Multiple wounds are common in trauma, need systematic inspection"
+      },
+      {
+        "scenario": "gunshot to leg - arterial bleeding",
+        "question": "Are there any exit wounds, additional injuries, or burns around the gunshot wound?",
+        "reasoning": "Gunshot wounds may have exit wounds and associated injuries"
+      },
+      {
+        "scenario": "car accident - multiple injuries",
+        "question": "Are there any hidden wounds, burns, or missed injuries from the car accident?",
+        "reasoning": "Car accidents often cause multiple hidden injuries"
+      },
+      {
+        "scenario": "explosion - blast injury",
+        "question": "Are there any additional wounds, burns, or blast injuries that weren't initially visible?",
+        "reasoning": "Blast injuries often have multiple hidden components"
+      },
+      {
+        "scenario": "fall from height - multiple trauma",
+        "question": "Are there any other wounds, internal injuries, or missed trauma from the fall?",
+        "reasoning": "Falls from height can cause multiple hidden injuries"
+      }
+  ],
+  "S": [
+      {
+        "scenario": "chest wound on a man - severe bleeding",
+        "question": "Are there any fractures or deformities in the chest area that need splinting?",
+        "reasoning": "Chest trauma can cause rib fractures that may need immobilization"
+      },
+      {
+        "scenario": "gunshot to leg - arterial bleeding",
+        "question": "Is there any evidence of fracture or deformity in the leg that requires splinting?",
+        "reasoning": "Gunshot wounds to limbs often involve fractures"
+      },
+      {
+        "scenario": "car accident - multiple injuries",
+        "question": "Are there any obvious fractures or deformities that need immediate splinting?",
+        "reasoning": "Car accidents commonly cause fractures requiring splinting"
+      },
+      {
+        "scenario": "fall from height - multiple trauma",
+        "question": "Are there any fractures or limb deformities from the fall that need splinting?",
+        "reasoning": "Falls from height commonly cause fractures"
+      },
+      {
+        "scenario": "crush injury - leg trapped",
+        "question": "Is there any fracture or deformity in the affected limb that needs splinting?",
+        "reasoning": "Crush injuries often result in fractures requiring splinting"
+      }
+  ]
+}
